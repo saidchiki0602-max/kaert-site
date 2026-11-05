@@ -1,0 +1,5 @@
+# Kaërt Groupe
+> Éditeur breton de logiciels pour les métiers du chantier : artisans (Kōv), maîtres d'œuvre (MOEpilote), particuliers (MonChantier), agents immobiliers (ValoTravaux), notaires (Conformité Travaux), et deux services d'apport de projets (CourtierTravaux.com, VosMaîtresdŒuvre).
+- Siège : 13 rue de la Basse Ville, 35190 Québriac, France
+- Contact : contact@kaert.fr
+- Site : https://kaert.fr

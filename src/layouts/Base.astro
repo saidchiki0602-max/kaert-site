@@ -1,0 +1,45 @@
+---
+interface Props { title: string; description: string; path?: string; }
+const { title, description, path = '/' } = Astro.props;
+const site = 'https://kaert.fr';
+const url = site + path;
+---
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <link rel="canonical" href={url}>
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kaërt">
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="og:url" content={url}>
+  <meta property="og:image" content={site + '/og.png'}>
+  <meta property="og:locale" content="fr_FR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0A0A0A">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&display=swap">
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Kaërt Groupe",
+    "url": site,
+    "logo": site + "/favicon.svg",
+    "description": "Éditeur de logiciels pour les professionnels du bâtiment et de l'immobilier : artisans, maîtres d'œuvre, agents immobiliers, notaires.",
+    "address": { "@type": "PostalAddress", "streetAddress": "13 rue de la Basse Ville", "postalCode": "35190", "addressLocality": "Québriac", "addressCountry": "FR" },
+    "areaServed": "Bretagne",
+    "brand": ["Kōv", "MOEpilote", "MonChantier", "ValoTravaux", "CourtierTravaux", "VosMaîtresdŒuvre"]
+  })} />
+  <slot name="head" />
+</head>
+<body>
+  <slot />
+</body>
+</html>

@@ -1,0 +1,179 @@
+---
+import Base from '../layouts/Base.astro';
+import '../styles/global.css';
+const ENDPOINT = import.meta.env.PUBLIC_FORM_ENDPOINT ?? '';
+const ANON = import.meta.env.PUBLIC_SUPABASE_ANON ?? '';
+---
+<Base title="Kaërt — Logiciels pour les métiers du chantier" description="Kaërt édite les logiciels qui manquent aux artisans, maîtres d'œuvre, agents immobiliers et notaires : Kōv, MOEpilote, MonChantier, ValoTravaux, CourtierTravaux. Faits en Bretagne par des gens qui ont tenu un chantier.">
+
+<nav class="nav" aria-label="Principale"><div class="wrap">
+  <a class="mark" href="#top" aria-label="Kaërt — accueil"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M6 36V4" stroke="currentColor" stroke-width="7" stroke-linecap="square"/><path d="M9 20 32 4" stroke="currentColor" stroke-width="7" stroke-linecap="square"/><path d="M14 20 34 36" stroke="currentColor" stroke-width="7" stroke-linecap="square" opacity=".45"/></svg>Kaërt</a>
+  <ul><li><a href="#produits">Produits</a></li><li><a href="#chantier">Le chantier</a></li><li><a href="#gratuit">Outils gratuits</a></li><li><a href="#pourquoi">Pourquoi</a></li></ul>
+  <a class="btn p" href="#contact" style="padding:12px 18px">Demander une démo</a>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+  <svg class="k" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M6 36V4" stroke="currentColor" stroke-width="7"/><path d="M9 20 32 4" stroke="currentColor" stroke-width="7"/><path d="M14 20 34 36" stroke="currentColor" stroke-width="7"/></svg>
+  <div class="eyebrow rv">Éditeur de logiciels pour les professionnels du bâtiment et de l'immobilier · Bretagne</div>
+  <h1 style="margin-top:22px"><span class="rv d1">Le chantier</span><span class="rv d2">mérite de</span><span class="rv d3 o">meilleurs outils.</span></h1>
+  <div class="sub">
+    <p class="rv d4">Artisans, maîtres d'œuvre, agents immobiliers, notaires : des métiers qui se passent le même bien sans jamais se parler. Kaërt fait les logiciels qui manquent, un métier à la fois, et les fait se parler. Faits par des gens qui ont tenu un chantier, pas par des gens qui en ont entendu parler.</p>
+    <div class="cta rv d4"><a class="btn p" href="#produits">Voir les produits</a><a class="btn s" href="#contact">Demander une démo</a></div>
+  </div>
+</div></header>
+
+<div class="mq" aria-hidden="true"><div>
+  <span><i>●</i>Kōv</span><span><i>●</i>MOEpilote</span><span><i>●</i>MonChantier</span><span><i>●</i>ValoTravaux</span><span><i>●</i>CourtierTravaux.com</span><span><i>●</i>VosMaîtresdŒuvre</span><span><i>●</i>Conformité Travaux</span>
+  <span><i>●</i>Kōv</span><span><i>●</i>MOEpilote</span><span><i>●</i>MonChantier</span><span><i>●</i>ValoTravaux</span><span><i>●</i>CourtierTravaux.com</span><span><i>●</i>VosMaîtresdŒuvre</span><span><i>●</i>Conformité Travaux</span>
+</div></div>
+
+<section class="man"><div class="wrap">
+  <div><div class="eyebrow">Ce qu'on croit</div><h2 style="margin-top:14px">Quatre règles, et on ne les négocie pas.</h2></div>
+  <ol>
+    <li><div><b>Un outil règle une douleur.</b><p>Pas une suite à tout faire. Chaque application fait une chose que le métier ne sait pas faire vite aujourd'hui, et la fait en moins de temps qu'il ne faut pour l'expliquer.</p></div></li>
+    <li><div><b>Zéro formation.</b><p>Si ça demande une notice, ça ne sera pas utilisé sur un chantier. Les artisans et les clients invités ouvrent un lien, sans compte. Ça marche avec des gants.</p></div></li>
+    <li><div><b>L'IA prépare, vous dites oui.</b><p>N'importe quelle IA vous dira ce qui manque sur un devis. Nous, on vérifie la décennale auprès de l'assureur, on rédige la relance, on prépare le compte rendu — et rien ne part sans votre accord. Ce qui ne se copie pas, c'est l'action.</p></div></li>
+    <li><div><b>Les outils se parlent.</b><p>Un artisan sur Kōv reçoit les plans du maître d'œuvre sur MOEpilote. Le particulier sur MonChantier voit les deux. Le dossier du bien suit la maison, pas le logiciel.</p></div></li>
+  </ol>
+</div></section>
+
+<section class="prod" id="produits"><div class="wrap">
+  <div class="head"><div><div class="eyebrow">Les logiciels</div><h2 style="margin-top:14px">Un métier, un outil.</h2></div><p>Chacun a son nom, son identité et son prix. Tous partagent le même dossier du bien, et chacun amène du travail aux autres.</p></div>
+  <div class="shelf">
+    <article class="pc" style="--c:var(--kov)">
+      <div class="lg"><svg viewBox="0 0 340 56" aria-hidden="true"><text x="0" y="44" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="46" fill="#F3F1EB" letter-spacing="-2">K<tspan>ō</tspan>v</text></svg></div>
+      <div class="who">Artisans · entreprises</div><h3>Kōv</h3>
+      <p>Le devis dicté en 30 secondes sur le chantier, le planning, les commandes, les factures. Et les chantiers de votre secteur, inclus.</p>
+      <div class="ft"><span class="st">En développement</span><a href="#contact">Démo →</a></div>
+    </article>
+    <article class="pc" style="--c:var(--moe)">
+      <div class="lg"><svg viewBox="0 0 340 56" aria-hidden="true"><text x="0" y="44" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="40" fill="#F3F1EB" letter-spacing="-1.5">MOE<tspan>pilote</tspan></text></svg></div>
+      <div class="who">Maîtres d'œuvre</div><h3>MOEpilote</h3>
+      <p>Le compte rendu de chantier dicté en 5 minutes, diffusé avec accusés de lecture. Assurances des entreprises contrôlées. Et un client qui sait où il en est, sans appeler.</p>
+      <div class="ft"><span class="st">Pilotes en cours</span><a href="#contact">Démo →</a></div>
+    </article>
+    <article class="pc" style="--c:var(--esti)">
+      <div class="lg"><svg viewBox="0 0 340 56" aria-hidden="true"><rect x="4" y="12" width="32" height="32" rx="6" data-acc="1" fill="#5EC08C"/><text x="11" y="36" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="24" fill="#15181C">V</text><text x="48" y="44" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="36" fill="#F3F1EB" letter-spacing="-1.5">Valo<tspan>Travaux</tspan></text></svg></div>
+      <div class="who">Agents immobiliers</div><h3>ValoTravaux</h3>
+      <p>Le chiffrage des travaux pendant la visite, le plan de sortie de passoire avec les aides et les mensualités, et le prix après travaux pour vendre sur la valeur.</p>
+      <div class="ft"><span class="st">En cours</span><a href="#gratuit">Essayer →</a></div>
+    </article>
+    <article class="pc" style="--c:var(--not)">
+      <div class="lg"><svg viewBox="0 0 340 56" aria-hidden="true"><text x="0" y="44" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="30" fill="#F3F1EB" letter-spacing="-1.2">Conformité<tspan> Travaux</tspan></text></svg></div>
+      <div class="who">Notaires · vendeurs</div><h3>Conformité Travaux</h3>
+      <p>Les pièces travaux qui bloquent un acte : permis, achèvement, dommage-ouvrage, décennales, RE2020. Ce qui manque, et comment le régulariser.</p>
+      <div class="ft"><span class="st">2027</span><a href="#contact">Être prévenu →</a></div>
+    </article>
+    <article class="pc" style="--c:var(--mc)">
+      <div class="lg"><svg viewBox="0 0 340 56" fill="none" aria-hidden="true"><path d="M6 30 22 16l16 14" data-acc="1" stroke="#F28A5C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 28v16h22V28" stroke="#F3F1EB" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="m17 36 3 3 6-7" data-acc="1" stroke="#F28A5C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><text x="50" y="44" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="36" fill="#F3F1EB" letter-spacing="-1.5">Mon<tspan>Chantier</tspan></text></svg></div>
+      <div class="who">Pour les clients de vos artisans</div><h3>MonChantier</h3>
+      <p>L'appli que l'artisan Kōv ou le MOE remet à son client : le chantier en clair, les paiements liés aux étapes, les questions qui ne vous dérangent plus. Un client informé n'appelle pas.</p>
+      <div class="ft"><span class="st">Prototype</span><a href="#contact">Démo →</a></div>
+    </article>
+    <article class="pc" style="--c:var(--ct)">
+      <div class="lg"><svg viewBox="0 0 340 56" aria-hidden="true"><text x="0" y="44" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="34" fill="#F3F1EB" letter-spacing="-1.5">Courtier<tspan>Travaux</tspan></text></svg></div>
+      <div class="who">Apporteur de chantiers</div><h3>CourtierTravaux.com</h3>
+      <p>Notre service de courtage côté particuliers, et son pendant pour les maîtres d'œuvre, VosMaîtresdŒuvre. Pour vous : des projets qualifiés — un client identifié, un budget cohérent, une date — trois professionnels maximum consultés.</p>
+      <div class="ft"><span class="st">Service</span><a href="#contact">Recevoir des projets →</a></div>
+    </article>
+  </div>
+</div></section>
+
+<section class="flow" id="chantier"><div class="wrap">
+  <div class="eyebrow">Le chantier, de bout en bout</div>
+  <h2 style="margin-top:14px">Un seul chantier. Tous les métiers. Un dossier qui suit le bien.</h2>
+  <div class="rail">
+    <div class="rl"><div class="n">1</div><b>Estimer</b><small>L'agent chiffre les travaux à la visite.</small><span class="tag">ValoTravaux</span></div>
+    <div class="rl"><div class="n">2</div><b>Confier</b><small>Le particulier choisit des professionnels vérifiés.</small><span class="tag">CourtierTravaux · VosMaîtresdŒuvre</span></div>
+    <div class="rl"><div class="n">3</div><b>Réaliser</b><small>L'artisan devise, planifie, facture.</small><span class="tag">Kōv</span></div>
+    <div class="rl"><div class="n">4</div><b>Piloter</b><small>Le MOE ou le particulier suit, vérifie, paie à l'étape.</small><span class="tag">MOEpilote · MonChantier</span></div>
+    <div class="rl"><div class="n">5</div><b>Réceptionner</b><small>Réserves, PV, garanties, carnet du logement.</small><span class="tag">Tous</span></div>
+    <div class="rl"><div class="n">6</div><b>Acter</b><small>Le notaire trouve les pièces au lieu de les réclamer.</small><span class="tag">Conformité Travaux</span></div>
+  </div>
+</div></section>
+
+<section class="free" id="gratuit"><div class="wrap">
+  <div class="head"><div><div class="eyebrow">Outils gratuits · pour les pros · sans compte</div><h2 style="margin-top:14px">Essayez avant de nous parler.</h2></div><p>Chaque logiciel a son outil en façade. Il règle un bout du problème tout de suite ; si vous voulez aller plus loin, le produit est derrière.</p></div>
+  <div class="tools">
+    <a class="tl soon" href="#contact"><div class="who">Agents immobiliers</div><b>Sortie de passoire en visite</b><p>Un F ou G en portefeuille ? Trois scénarios chiffrés, les aides de l'acheteur, l'effort par mois. Une fiche à lui remettre.</p><span class="go">Ouverture le 19 novembre</span></a>
+    <a class="tl soon" href="#contact"><div class="who">Particuliers · pros</div><b>Mon devis est-il correct ?</b><p>Un devis d'entreprise déposé : lignes manquantes, prix hors marché, mentions obligatoires. En 30 secondes.</p><span class="go">Ouverture le 19 novembre</span></a>
+    <a class="tl soon" href="#contact"><div class="who">Maîtres d'œuvre</div><b>Mon CR de chantier en 5 minutes</b><p>Dictez votre réunion, recevez le compte rendu structuré, diffusé avec accusés de lecture.</p><span class="go">Bientôt</span></a>
+    <a class="tl soon" href="#contact"><div class="who">Artisans</div><b>Mon devis en 30 secondes</b><p>Trois lignes dictées, un devis PDF propre avec toutes les mentions légales. Trois par mois offerts.</p><span class="go">Bientôt</span></a>
+    <a class="tl soon" href="#contact"><div class="who">MOE · artisans · agents</div><b>Cette décennale est-elle valable ?</b><p>Attestation lue, croisée avec le devis, confirmée auprès de l'assureur. Trafiquée, impayée ou hors activité : on le voit.</p><span class="go">Bientôt</span></a>
+    <a class="tl soon" href="#contact"><div class="who">Notaires</div><b>Dossier travaux complet pour l'acte ?</b><p>Cinq questions, et la liste des pièces qui manqueront : permis, achèvement, assurances, DPE.</p><span class="go">Bientôt</span></a>
+  </div>
+</div></section>
+
+<section class="why" id="pourquoi"><div class="wrap">
+  <div class="eyebrow" style="color:var(--mist)">Pourquoi Kaërt</div>
+  <h2 style="margin-top:14px">On a tenu le chantier avant d'écrire le logiciel.</h2>
+  <div class="g">
+    <div><b>10</b><span>ans de maîtrise d'œuvre en Ille-et-Vilaine</span></div>
+    <div><b>4</b><span>métiers reliés par un seul dossier du bien</span></div>
+    <div><b>0</b><span>compte à créer pour vos entreprises et vos clients invités</span></div>
+    <div><b>35</b><span>Québriac, Bretagne. Testé sur de vrais chantiers.</span></div>
+  </div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+  <div>
+    <div class="eyebrow">Démo</div>
+    <h2 style="margin-top:14px">15 minutes, sur votre cas réel.</h2>
+    <p class="lead">Un agent apporte une annonce de bien à rénover. Un maître d'œuvre apporte son dernier compte rendu, on le refait en dictée devant lui. Un artisan apporte un devis fait hier soir. Pas de démo générique.</p>
+    <div class="addr">Kaërt Groupe<small>13 rue de la Basse Ville, 35190 Québriac</small><small><span id="mail" style="user-select:all">contact@kaert.fr</span> <button class="btn s" type="button" style="padding:6px 10px;font-size:.8rem;margin-left:8px" id="copy-mail">Copier</button></small></div>
+  </div>
+  <form id="demo" data-endpoint={ENDPOINT} data-anon={ANON} novalidate>
+    <label>Vous êtes<select name="role" id="f-role"><option>Artisan / entreprise</option><option>Maître d'œuvre</option><option>Agent immobilier</option><option>Notaire</option><option>Autre professionnel</option></select></label>
+    <label>Nom et structure<input name="nom" id="f-nom" placeholder="Prénom Nom — Entreprise / Cabinet / Agence" required autocomplete="name"></label>
+    <label>Téléphone ou e-mail<input name="contact" id="f-tel" placeholder="06 … ou vous@…" required autocomplete="tel"></label>
+    <label>Ce qui vous prend du temps<textarea name="message" id="f-msg" rows="3" placeholder="Ex : mes devis le soir, mes comptes rendus le dimanche, les passoires que je ne vends plus…"></textarea></label>
+    <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+    <button class="btn p" type="submit" style="justify-content:center">Demander une démo</button>
+    <div class="ok" id="f-ok" hidden>Demande enregistrée. On vous rappelle sous 24 h ouvrées.</div>
+    <div class="err" id="f-err" hidden></div>
+  </form>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="big" aria-hidden="true">Kaërt</div>
+  <div class="row"><div>© 2026 Kaërt Groupe SAS — Québriac, Bretagne · <a href="/mentions-legales/">Mentions légales</a> · <a href="/confidentialite/">Confidentialité</a></div><div><a href="#produits">Kōv</a> · <a href="#produits">MOEpilote</a> · <a href="#produits">MonChantier</a> · <a href="#produits">ValoTravaux</a> · <a href="#produits">CourtierTravaux.com</a></div></div>
+</div></footer>
+
+<script>
+  const form = document.getElementById('demo') as HTMLFormElement;
+  const ok = document.getElementById('f-ok') as HTMLElement;
+  const err = document.getElementById('f-err') as HTMLElement;
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    err.hidden = true;
+    const fd = new FormData(form);
+    if ((fd.get('website') as string)?.length) return; // pot de miel anti-spam
+    const nom = (fd.get('nom') as string || '').trim();
+    const contact = (fd.get('contact') as string || '').trim();
+    if (!nom || !contact) { err.textContent = 'Indiquez votre nom et un moyen de vous joindre.'; err.hidden = false; return; }
+    const payload = { source: 'kaert.fr', role: fd.get('role'), nom, contact, message: (fd.get('message') as string || '').trim(), page: location.pathname, ua: navigator.userAgent };
+    const endpoint = form.dataset.endpoint || '';
+    const anon = form.dataset.anon || '';
+    const btn = form.querySelector('button[type=submit]') as HTMLButtonElement;
+    btn.disabled = true;
+    if (!endpoint) {
+      // Pas encore de base branchée : on ne ment pas, on donne l'e-mail avec le texte prêt.
+      const body = encodeURIComponent(`Demande de démo — ${payload.role}\nNom : ${nom}\nContact : ${contact}\n\n${payload.message}`);
+      err.innerHTML = `Le formulaire sera actif très bientôt. En attendant, écrivez-nous à <b>contact@kaert.fr</b> — <a href="mailto:contact@kaert.fr?subject=Demande%20de%20d%C3%A9mo&body=${body}">ouvrir un e-mail pré-rempli</a>.`;
+      err.hidden = false; btn.disabled = false; return;
+    }
+    try {
+      const r = await fetch(endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json', 'apikey': anon, 'Authorization': 'Bearer ' + anon, 'Prefer': 'return=minimal' }, body: JSON.stringify(payload) });
+      if (!r.ok) throw new Error(String(r.status));
+      ok.hidden = false; form.reset();
+    } catch (x) {
+      err.textContent = 'Envoi impossible pour le moment. Écrivez-nous à contact@kaert.fr.'; err.hidden = false; btn.disabled = false;
+    }
+  });
+  document.getElementById('copy-mail')?.addEventListener('click', () => {
+    const m = document.getElementById('mail')!.textContent || '';
+    const sel = () => { const r = document.createRange(); r.selectNodeContents(document.getElementById('mail')!); const s = getSelection(); s?.removeAllRanges(); s?.addRange(r); };
+    try { navigator.clipboard.writeText(m).catch(sel); } catch { sel(); }
+  });
+</script>
+</Base>
