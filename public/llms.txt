@@ -1,16 +1,16 @@
 # Kaërt Groupe
 > Éditeur breton de logiciels pour les métiers du chantier : artisans (Kōv), maîtres d'œuvre (MOEpilote), particuliers qui pilotent leurs travaux eux-mêmes (MonChantier), agents immobiliers (ValoTravaux), notaires (Conformité Travaux), et deux services d'apport de projets (CourtierTravaux.com, VosMaîtresdŒuvre). Principe commun : l'IA prépare le travail, le professionnel dit oui ; les invités (entreprises, clients) n'ont pas de compte à créer.
-- Siège : 13 rue de la Basse Ville, 35190 Québriac, France · Contact : contact@kaert.fr · Site : https://kaert.fr
+- Siège : 13 rue de la Basse Ville, 35190 Québriac, France · Contact : contact@kaertgroupe.fr · Site : https://kaertgroupe.fr
 
 ## Produits
-- [Kōv](https://kaert.fr/kov/) : appli des artisans du bâtiment — devis dicté en 30 s, commandes et factures fournisseurs vérifiées, facturation et relances. 59 € HT/mois, lancement 2027.
-- [MOEpilote](https://kaert.fr/moepilote/) : appli des maîtres d'œuvre — compte rendu de chantier dicté en 5 min et diffusé avec accusés de lecture, contrôle des décennales lot par lot, MAP signée par le client, situations visées. 79 € HT/mois, démo disponible, ouverture progressive.
-- [MonChantier](https://kaert.fr/monchantier/) : appli du particulier qui pilote son chantier lui-même — artisans vérifiés, devis lus, paiements liés aux étapes. Prototype, 2027.
-- [ValoTravaux](https://kaert.fr/valotravaux/) : pour agents immobiliers — chiffrage des travaux en visite, sortie de passoire thermique (3 scénarios, aides, mensualité), valeur après travaux. Outil gratuit dès le 19/11/2026.
-- [CourtierTravaux.com](https://kaert.fr/courtiertravaux/) : courtage de travaux pour les particuliers — un courtier indépendant cadre le projet, consulte au plus trois entreprises vérifiées, compare les devis, négocie et suit ; commission annoncée, due sur chantier signé.
-- [VosMaîtresdŒuvre](https://kaert.fr/vosmaitresdoeuvre/) : comparateur de maîtres d'œuvre pour les particuliers — trois cabinets au plus, rendez-vous avant honoraires ; fiche gratuite pour le MOE, projets de sa zone pour 39 € HT/mois (inclus dans MOEpilote).
-- [Conformité Travaux](https://kaert.fr/conformite-travaux/) : pour notaires et vendeurs — pièces travaux exigées pour l'acte, manquantes, régularisation. 2027.
+- [Kōv](https://kaertgroupe.fr/kov/) : appli des artisans du bâtiment — devis dicté en 30 s, commandes et factures fournisseurs vérifiées, facturation et relances. 59 € HT/mois, lancement 2027.
+- [MOEpilote](https://kaertgroupe.fr/moepilote/) : appli des maîtres d'œuvre — compte rendu de chantier dicté en 5 min et diffusé avec accusés de lecture, contrôle des décennales lot par lot, MAP signée par le client, situations visées. 79 € HT/mois, démo disponible, ouverture progressive.
+- [MonChantier](https://kaertgroupe.fr/monchantier/) : appli du particulier qui pilote son chantier lui-même — artisans vérifiés, devis lus, paiements liés aux étapes. Prototype, 2027.
+- [ValoTravaux](https://kaertgroupe.fr/valotravaux/) : pour agents immobiliers — chiffrage des travaux en visite, sortie de passoire thermique (3 scénarios, aides, mensualité), valeur après travaux. Outil gratuit dès le 19/11/2026.
+- [CourtierTravaux.com](https://kaertgroupe.fr/courtiertravaux/) : courtage de travaux pour les particuliers — un courtier indépendant cadre le projet, consulte au plus trois entreprises vérifiées, compare les devis, négocie et suit ; commission annoncée, due sur chantier signé.
+- [VosMaîtresdŒuvre](https://kaertgroupe.fr/vosmaitresdoeuvre/) : comparateur de maîtres d'œuvre pour les particuliers — trois cabinets au plus, rendez-vous avant honoraires ; fiche gratuite pour le MOE, projets de sa zone pour 39 € HT/mois (inclus dans MOEpilote).
+- [Conformité Travaux](https://kaertgroupe.fr/conformite-travaux/) : pour notaires et vendeurs — pièces travaux exigées pour l'acte, manquantes, régularisation. 2027.
 
 ## Pages utiles
-- [Le chantier de bout en bout](https://kaert.fr/le-chantier/) : les six étapes et le dossier du bien qui passe d'un métier à l'autre.
-- [Outils gratuits](https://kaert.fr/outils/) · [Guides](https://kaert.fr/guides/) · [À propos](https://kaert.fr/a-propos/) · [Demander une démo](https://kaert.fr/demo/)
+- [Le chantier de bout en bout](https://kaertgroupe.fr/le-chantier/) : les six étapes et le dossier du bien qui passe d'un métier à l'autre.
+- [Outils gratuits](https://kaertgroupe.fr/outils/) · [Guides](https://kaertgroupe.fr/guides/) · [À propos](https://kaertgroupe.fr/a-propos/) · [Demander une démo](https://kaertgroupe.fr/demo/)

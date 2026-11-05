@@ -28,14 +28,14 @@ const roles = ['Artisan / entreprise', "Maître d'œuvre", 'Agent immobilier', '
       const nom = (fd.get('nom') as string || '').trim();
       const contact = (fd.get('contact') as string || '').trim();
       if (!nom || !contact) { err.textContent = 'Indiquez votre nom et un moyen de vous joindre.'; err.hidden = false; return; }
-      const payload = { source: 'kaert.fr', role: fd.get('role'), nom, contact, message: (fd.get('message') as string || '').trim(), page: location.pathname, ua: navigator.userAgent };
+      const payload = { source: 'kaertgroupe.fr', role: fd.get('role'), nom, contact, message: (fd.get('message') as string || '').trim(), page: location.pathname, ua: navigator.userAgent };
       const endpoint = form.dataset.endpoint || '';
       const anon = form.dataset.anon || '';
       const btn = form.querySelector('button[type=submit]') as HTMLButtonElement;
       btn.disabled = true;
       if (!endpoint) {
         const body = encodeURIComponent(`Demande de démo — ${payload.role}\nNom : ${nom}\nContact : ${contact}\n\n${payload.message}`);
-        err.innerHTML = `Le formulaire sera actif très bientôt. En attendant, écrivez-nous à <b>contact@kaert.fr</b> — <a href="mailto:contact@kaert.fr?subject=Demande%20de%20d%C3%A9mo&body=${body}">ouvrir un e-mail pré-rempli</a>.`;
+        err.innerHTML = `Le formulaire sera actif très bientôt. En attendant, écrivez-nous à <b>contact@kaertgroupe.fr</b> — <a href="mailto:contact@kaertgroupe.fr?subject=Demande%20de%20d%C3%A9mo&body=${body}">ouvrir un e-mail pré-rempli</a>.`;
         err.hidden = false; btn.disabled = false; return;
       }
       try {
@@ -43,7 +43,7 @@ const roles = ['Artisan / entreprise', "Maître d'œuvre", 'Agent immobilier', '
         if (!r.ok) throw new Error(String(r.status));
         ok.hidden = false; form.reset();
       } catch {
-        err.textContent = 'Envoi impossible pour le moment. Écrivez-nous à contact@kaert.fr.'; err.hidden = false; btn.disabled = false;
+        err.textContent = 'Envoi impossible pour le moment. Écrivez-nous à contact@kaertgroupe.fr.'; err.hidden = false; btn.disabled = false;
       }
     });
   });

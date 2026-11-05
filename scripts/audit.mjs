@@ -30,7 +30,7 @@ for (const f of files) {
   if (words < 300 && !legal) warns.push(`${p}: ${words} mots, page mince`);
   if (broken.length) errs.push(`${p}: liens cassés → ${[...new Set(broken)].join(', ')}`);
   if (imgsNoAlt) warns.push(`${p}: ${imgsNoAlt} image(s) sans alt`);
-  if (!legal && p !== '404' && sitemap && !sitemap.includes(`kaert.fr/${p === 'index' ? '' : p + '/'}<`)) warns.push(`${p}: absente du sitemap`);
+  if (!legal && p !== '404' && sitemap && !sitemap.includes(`kaertgroupe.fr/${p === 'index' ? '' : p + '/'}<`)) warns.push(`${p}: absente du sitemap`);
   if (!legal && p !== '404' && p !== 'index' && llms && !llms.includes(`/${p}/`)) warns.push(`${p}: absente de llms.txt`);
 }
 console.log(`\nAudit SEO/GEO — ${files.length} pages\n`);
