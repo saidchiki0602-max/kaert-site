@@ -266,3 +266,9 @@ footer .cols a:hover{color:var(--chalk)}
 .faq summary::after{content:'+';position:absolute;right:4px;top:14px;font-size:1.6rem;font-weight:500;line-height:1}
 .faq details[open] summary::after{content:'–'}
 .faq details p{color:var(--fg2);font-size:1.05rem;line-height:1.65;padding:0 0 22px;max-width:70ch}
+/* 7 cartes : la dernière prend la largeur */
+.shelf .pc:nth-child(7){grid-column:1/-1;min-height:0;display:grid;grid-template-columns:auto 1fr auto;align-items:center;column-gap:28px}
+.shelf .pc:nth-child(7) .lg{height:auto}.shelf .pc:nth-child(7) .lg svg{max-width:260px}
+.shelf .pc:nth-child(7) .who{grid-column:2}.shelf .pc:nth-child(7) h3{grid-column:2}.shelf .pc:nth-child(7) p{grid-column:2}.shelf .pc:nth-child(7) .ft{grid-column:3;grid-row:1/5;flex-direction:column;align-items:flex-end}
+.shelf .pc:nth-child(7) .lg{grid-row:1/5}
+@media(max-width:900px){.shelf .pc:nth-child(7){display:flex}}

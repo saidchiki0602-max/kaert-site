@@ -1,0 +1,33 @@
+---
+import Page from '../layouts/Page.astro';
+import Product from '../components/Product.astro';
+import Faq from '../components/Faq.astro';
+import DemoForm from '../components/DemoForm.astro';
+---
+<Page title="VosMaîtresdŒuvre — Le comparateur de maîtres d'œuvre" description="VosMaîtresdŒuvre : le particulier compare jusqu'à trois maîtres d'œuvre vérifiés de son secteur et demande un rendez-vous. Pour les maîtres d'œuvre : fiche gratuite, projets inclus dans MOEpilote, honoraires après la rencontre." path="/vosmaitresdoeuvre/">
+<Product who="Maîtres d'œuvre · architectes" status="Service" color="var(--vmo)"
+  title="Le comparateur pour choisir son maître d'œuvre."
+  sub="Maison neuve, extension, rénovation lourde : le particulier décrit son projet, son budget est vérifié contre les prix de sa ville, et il compare jusqu'à trois maîtres d'œuvre de son secteur. Il demande un rendez-vous ; honoraires et proposition viennent après la rencontre, comme vous le faites déjà."
+  feats={[
+    { t: 'Un dossier, pas un formulaire.', p: "Type de projet, ville, surface, budget confronté aux prix locaux, permis à prévoir ou non. Si le budget ne tient pas, on le dit au particulier avant de vous déranger." },
+    { t: 'Trois cabinets maximum, rendez-vous d’abord.', p: "Jamais cinq ou dix. Vous savez combien vous êtes, vous répondez en deux minutes par un créneau de rendez-vous. Pas d'honoraires ni de proposition à envoyer avant d'avoir rencontré le client." },
+    { t: 'Vos chiffres parlent pour vous.', p: "Si vous utilisez MOEpilote, votre fiche affiche ce que l'appli mesure : délai de réponse, chantiers livrés à la date, avis recueillis à la réception. Mesurés, donc crédibles." },
+  ]}
+  client={{ label: 'Ce que voit le particulier', text: "Trois fiches au plus, les mêmes critères pour chacune : assurances vérifiées, réalisations, spécialités, zone, et les chiffres mesurés par MOEpilote. Il choisit après vous avoir rencontrés ; le cabinet retenu lui ouvre son espace client, jusqu'à la MAP et au chantier." }}
+  price={{ big: '0 €', small: 'la fiche', p: "Le référencement est gratuit. Les projets de votre zone sont inclus dans l'abonnement MOEpilote, jusqu'à quatre par mois. Nous ne vendons pas de leads.", items: ['Fiche gratuite : assurances vérifiées, spécialités, zone, réalisations', 'Projets inclus dans MOEpilote, jusqu’à 4 par mois dans votre zone', 'Gratuit pour le particulier'] }}
+  cta={{ label: 'Référencer mon cabinet', href: '/vosmaitresdoeuvre/#ref' }}>
+  <svg slot="logo" viewBox="0 0 420 56" aria-hidden="true"><text x="0" y="44" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="34" fill="currentColor" letter-spacing="-1.5">VosMaîtresd<tspan fill="var(--c)">Œuvre</tspan></text></svg>
+</Product>
+<section class="contact" id="ref"><div class="wrap">
+  <div><div class="eyebrow">Maîtres d'œuvre</div><h2 style="margin-top:14px">Référencer mon cabinet</h2><p class="lead">On vérifie votre SIREN et vos assurances, on crée votre fiche avec vos réalisations, et vous recevez les projets de votre zone. Gratuit.</p></div>
+  <DemoForm label="Référencer mon cabinet" defaultRole="Maître d'œuvre" />
+</div></section>
+<Faq items={[
+  ["Qu'est-ce que VosMaîtresdŒuvre ?", "Un comparateur de maîtres d'œuvre pour les particuliers qui ont un projet de maison neuve, d'extension ou de rénovation lourde : jusqu'à trois cabinets vérifiés du secteur, comparés sur les mêmes critères, puis un rendez-vous. Édité par Kaërt, qui fait aussi MOEpilote."],
+  ["Dois-je envoyer des honoraires avant d'avoir rencontré le client ?", "Non. Vous répondez par un créneau de rendez-vous. Honoraires, proposition et contrat viennent après la rencontre, comme vous le faites déjà."],
+  ["Est-ce que vous vendez des leads ?", "Non. La fiche est gratuite et les projets sont inclus dans l'abonnement MOEpilote, jusqu'à quatre par mois dans votre zone. Nous ne facturons ni le contact ni le rendez-vous."],
+  ["Combien de maîtres d'œuvre sont consultés sur un projet ?", "Trois au plus. Vous savez combien vous êtes."],
+  ["Faut-il être abonné à MOEpilote ?", "Pour avoir une fiche, non. Pour recevoir les projets de votre zone, oui : c'est inclus dans l'abonnement, et votre fiche affiche alors les chiffres mesurés par l'appli, qui font la différence auprès du particulier."],
+  ["Quelle différence avec CourtierTravaux.com ?", "CourtierTravaux.com est un service de courtage : un courtier accompagne le particulier et consulte des entreprises pour des travaux sans conception. VosMaîtresdŒuvre met le particulier directement en relation avec un maître d'œuvre, qui conçoit et dirige le projet."],
+]} />
+</Page>
