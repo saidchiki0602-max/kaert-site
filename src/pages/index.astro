@@ -22,12 +22,12 @@ import { L } from '../lib/links';
 </div></div>
 
 <section class="man"><div class="wrap">
-  <div><div class="eyebrow">Ce qu'on croit</div><h2 style="margin-top:14px">Quatre règles, et on ne les négocie pas.</h2></div>
+  <div><div class="eyebrow">Ce que ça change</div><h2 style="margin-top:14px">Concrètement, métier par métier.</h2><p style="color:var(--fg2);margin-top:16px;max-width:36ch">Pas de promesse générale. Ce que chaque outil enlève de votre semaine.</p></div>
   <ol>
-    <li><div><b>Un outil règle une douleur.</b><p>Pas une suite à tout faire. Chaque application fait une chose que le métier ne sait pas faire vite aujourd'hui, et la fait en moins de temps qu'il ne faut pour l'expliquer.</p></div></li>
-    <li><div><b>Zéro formation.</b><p>Si ça demande une notice, ça ne sera pas utilisé sur un chantier. Les artisans et les clients invités ouvrent un lien, sans compte. Ça marche avec des gants.</p></div></li>
-    <li><div><b>L'IA prépare, vous dites oui.</b><p>N'importe quelle IA vous dira ce qui manque sur un devis. Nous, on vérifie la décennale auprès de l'assureur, on rédige la relance, on prépare le compte rendu — et rien ne part sans votre accord. Ce qui ne se copie pas, c'est l'action.</p></div></li>
-    <li><div><b>Les outils se parlent.</b><p>Un artisan sur Kōv reçoit les plans du maître d'œuvre sur MOEpilote. Le client, dans son espace, voit les deux. Le dossier du bien suit la maison, pas le logiciel.</p></div></li>
+    <li><div><b>Maîtres d'œuvre</b><p>Le compte rendu du lundi dicté en cinq minutes, diffusé avec accusés de lecture. La décennale vérifiée avant le marché, pas après le sinistre. Un client qui n'appelle plus le soir.</p></div></li>
+    <li><div><b>Artisans</b><p>Le devis envoyé avant de rentrer. L'impayé relancé sans y penser. L'écart sur la facture fournisseur, vu et contesté. Et des chantiers de votre secteur, inclus.</p></div></li>
+    <li><div><b>Agents immobiliers</b><p>Le F ou le G qui se vend comme un projet chiffré — travaux, aides, mensualité — et pas comme une décote.</p></div></li>
+    <li><div><b>Notaires</b><p>Les pièces travaux trouvées avant le compromis, pas réclamées la veille de l'acte.</p></div></li>
   </ol>
 </div></section>
 
@@ -44,7 +44,7 @@ import { L } from '../lib/links';
       <div class="lg"><svg viewBox="0 0 340 56" aria-hidden="true"><text x="0" y="44" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="40" fill="#F3F1EB" letter-spacing="-1.5">MOE<tspan>pilote</tspan></text></svg></div>
       <div class="who">Maîtres d'œuvre</div><h3>MOEpilote</h3>
       <p>Le compte rendu de chantier dicté en 5 minutes, diffusé avec accusés de lecture. Assurances des entreprises contrôlées. Et un client qui sait où il en est, sans appeler.</p>
-      <div class="ft"><span class="st">Pilotes en cours</span><a href={L('/moepilote/')}>Démo →</a></div>
+      <div class="ft"><span class="st">Démo disponible</span><a href={L('/moepilote/')}>Démo →</a></div>
     </article>
     <article class="pc" style="--c:var(--esti)">
       <div class="lg"><svg viewBox="0 0 340 56" aria-hidden="true"><rect x="4" y="12" width="32" height="32" rx="6" data-acc="1" fill="#5EC08C"/><text x="11" y="36" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="24" fill="#15181C">V</text><text x="48" y="44" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="36" fill="#F3F1EB" letter-spacing="-1.5">Valo<tspan>Travaux</tspan></text></svg></div>
@@ -101,15 +101,15 @@ import { L } from '../lib/links';
 </div></section>
 
 <section class="why" id="pourquoi"><div class="wrap">
-  <div class="eyebrow" style="color:var(--mist)">Pourquoi Kaërt</div>
+  <div class="eyebrow" style="color:var(--mist)">Pourquoi nous croire</div>
   <h2 style="margin-top:14px">On a tenu le chantier avant d'écrire le logiciel.</h2>
-  <p style="margin-top:16px"><a href={L('/a-propos/')} style="color:var(--mist);font-weight:700">D'où ça vient →</a></p>
   <div class="g">
-    <div><b>10</b><span>ans de maîtrise d'œuvre en Ille-et-Vilaine</span></div>
-    <div><b>4</b><span>métiers reliés par un seul dossier du bien</span></div>
-    <div><b>0</b><span>compte à créer pour vos entreprises et vos clients invités</span></div>
-    <div><b>35</b><span>Québriac, Bretagne. Testé sur de vrais chantiers.</span></div>
+    <div><b>10</b><span>ans de maîtrise d'œuvre en Ille-et-Vilaine, avant d'écrire une ligne de code</span></div>
+    <div><b>OUI</b><span>rien ne part sans votre accord : l'IA prépare, vous validez</span></div>
+    <div><b>0</b><span>formation, et zéro compte à créer pour vos entreprises et vos clients</span></div>
+    <div><b>1</b><span>dossier du bien, qui passe d'un métier à l'autre au lieu d'être refait</span></div>
   </div>
+  <p style="margin-top:16px"><a href={L('/a-propos/')} style="color:var(--mist);font-weight:700">Qui nous sommes →</a></p>
 </div></section>
 
 <section class="contact" id="contact"><div class="wrap">
@@ -131,7 +131,7 @@ import { L } from '../lib/links';
 </script>
 <Faq title="Ce qu'on nous demande le plus" items={[
   ["Qu'est-ce que Kaërt ?", "Kaërt Groupe est un éditeur breton de logiciels pour les métiers du chantier : Kōv pour les artisans, MOEpilote pour les maîtres d'œuvre, MonChantier pour les particuliers qui pilotent leurs travaux eux-mêmes, ValoTravaux pour les agents immobiliers, Conformité Travaux pour les notaires, et deux services d'apport de projets, CourtierTravaux.com et VosMaîtresdŒuvre. Siège à Québriac, Ille-et-Vilaine."],
-  ["Les logiciels Kaërt sont-ils déjà disponibles ?", "MOEpilote est en pilotes avec des maîtres d'œuvre bretons et se montre en démo. Kōv ouvre en 2027 avec une liste d'attente. Les premiers outils gratuits (sortie de passoire, vérification de devis, coût d'un projet) ouvrent le 19 novembre 2026. Conformité Travaux arrive en 2027."],
+  ["Les logiciels Kaërt sont-ils déjà disponibles ?", "MOEpilote se montre en démo et ouvre progressivement, cabinet par cabinet. Kōv ouvre en 2027 avec une liste d'attente. Les premiers outils gratuits (sortie de passoire, vérification de devis, coût d'un projet) ouvrent le 19 novembre 2026. Conformité Travaux arrive en 2027."],
   ["Faut-il créer un compte pour que mes entreprises ou mes clients utilisent l'outil ?", "Non. Les entreprises et les clients que vous invitez ouvrent un lien, sans compte ni installation. Seul le professionnel abonné a un compte."],
   ["Que fait l'intelligence artificielle dans vos logiciels ?", "Elle prépare le travail : rédiger un compte rendu à partir d'une dictée, lire une attestation d'assurance, rédiger une relance, comparer une facture au devis. Rien ne part sans que le professionnel ait dit oui. L'IA propose, l'humain décide et signe."],
   ["Où travaillez-vous ?", "Nos outils sont testés sur de vrais chantiers en Ille-et-Vilaine et en Bretagne. Les logiciels fonctionnent partout en France ; les démos se font en visio, ou sur place en Ille-et-Vilaine."],
