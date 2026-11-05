@@ -1,25 +1,39 @@
 ---
 import Page from '../layouts/Page.astro';
+import Faq from '../components/Faq.astro';
+import AppLd from '../components/AppLd.astro';
 import Product from '../components/Product.astro';
 import { L } from '../lib/links';
 ---
-<Page title="MonChantier — Le chantier en clair pour votre client" description="L'appli remise au client par l'artisan ou le MOE : avancement, photos, décisions guidées, paiements à l'étape. Un client informé n'appelle pas." path="/monchantier/">
-<Product who="Pour les clients de vos artisans et maîtres d'œuvre" status="Prototype" color="var(--mc)"
-  title="Votre client voit tout. Il n'appelle plus."
-  sub="L'appli que l'artisan ou le maître d'œuvre remet à son client : le chantier en clair, les paiements liés aux étapes, les décisions en un clic."
+<Page title="MonChantier — Pilotez vos travaux vous-même, sans vous faire avoir" description="L'appli du particulier qui pilote son chantier lui-même : artisans vérifiés, devis lus, chantier en clair lot par lot, paiements liés aux étapes, garanties conservées." path="/monchantier/">
+<Product who="Particuliers qui pilotent leurs travaux eux-mêmes" status="Prototype" color="var(--mc)"
+  title="Vos travaux, lot par lot, sans vous faire avoir."
+  sub="L'appli du particulier qui pilote son chantier lui-même, sans maître d'œuvre : les artisans vérifiés, les devis lus, le chantier en clair, les paiements liés aux étapes."
   feats={[
-    { t: 'Le chantier en clair.', p: "Avancement, photo du jour, prochaine étape, compte rendu sans jargon. Le client sait où il en est avant d'avoir eu le temps de s'inquiéter." },
-    { t: 'Les paiements liés aux étapes.', p: "Il voit ce qui est prévu, ce qui est fait, ce qui est dû, et pourquoi. Il paie ce qui est vérifié, pas ce qui est demandé." },
-    { t: 'Les décisions guidées.', p: "Carrelage, robinetterie, couleur : trois options, le prix, l'impact sur le délai, un clic. Plus de chantier bloqué par un choix qui traîne." },
+    { t: 'Les artisans vérifiés et les devis lus.', p: "Assurance décennale, SIREN, avis recueillis à la réception : vous choisissez parmi des entreprises contrôlées. Chaque devis reçu est lu : lignes manquantes, prix hors marché, mentions obligatoires, questions à poser avant de signer." },
+    { t: 'Le chantier en clair, lot par lot.', p: "Qui vient quand, ce qui doit être fait avant que le suivant arrive, la photo du jour, la prochaine étape. Le carreleur n'arrive plus avant que le plombier ait fini." },
+    { t: 'Les paiements liés aux étapes.', p: "Vous voyez ce qui est prévu, ce qui est fait, ce qui est dû, et pourquoi. Acompte, situation, solde : vous payez ce qui est vérifié, pas ce qui est demandé. À la fin, PV de réception et garanties conservés dix ans." },
   ]}
-  client={{ label: 'Et pour le particulier sans professionnel', text: "MonChantier existe aussi seul, pour celui qui pilote ses travaux lui-même, lot par lot : même clarté, mêmes paiements à l'étape, artisans vérifiés." }}
-  price={{ big: 'Inclus', small: 'dans Kōv et MOEpilote', p: "Pour les clients de leurs utilisateurs, sans limite. Version autonome pour les particuliers en 2027.", items: ['Aucun compte à créer : le client ouvre un lien', 'Fonctionne sur téléphone, sans installation', 'Le dossier de la maison conservé dix ans'] }}
-  cta={{ label: 'Voir la démo', href: '/demo/', note: 'Démo interactive de l’appli client.' }}>
+  oui={{ intro: "Vous n'êtes pas du métier, l'appli l'est. Elle prépare la relance de l'artisan en retard, la question à poser sur un devis, le paiement d'étape à débloquer. Vous décidez, en un clic.", items: [
+    { b: 'Relancer le plombier — étape « alimentation » en retard', s: 'Prévu lundi, rien hier. Message poli prêt.' },
+    { b: 'Devis électricité — 2 points à vérifier', s: 'Tableau non chiffré, pas de date de validité. Questions rédigées.' },
+    { b: 'Débloquer le paiement — carrelage, 2 850 €', s: 'Étape terminée, photos conformes au devis.' },
+  ] }}
+  client={{ label: 'Et si vous avez un artisan Kōv ou un maître d’œuvre MOEpilote ?', text: "Vous n'avez pas besoin de MonChantier : leur appli vous ouvre déjà votre espace client, avec le même suivi, les mêmes photos et les mêmes paiements à l'étape. MonChantier est pour ceux qui n'ont ni l'un ni l'autre et font le chantier eux-mêmes." }}
+  price={{ big: '2027', p: "Prototype testé avec des particuliers en Bretagne. Lancement 2027.", items: ['Aucune installation : ça marche sur votre téléphone', 'Vos artisans ouvrent un lien, sans compte', 'Le dossier de la maison conservé dix ans, utile le jour de la revente'] }}
+  cta={{ label: 'Voir la démo', href: '/demo/', note: 'Démo interactive de l’appli.' }}>
   <svg slot="logo" viewBox="0 0 340 56" fill="none" aria-hidden="true"><path d="M6 30 22 16l16 14" stroke="var(--c)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 28v16h22V28" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="m17 36 3 3 6-7" stroke="var(--c)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><text x="50" y="44" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="36" fill="currentColor" letter-spacing="-1.5">Mon<tspan fill="var(--c)">Chantier</tspan></text></svg>
 </Product>
 <section class="sec" style="border-top:2px solid var(--fg)"><div class="wrap">
-  <h2>Vous êtes artisan ou maître d'œuvre ?</h2>
-  <p class="lead">MonChantier vient avec votre appli. Votre client y entre par le lien que vous lui envoyez.</p>
-  <div class="grid2"><a class="box" href={L('/kov/')} style="text-decoration:none;color:inherit"><div class="meta">Artisans</div><b>Kōv →</b><p>Le devis dicté, les commandes, les factures. MonChantier pour vos clients, inclus.</p></a><a class="box" href={L('/moepilote/')} style="text-decoration:none;color:inherit"><div class="meta">Maîtres d'œuvre</div><b>MOEpilote →</b><p>Le CR dicté, les assurances contrôlées, la MAP. Portail client illimité, inclus.</p></a></div>
+  <h2>Vous préférez être accompagné ?</h2>
+  <p class="lead">Pour un projet lourd — maison neuve, extension, rénovation complète — un maître d'œuvre vous fait gagner plus qu'il ne coûte. On vous aide à en comparer jusqu'à trois.</p>
+  <div class="grid2"><a class="box" href={L('/projets/')} style="text-decoration:none;color:inherit"><div class="meta">Maîtres d'œuvre</div><b>VosMaîtresdŒuvre →</b><p>Comparer jusqu'à trois maîtres d'œuvre vérifiés, les rencontrer, choisir.</p></a><a class="box" href={L('/projets/')} style="text-decoration:none;color:inherit"><div class="meta">Artisans</div><b>CourtierTravaux.com →</b><p>Des artisans vérifiés pour chaque lot, trois au plus consultés.</p></a></div>
 </div></section>
+<AppLd name="MonChantier" url="/monchantier/" audience="Particuliers qui pilotent leurs travaux eux-mêmes" status="Prototype, lancement 2027" description="Application pour le particulier qui pilote son chantier lui-même : artisans vérifiés, devis lus, chantier en clair lot par lot, paiements liés aux étapes, garanties conservées dix ans." />
+<Faq items={[
+  ["À qui s'adresse MonChantier ?", "Au particulier qui fait ses travaux sans maître d'œuvre et coordonne lui-même plusieurs artisans : rénovation d'une maison, salle de bain et cuisine, extension légère. Si vous avez un maître d'œuvre MOEpilote ou un artisan Kōv, vous avez déjà votre espace client dans leur application."],
+  ["Comment MonChantier vérifie-t-il un artisan ?", "SIREN actif, attestation d'assurance décennale lue et valide pour les travaux concernés, avis recueillis à la réception des chantiers précédents. Les artisans arrivent par CourtierTravaux.com, trois au plus consultés par lot."],
+  ["Que veut dire « paiement lié aux étapes » ?", "Chaque lot est découpé en étapes avec un montant. Vous payez une étape quand elle est terminée et vérifiée (photos conformes au devis), pas quand l'artisan le demande. Acompte, situations et solde sont prévus dès le départ."],
+  ["MonChantier est-il disponible ?", "C'est un prototype testé avec des particuliers en Bretagne. Lancement en 2027. Laissez vos coordonnées pour être prévenu à l'ouverture."],
+]} />
 </Page>

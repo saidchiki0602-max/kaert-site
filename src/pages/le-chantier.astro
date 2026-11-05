@@ -1,11 +1,12 @@
 ---
 import Page from '../layouts/Page.astro';
+import Faq from '../components/Faq.astro';
 import { L } from '../lib/links';
 const steps = [
   ['Estimer', "L'agent chiffre les travaux à la visite et chiffre la sortie de passoire", 'ValoTravaux', '/valotravaux/', 'Un projet cadré et un acheteur décidé'],
   ['Confier', "Le particulier choisit jusqu'à trois professionnels vérifiés, les rencontre, décide", 'CourtierTravaux · VosMaîtresdŒuvre', '/projets/', 'Un dossier cohérent : budget, surface, délai'],
   ['Réaliser', "L'artisan devise, commande, planifie, facture", 'Kōv', '/kov/', 'Devis, planning, factures dans le dossier'],
-  ['Piloter', "Le maître d'œuvre ou le particulier suit, vérifie, paie à l'étape", 'MOEpilote · MonChantier', '/moepilote/', 'Comptes rendus, photos, décisions, paiements'],
+  ['Piloter', "Le maître d'œuvre pilote et son client suit dans son espace ; ou le particulier pilote lui-même", 'MOEpilote · MonChantier', '/moepilote/', 'Comptes rendus, photos, décisions, paiements'],
   ['Réceptionner', 'Réserves, PV, garanties, carnet du logement', 'Tous', '/le-chantier/', 'Le dossier de la maison, conservé dix ans'],
   ['Acter', 'Le notaire trouve les pièces au lieu de les réclamer', 'Conformité Travaux', '/conformite-travaux/', 'Un acte sans report'],
 ];
@@ -26,10 +27,15 @@ const steps = [
   <div class="eyebrow" style="color:var(--mist)">Trois exemples concrets</div>
   <div class="grid2" style="grid-template-columns:repeat(3,1fr)">
     <div class="box" style="background:var(--slate2);border-color:var(--granite)"><div class="meta" style="color:var(--mist)">Kōv ↔ MOEpilote</div><p style="color:var(--chalk);font-size:1.05rem">L'artisan sur Kōv reçoit les plans à l'indice C du maître d'œuvre sur MOEpilote, avec accusé de lecture. Plus de « je n'avais pas la dernière version ».</p></div>
-    <div class="box" style="background:var(--slate2);border-color:var(--granite)"><div class="meta" style="color:var(--mist)">MonChantier ↔ Kōv ↔ MOEpilote</div><p style="color:var(--chalk);font-size:1.05rem">Le particulier sur MonChantier voit la facture de l'artisan et le visa du maître d'œuvre sur la même ligne. Il paie ce qui est vérifié.</p></div>
+    <div class="box" style="background:var(--slate2);border-color:var(--granite)"><div class="meta" style="color:var(--mist)">MOEpilote ↔ Kōv</div><p style="color:var(--chalk);font-size:1.05rem">Le client du maître d'œuvre voit, dans son espace, la facture de l'artisan et le visa du maître d'œuvre sur la même ligne. Il paie ce qui est vérifié.</p></div>
     <div class="box" style="background:var(--slate2);border-color:var(--granite)"><div class="meta" style="color:var(--mist)">Conformité Travaux</div><p style="color:var(--chalk);font-size:1.05rem">Le notaire, cinq ans plus tard, ouvre le dossier de la maison : permis, PV de réception, attestations d'assurance. L'acte ne bloque pas.</p></div>
   </div>
 </div></section>
 <section class="sec"><div class="wrap" style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn p" href={L('/#produits')}>Voir les produits</a><a class="btn s" href={L('/demo/')}>Demander une démo</a></div></section>
 <style>@media(max-width:860px){.grid2{grid-template-columns:1fr!important}}</style>
+<Faq items={[
+  ["Pourquoi six produits et pas un seul logiciel ?", "Parce qu'un artisan, un maître d'œuvre, un agent immobilier et un notaire n'ont ni le même métier ni les mêmes journées. Chacun a son outil, simple, sans formation. Ce qu'ils partagent, c'est le dossier du bien, qui passe de l'un à l'autre."],
+  ["Qu'est-ce que le « dossier du bien » ?", "L'ensemble des pièces d'une maison au fil des travaux : estimation, devis, plans à jour, comptes rendus, photos, factures, PV de réception, attestations d'assurance, garanties. Il est conservé dix ans et transmis au notaire le jour de la vente."],
+  ["Dois-je utiliser tous les produits Kaërt ?", "Non. Chaque produit fonctionne seul. Les passerelles s'activent quand deux utilisateurs se croisent sur le même chantier : un artisan Kōv reçoit automatiquement les plans du maître d'œuvre MOEpilote, par exemple."],
+]} />
 </Page>

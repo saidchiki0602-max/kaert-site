@@ -1,0 +1,8 @@
+---
+// Balisage SoftwareApplication pour une page produit.
+interface Props { name: string; description: string; audience: string; price?: string; url: string; status: string }
+const { name, description, audience, price, url, status } = Astro.props;
+const ld: any = { "@context": "https://schema.org", "@type": "SoftwareApplication", name, description, applicationCategory: "BusinessApplication", operatingSystem: "Web, iOS, Android", url: 'https://kaert.fr' + url, audience: { "@type": "Audience", audienceType: audience }, publisher: { "@type": "Organization", name: "Kaërt Groupe", url: "https://kaert.fr" }, releaseNotes: status };
+if (price) ld.offers = { "@type": "Offer", price, priceCurrency: "EUR", priceSpecification: { "@type": "UnitPriceSpecification", price, priceCurrency: "EUR", unitText: "mois HT" } };
+---
+<script type="application/ld+json" set:html={JSON.stringify(ld)} />

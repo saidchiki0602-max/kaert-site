@@ -1,5 +1,7 @@
 ---
 import Page from '../layouts/Page.astro';
+import Faq from '../components/Faq.astro';
+import AppLd from '../components/AppLd.astro';
 import Product from '../components/Product.astro';
 import DemoForm from '../components/DemoForm.astro';
 ---
@@ -20,4 +22,11 @@ import DemoForm from '../components/DemoForm.astro';
   <div><div class="eyebrow">Ouverture 2027</div><h2 style="margin-top:14px">Être prévenu à l'ouverture.</h2><p class="lead">Un e-mail à l'ouverture de l'outil gratuit, un autre au lancement. Rien entre les deux.</p></div>
   <DemoForm label="Me prévenir" defaultRole="Notaire" />
 </div></section>
+<AppLd name="Conformité Travaux" url="/conformite-travaux/" audience="Notaires et vendeurs" status="Ouverture 2027" description="Outil pour notaires et vendeurs : liste des pièces travaux exigées pour un acte (permis, DAACT, dommages-ouvrage, décennales, RE2020), pièces manquantes, risques et régularisation." />
+<Faq items={[
+  ["Quelles pièces travaux un notaire demande-t-il pour une vente ?", "Selon les travaux réalisés : autorisation d'urbanisme (permis ou déclaration préalable), déclaration attestant l'achèvement et la conformité (DAACT), attestation d'assurance dommages-ouvrage, attestations décennales des entreprises, PV de réception, factures, attestation RE2020 ou RT2012 pour les constructions récentes, diagnostics."],
+  ["Que se passe-t-il s'il manque une pièce ?", "Selon la pièce : report de signature, réserve dans l'acte, négociation du prix, ou transfert de responsabilité au vendeur. Conformité Travaux dit, pour chaque pièce absente, la conséquence et le chemin de régularisation."],
+  ["Peut-on régulariser des travaux faits sans permis ?", "Souvent, par un permis de régularisation si les travaux respectent les règles d'urbanisme en vigueur, ou par prescription après dix ans pour certaines infractions. L'outil indique qui contacter, les délais et le coût."],
+  ["Quand Conformité Travaux sera-t-il disponible ?", "En 2027. Un premier outil gratuit, « Dossier travaux complet pour l'acte ? », ouvre avant : cinq questions et la liste des pièces attendues et manquantes."],
+]} />
 </Page>

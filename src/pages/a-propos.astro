@@ -1,5 +1,6 @@
 ---
 import Page from '../layouts/Page.astro';
+import Faq from '../components/Faq.astro';
 import { L } from '../lib/links';
 ---
 <Page title="À propos de Kaërt — Dix ans de chantier avant le logiciel" description="Né à Québriac de dix ans de maîtrise d'œuvre, Kaërt fait des logiciels qui règlent une douleur, sans formation, testés sur de vrais chantiers bretons." path="/a-propos/">
@@ -24,4 +25,9 @@ import { L } from '../lib/links';
   <p style="margin-top:18px;font-size:.9rem;color:var(--fg2)">Contact presse : <span style="user-select:all;color:var(--fg)">contact@kaert.fr</span> — logos et visuels sur demande.</p></aside>
 </div></section>
 <style>@media(max-width:820px){#ap{grid-template-columns:1fr!important}}</style>
+<Faq items={[
+  ["Qui est derrière Kaërt ?", "Kaërt Groupe est une SAS créée en 2024 à Québriac (Ille-et-Vilaine), fondée par un maître d'œuvre ayant dix ans de conduite d'opération et de pilotage de chantiers. L'équipe réunit des gens du bâtiment et des développeurs."],
+  ["Quel est le lien entre Kaërt et Webenvue ?", "Webenvue est la première activité de Kaërt Groupe : des sites internet pour les artisans et les commerces. C'est en écoutant ces artisans qu'est née l'édition de logiciels pour le chantier."],
+  ["Comment contacter Kaërt ?", "Par e-mail à contact@kaert.fr, ou par le formulaire de démo. Pour la presse : logos et visuels sur demande à la même adresse."],
+]} />
 </Page>

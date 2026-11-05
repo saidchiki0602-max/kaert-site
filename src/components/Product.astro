@@ -12,7 +12,8 @@ interface Props {
 }
 const { who, title, sub, status, color, feats, oui, client, price, cta } = Astro.props;
 ---
-<header class="ph" style={`--c:${color}`}><div class="wrap">
+<div class="product" style={`--c:${color}`}>
+<header class="ph"><div class="wrap">
   <div class="who">{who} <span class="st" style="margin-left:10px">{status}</span></div>
   <div class="lgwrap"><slot name="logo" /></div>
   <h1>{title}</h1>
@@ -47,4 +48,5 @@ const { who, title, sub, status, color, feats, oui, client, price, cta } = Astro
     <div style="margin-top:22px"><a class="btn p" href={L(cta.href)} id="cta">{cta.label}</a></div>
   </div>
 </div></section>
+</div>
 <slot />

@@ -1,5 +1,7 @@
 ---
 import Page from '../layouts/Page.astro';
+import Faq from '../components/Faq.astro';
+import AppLd from '../components/AppLd.astro';
 import Product from '../components/Product.astro';
 import DemoForm from '../components/DemoForm.astro';
 ---
@@ -27,4 +29,13 @@ import DemoForm from '../components/DemoForm.astro';
   <div><div class="eyebrow">Démo</div><h2 style="margin-top:14px">Apportez votre dernier CR. On le refait en dictée devant vous.</h2><p class="lead">15 minutes, en visio ou sur place en Ille-et-Vilaine. Vous repartez avec votre compte rendu diffusé.</p></div>
   <DemoForm label="Demander une démo" defaultRole="Maître d'œuvre" />
 </div></section>
+<AppLd name="MOEpilote" url="/moepilote/" audience="Maîtres d'œuvre et architectes" price="79" status="Pilotes en cours en Bretagne" description="Application pour maîtres d'œuvre : compte rendu de chantier dicté et diffusé avec accusés de lecture, contrôle des assurances décennales des entreprises, mise au point (MAP), situations, portail client inclus." />
+<Faq items={[
+  ["Qu'est-ce que MOEpilote ?", "MOEpilote est l'application des maîtres d'œuvre éditée par Kaërt. Elle rédige le compte rendu de chantier à partir d'une dictée, le diffuse avec accusés de lecture et relances, contrôle les attestations d'assurance des entreprises lot par lot, fait signer la mise au point au client et vise les situations sur l'avancement réel. Chaque action attend le OUI du maître d'œuvre."],
+  ["Combien de temps prend un compte rendu de chantier avec MOEpilote ?", "Environ cinq minutes : deux à trois minutes de dictée en sortant de la visite, puis une relecture. L'agent identifie les entreprises, classe réserves et actions, fixe les délais et produit deux versions : technique pour les entreprises, en clair pour le client."],
+  ["Comment MOEpilote vérifie-t-il une attestation décennale ?", "Il lit l'attestation (photo ou PDF), extrait l'assureur, la période, les activités couvertes, et les croise avec le lot du marché. Si le lot comprend une pompe à chaleur et que l'attestation ne couvre pas le chauffage, il le signale. Il relance avant expiration et bloque le visa d'une situation tant que le dossier n'est pas à jour."],
+  ["Qu'est-ce que la MAP dans MOEpilote ?", "La réunion de mise au point, avant l'ouverture du chantier : plans, devis, entreprises retenues, cahier des choix (carrelage, sanitaires, menuiseries…), planning et budget sont validés par le client dans l'application, point par point, et signés."],
+  ["Combien coûte MOEpilote ?", "79 € HT par mois et par maître d'œuvre, portail client illimité inclus, options à la carte. Prix bloqué à vie pour les 200 premiers cabinets."],
+  ["Mes clients et mes entreprises doivent-ils créer un compte ?", "Non. Ils reçoivent un lien. Le client voit photos, compte rendu en clair, décisions à prendre et factures vérifiées ; les entreprises reçoivent le CR, les plans à jour et les demandes de pièces, avec accusé de lecture."],
+]} />
 </Page>

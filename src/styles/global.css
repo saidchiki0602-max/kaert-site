@@ -2,7 +2,7 @@
 :root{
   --chalk:#FFFFFF;--chalk2:#F2F2F2;--slate:#0A0A0A;--slate2:#161616;--granite:#6E6E6E;--mist:#A8A8A8;--line:#DADADA;
   --orange:#0A0A0A;--orange2:#FFFFFF;
-  --kov:#4A7FA5;--moe:#2B4A8B;--mc:#D95F2B;--esti:#1A5C3A;--ct:#C8F56A;--not:#6B4E9B;--vmo:#C4873A;
+  --kov:#4A7FA5;--moe:#2B4A8B;--mc:#D95F2B;--esti:#1A5C3A;--ct:#C8F56A;--not:#6B4E9B;--vmo:#A8691F;
   --bg:var(--chalk);--bg2:#F7F7F7;--fg:var(--slate);--fg2:#555555;
   --display:'Bricolage Grotesque',Impact,'Arial Black',sans-serif;--body:'Instrument Sans',system-ui,sans-serif;
   color-scheme:light;
@@ -233,3 +233,36 @@ footer .cols a:hover{color:var(--chalk)}
 .nav .mob .t{font-family:var(--display);font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--fg2);margin-top:14px}
 @media(max-width:820px){.burger{display:flex}.nav .dsk{display:none}}
 @media(min-width:821px){.nav .mob{display:none!important}}
+/* couleur du produit sur sa page : 3 endroits, pas plus */
+.ph h1{position:relative;padding-bottom:22px}
+.ph h1::after{content:'';position:absolute;left:0;bottom:0;width:88px;height:8px;background:var(--c,var(--fg))}
+.ph .st{border-color:var(--c,var(--fg));color:var(--c,var(--fg))}
+.ph .cta .btn.p,.pr .box .btn.p{background:var(--c,var(--fg));border-color:var(--c,var(--fg));color:#fff}
+.ph .cta .btn.p:hover,.pr .box .btn.p:hover{background:transparent;color:var(--c,var(--fg))}
+.oui .card .it .y{background:var(--c,var(--chalk));color:#fff}
+.feat .g .n{opacity:1;color:var(--c,var(--fg))}
+/* le chantier : histoire en 6 temps */
+.flow-intro{color:var(--fg2);font-size:1.1rem;max-width:62ch;margin-top:16px}
+.story{list-style:none;margin:40px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--fg);border:2px solid var(--fg);counter-reset:none}
+.story li{background:var(--bg);padding:24px 22px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.story .n{font-family:var(--display);font-weight:800;font-size:2.2rem;line-height:1;opacity:.25}
+.story .who{font-family:var(--display);font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--fg2)}
+.story b{font-family:var(--display);font-size:1.25rem;line-height:1.15;letter-spacing:-.02em}
+.story .tag{align-self:flex-start;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 8px;background:var(--fg);color:var(--bg);margin-top:4px}
+.story small{color:var(--fg2);font-size:.92rem;margin-top:6px;padding-top:10px;border-top:1px solid var(--line)}
+@media(max-width:900px){.story{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.story{grid-template-columns:1fr;border:0;background:none;gap:0;position:relative}
+.story::before{content:'';position:absolute;left:19px;top:0;bottom:0;width:2px;background:var(--fg)}
+.story li{padding:18px 0 26px 56px;position:relative;background:none}
+.story .n{position:absolute;left:0;top:14px;width:40px;height:40px;border-radius:50%;background:var(--fg);color:var(--bg);opacity:1;font-size:1.1rem;display:flex;align-items:center;justify-content:center}}
+.nav .mob[hidden]{display:none}
+/* FAQ */
+.faq{padding-block:clamp(48px,7vw,88px);border-top:2px solid var(--fg)}
+.faq h2{font-size:clamp(1.8rem,4vw,3rem)}
+.faq .qs{margin-top:28px;border-top:2px solid var(--fg);max-width:80ch}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;padding:18px 40px 18px 0;font-family:var(--display);font-weight:700;font-size:1.15rem;letter-spacing:-.01em;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:'+';position:absolute;right:4px;top:14px;font-size:1.6rem;font-weight:500;line-height:1}
+.faq details[open] summary::after{content:'–'}
+.faq details p{color:var(--fg2);font-size:1.05rem;line-height:1.65;padding:0 0 22px;max-width:70ch}

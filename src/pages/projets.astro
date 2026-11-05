@@ -1,5 +1,6 @@
 ---
 import Page from '../layouts/Page.astro';
+import Faq from '../components/Faq.astro';
 import Product from '../components/Product.astro';
 import DemoForm from '../components/DemoForm.astro';
 ---
@@ -28,4 +29,11 @@ import DemoForm from '../components/DemoForm.astro';
   <div><div class="eyebrow">Référencement</div><h2 style="margin-top:14px">Référencer mon entreprise · mon cabinet</h2><p class="lead">On vérifie votre SIREN et vos assurances, on crée votre fiche, et vous recevez les projets de votre zone. Gratuit.</p></div>
   <DemoForm label="Me référencer" />
 </div></section>
+<Faq items={[
+  ["Quelle différence entre CourtierTravaux.com et VosMaîtresdŒuvre ?", "CourtierTravaux.com apporte des projets aux artisans, lot par lot. VosMaîtresdŒuvre apporte des projets complets (maison neuve, extension, rénovation lourde) aux maîtres d'œuvre. Même principe des deux côtés : un dossier cadré, trois professionnels au plus consultés."],
+  ["Est-ce que vous vendez des leads ?", "Non. Le référencement est gratuit et les projets sont inclus dans l'abonnement Kōv ou MOEpilote, jusqu'à quatre par mois dans votre zone. Nous ne facturons ni le contact ni le rendez-vous."],
+  ["Dois-je envoyer un devis ou des honoraires avant d'avoir rencontré le client ?", "Non. Vous répondez par un créneau de rendez-vous. Honoraires, proposition et devis viennent après la rencontre, comme vous le faites déjà. Le particulier compare au plus trois professionnels."],
+  ["Comment le projet est-il qualifié ?", "Le particulier passe par nos outils : son budget est confronté aux prix de sa ville, son projet est cadré (type, surface, délai, permis), ses devis déjà reçus sont lus. Vous recevez un dossier, pas un numéro de téléphone."],
+  ["Que voit le particulier sur ma fiche ?", "Vos assurances vérifiées, vos spécialités, votre zone, et, si vous utilisez Kōv ou MOEpilote, ce que l'application mesure : délai de réponse, chantiers livrés à la date, avis recueillis à la réception."],
+]} />
 </Page>

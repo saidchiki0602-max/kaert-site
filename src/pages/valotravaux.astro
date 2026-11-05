@@ -1,5 +1,7 @@
 ---
 import Page from '../layouts/Page.astro';
+import Faq from '../components/Faq.astro';
+import AppLd from '../components/AppLd.astro';
 import Product from '../components/Product.astro';
 import DemoForm from '../components/DemoForm.astro';
 ---
@@ -21,4 +23,11 @@ import DemoForm from '../components/DemoForm.astro';
   <div><div class="eyebrow">Pour les agences</div><h2 style="margin-top:14px">Apportez une annonce de bien à rénover.</h2><p class="lead">On chiffre les travaux et la sortie de passoire devant vous, en 15 minutes. Vous repartez avec la fiche.</p></div>
   <DemoForm label="Demander une démo" defaultRole="Agent immobilier" />
 </div></section>
+<AppLd name="ValoTravaux" url="/valotravaux/" audience="Agents immobiliers" status="Outil gratuit dès le 19 novembre 2026, version agences en 2027" description="Outil pour agents immobiliers : chiffrage des travaux pendant la visite, scénarios de sortie de passoire thermique avec aides et mensualité, valeur du bien après travaux." />
+<Faq items={[
+  ["Qu'est-ce que ValoTravaux ?", "Un outil pour agents immobiliers qui chiffre les travaux d'un bien pendant la visite, propose trois scénarios de sortie de passoire thermique (travaux, aides, reste à charge, mensualité) et estime la valeur du bien après rénovation."],
+  ["Qu'est-ce qu'une passoire thermique et pourquoi ça bloque une vente ?", "Un logement classé F ou G au DPE. Les G sont interdits à la location depuis 2025, les F le seront en 2028 : les acheteurs décotent fortement ou renoncent. Montrer un chemin chiffré vers un D ou un C transforme le bien en projet."],
+  ["Sur quoi reposent les chiffres de ValoTravaux ?", "Sur les prix de travaux constatés dans votre secteur, les barèmes d'aides en vigueur (MaPrimeRénov', CEE, éco-PTZ) et les taux de crédit du moment. Les hypothèses sont affichées sur la fiche remise à l'acheteur, avec la date."],
+  ["ValoTravaux est-il gratuit ?", "L'outil de sortie de passoire est gratuit, sans compte, dès le 19 novembre 2026. La version complète pour agences (chiffrage en visite, valeur après travaux, fiches à votre marque) arrive en 2027."],
+]} />
 </Page>

@@ -1,5 +1,15 @@
 # Kaërt Groupe
-> Éditeur breton de logiciels pour les métiers du chantier : artisans (Kōv), maîtres d'œuvre (MOEpilote), particuliers (MonChantier), agents immobiliers (ValoTravaux), notaires (Conformité Travaux), et deux services d'apport de projets (CourtierTravaux.com, VosMaîtresdŒuvre).
-- Siège : 13 rue de la Basse Ville, 35190 Québriac, France
-- Contact : contact@kaert.fr
-- Site : https://kaert.fr
+> Éditeur breton de logiciels pour les métiers du chantier : artisans (Kōv), maîtres d'œuvre (MOEpilote), particuliers qui pilotent leurs travaux eux-mêmes (MonChantier), agents immobiliers (ValoTravaux), notaires (Conformité Travaux), et deux services d'apport de projets (CourtierTravaux.com, VosMaîtresdŒuvre). Principe commun : l'IA prépare le travail, le professionnel dit oui ; les invités (entreprises, clients) n'ont pas de compte à créer.
+- Siège : 13 rue de la Basse Ville, 35190 Québriac, France · Contact : contact@kaert.fr · Site : https://kaert.fr
+
+## Produits
+- [Kōv](https://kaert.fr/kov/) : appli des artisans du bâtiment — devis dicté en 30 s, commandes et factures fournisseurs vérifiées, facturation et relances. 59 € HT/mois, lancement 2027.
+- [MOEpilote](https://kaert.fr/moepilote/) : appli des maîtres d'œuvre — compte rendu de chantier dicté en 5 min et diffusé avec accusés de lecture, contrôle des décennales lot par lot, MAP signée par le client, situations visées. 79 € HT/mois, pilotes en cours.
+- [MonChantier](https://kaert.fr/monchantier/) : appli du particulier qui pilote son chantier lui-même — artisans vérifiés, devis lus, paiements liés aux étapes. Prototype, 2027.
+- [ValoTravaux](https://kaert.fr/valotravaux/) : pour agents immobiliers — chiffrage des travaux en visite, sortie de passoire thermique (3 scénarios, aides, mensualité), valeur après travaux. Outil gratuit dès le 19/11/2026.
+- [Projets qualifiés](https://kaert.fr/projets/) : CourtierTravaux.com (artisans) et VosMaîtresdŒuvre (maîtres d'œuvre) — projets avec budget vérifié, trois professionnels maximum consultés, référencement gratuit, pas de vente de leads.
+- [Conformité Travaux](https://kaert.fr/conformite-travaux/) : pour notaires et vendeurs — pièces travaux exigées pour l'acte, manquantes, régularisation. 2027.
+
+## Pages utiles
+- [Le chantier de bout en bout](https://kaert.fr/le-chantier/) : les six étapes et le dossier du bien qui passe d'un métier à l'autre.
+- [Outils gratuits](https://kaert.fr/outils/) · [Guides](https://kaert.fr/guides/) · [À propos](https://kaert.fr/a-propos/) · [Demander une démo](https://kaert.fr/demo/)

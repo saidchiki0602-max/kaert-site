@@ -1,9 +1,10 @@
 ---
 import Page from '../layouts/Page.astro';
+import Faq from '../components/Faq.astro';
 import { L } from '../lib/links';
 const tools = [
   { id: 'passoire', who: 'Agents immobiliers', t: 'Sortie de passoire en visite', p: "Un F ou G en portefeuille ? Trois scénarios chiffrés, les aides de l'acheteur, l'effort par mois. Une fiche à lui remettre.", ask: 'DPE, surface, année, chauffage, budget acheteur', give: '3 scénarios, aides, mensualité, valeur après travaux, fiche PDF', when: 'Ouverture le 19 novembre', soon: false, to: '/valotravaux/', toLabel: 'ValoTravaux' },
-  { id: 'devis', who: 'Particuliers · pros', t: 'Mon devis est-il correct ?', p: "Un devis d'entreprise déposé : lignes manquantes, prix hors marché, mentions obligatoires. En 30 secondes.", ask: 'Le devis (photo ou PDF), le type de travaux, la ville', give: "Score, points à corriger, questions à poser à l'entreprise", when: 'Ouverture le 19 novembre', soon: false, to: '/projets/', toLabel: 'CourtierTravaux' },
+  { id: 'devis', who: 'Particuliers · pros', t: 'Mon devis est-il correct ?', p: "Un devis d'entreprise déposé : lignes manquantes, prix hors marché, mentions obligatoires. En 30 secondes.", ask: 'Le devis (photo ou PDF), le type de travaux, la ville', give: "Score, points à corriger, questions à poser à l'entreprise", when: 'Ouverture le 19 novembre', soon: false, to: '/monchantier/', toLabel: 'MonChantier' },
   { id: 'cout', who: 'Particuliers', t: 'Combien coûte mon projet ?', p: 'Maison neuve, extension, rénovation : la fourchette de votre ville, par m², selon les finitions.', ask: 'Type, ville, surface, niveau de finitions', give: 'Fourchette, honoraires de MOE, calendrier réaliste', when: 'Ouverture le 19 novembre', soon: false, to: '/projets/', toLabel: 'VosMaîtresdŒuvre' },
   { id: 'cr', who: "Maîtres d'œuvre", t: 'Mon CR de chantier en 5 minutes', p: 'Dictez votre réunion, recevez le compte rendu structuré, diffusé avec accusés de lecture.', ask: 'Une dictée de 2 minutes', give: 'Un CR structuré par lot, actions et délais ; 3 par mois offerts', when: 'Bientôt', soon: true, to: '/moepilote/', toLabel: 'MOEpilote' },
   { id: 'devis30', who: 'Artisans', t: 'Mon devis en 30 secondes', p: 'Trois lignes dictées, un devis PDF propre avec toutes les mentions légales. Trois par mois offerts.', ask: 'Métier, SIRET, trois lignes', give: 'Devis PDF conforme', when: 'Bientôt, avec Kōv', soon: true, to: '/kov/', toLabel: 'Kōv' },
@@ -31,4 +32,9 @@ const tools = [
   </div>
   <p style="color:var(--fg2);margin-top:30px;max-width:70ch">Chaque outil se termine par une seule proposition, jamais deux. Les résultats vous sont envoyés par e-mail si vous le souhaitez : c'est là que naît votre dossier.</p>
 </div></section>
+<Faq items={[
+  ["Les outils sont-ils vraiment gratuits ?", "Oui, sans compte et sans carte bancaire. Certains ont une limite mensuelle (par exemple trois comptes rendus ou trois devis par mois). Le résultat vous est envoyé par e-mail si vous le souhaitez."],
+  ["Que faites-vous de mon devis ou de mon attestation ?", "Ils servent à produire votre résultat, puis sont supprimés sous 30 jours sauf si vous créez un dossier. Ils ne sont ni revendus ni utilisés pour autre chose. Détails dans la politique de confidentialité."],
+  ["Pourquoi offrir ces outils ?", "Parce que c'est la meilleure démonstration de ce que font nos logiciels : si l'outil règle votre problème du jour en deux minutes, vous savez ce que vaut le produit derrière."],
+]} />
 </Page>
