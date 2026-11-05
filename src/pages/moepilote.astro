@@ -1,0 +1,30 @@
+---
+import Page from '../layouts/Page.astro';
+import Product from '../components/Product.astro';
+import DemoForm from '../components/DemoForm.astro';
+---
+<Page title="MOEpilote — L'appli des maîtres d'œuvre" description="Compte rendu de chantier dicté en 5 minutes, assurances des entreprises contrôlées, client informé sans appeler. Démo sur votre dernier CR." path="/moepilote/">
+<Product who="Maîtres d'œuvre · architectes" status="Pilotes en cours" color="var(--moe)"
+  title="Dictez votre compte rendu. L'agent rédige. Tout le monde reçoit."
+  sub="L'appli des maîtres d'œuvre : le CR de visite en 5 minutes, les entreprises relancées, les assurances contrôlées, et un client qui n'a plus besoin d'appeler."
+  feats={[
+    { t: 'Le CR de chantier dicté.', p: "En sortant de la visite, vous parlez comme sur le chantier. L'agent identifie les entreprises, classe réserves et actions, fixe les délais, et rédige deux versions : technique pour les entreprises, en clair pour votre client. Diffusé avec accusés de lecture et relance automatique." },
+    { t: 'Les assurances vérifiées, lot par lot.', p: "Décennale, RC, URSSAF, Kbis : l'agent lit chaque attestation, croise les activités couvertes avec le lot du marché, relance avant expiration, et bloque le visa d'une situation tant que le dossier n'est pas à jour. La décennale qui ne couvre pas le chauffage alors que le lot comprend la PAC : il la voit." },
+    { t: 'La mise au point et le chantier, verrouillés.', p: "La MAP avec le client (plans, devis, entreprises, cahier des choix, planning, budget) signée dans l'appli ; puis réserves, PV, situations visées sur l'avancement réel." },
+  ]}
+  oui={{ intro: "La relance de l'électricien, le point hebdo à vos cinq clients, le visa de la situation corrigée, la mise en demeure : préparés, en attente de votre OUI. Six actions par jour en moyenne, trente secondes chacune.", items: [
+    { b: 'Diffuser le CR n°14 — maison Le Goff', s: '9 entreprises, 6 réserves, 2 versions rédigées.' },
+    { b: 'Relancer SARL Élec35 — réserve R-12 en retard', s: 'Échéance dépassée de 3 jours. Message ferme prêt.' },
+    { b: 'Viser la situation n°3 — Lot 4 Plomberie', s: 'Corrigée à 48 % d’avancement réel (demandé : 60 %).' },
+    { b: 'Point hebdo aux clients', s: '5 messages en clair, photos de la semaine jointes.' },
+  ] }}
+  client={{ label: 'Pour votre client', text: "Il a sa propre appli : photos chaque jour, compte rendu en clair, décisions guidées avec prix et délai, factures d'entreprise vérifiées avant qu'il paie, garanties conservées dix ans. Aucune mauvaise nouvelle ne lui arrive par quelqu'un d'autre que vous." }}
+  price={{ big: '79 €', small: 'HT / mois / maître d’œuvre', p: "Pilotes en cours en Bretagne. Prix bloqué à vie pour les 200 premiers cabinets.", items: ['CR dicté, diffusion, relances, accusés de lecture', 'Contrôle des assurances et des situations', 'MAP, réserves, PV, DOE', 'Portail client illimité inclus', 'Options à la carte'] }}
+  cta={{ label: 'Demander une démo sur votre dernier compte rendu', href: '/moepilote/#demo' }}>
+  <svg slot="logo" viewBox="0 0 340 56" aria-hidden="true"><text x="0" y="44" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="40" fill="currentColor" letter-spacing="-1.5">MOE<tspan fill="var(--c)">pilote</tspan></text></svg>
+</Product>
+<section class="contact" id="demo"><div class="wrap">
+  <div><div class="eyebrow">Démo</div><h2 style="margin-top:14px">Apportez votre dernier CR. On le refait en dictée devant vous.</h2><p class="lead">15 minutes, en visio ou sur place en Ille-et-Vilaine. Vous repartez avec votre compte rendu diffusé.</p></div>
+  <DemoForm label="Demander une démo" defaultRole="Maître d'œuvre" />
+</div></section>
+</Page>

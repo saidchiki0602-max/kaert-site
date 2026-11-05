@@ -1,0 +1,25 @@
+---
+import Page from '../layouts/Page.astro';
+import Product from '../components/Product.astro';
+import { L } from '../lib/links';
+---
+<Page title="MonChantier — Le chantier en clair pour votre client" description="L'appli remise au client par l'artisan ou le MOE : avancement, photos, décisions guidées, paiements à l'étape. Un client informé n'appelle pas." path="/monchantier/">
+<Product who="Pour les clients de vos artisans et maîtres d'œuvre" status="Prototype" color="var(--mc)"
+  title="Votre client voit tout. Il n'appelle plus."
+  sub="L'appli que l'artisan ou le maître d'œuvre remet à son client : le chantier en clair, les paiements liés aux étapes, les décisions en un clic."
+  feats={[
+    { t: 'Le chantier en clair.', p: "Avancement, photo du jour, prochaine étape, compte rendu sans jargon. Le client sait où il en est avant d'avoir eu le temps de s'inquiéter." },
+    { t: 'Les paiements liés aux étapes.', p: "Il voit ce qui est prévu, ce qui est fait, ce qui est dû, et pourquoi. Il paie ce qui est vérifié, pas ce qui est demandé." },
+    { t: 'Les décisions guidées.', p: "Carrelage, robinetterie, couleur : trois options, le prix, l'impact sur le délai, un clic. Plus de chantier bloqué par un choix qui traîne." },
+  ]}
+  client={{ label: 'Et pour le particulier sans professionnel', text: "MonChantier existe aussi seul, pour celui qui pilote ses travaux lui-même, lot par lot : même clarté, mêmes paiements à l'étape, artisans vérifiés." }}
+  price={{ big: 'Inclus', small: 'dans Kōv et MOEpilote', p: "Pour les clients de leurs utilisateurs, sans limite. Version autonome pour les particuliers en 2027.", items: ['Aucun compte à créer : le client ouvre un lien', 'Fonctionne sur téléphone, sans installation', 'Le dossier de la maison conservé dix ans'] }}
+  cta={{ label: 'Voir la démo', href: '/demo/', note: 'Démo interactive de l’appli client.' }}>
+  <svg slot="logo" viewBox="0 0 340 56" fill="none" aria-hidden="true"><path d="M6 30 22 16l16 14" stroke="var(--c)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 28v16h22V28" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="m17 36 3 3 6-7" stroke="var(--c)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><text x="50" y="44" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="36" fill="currentColor" letter-spacing="-1.5">Mon<tspan fill="var(--c)">Chantier</tspan></text></svg>
+</Product>
+<section class="sec" style="border-top:2px solid var(--fg)"><div class="wrap">
+  <h2>Vous êtes artisan ou maître d'œuvre ?</h2>
+  <p class="lead">MonChantier vient avec votre appli. Votre client y entre par le lien que vous lui envoyez.</p>
+  <div class="grid2"><a class="box" href={L('/kov/')} style="text-decoration:none;color:inherit"><div class="meta">Artisans</div><b>Kōv →</b><p>Le devis dicté, les commandes, les factures. MonChantier pour vos clients, inclus.</p></a><a class="box" href={L('/moepilote/')} style="text-decoration:none;color:inherit"><div class="meta">Maîtres d'œuvre</div><b>MOEpilote →</b><p>Le CR dicté, les assurances contrôlées, la MAP. Portail client illimité, inclus.</p></a></div>
+</div></section>
+</Page>

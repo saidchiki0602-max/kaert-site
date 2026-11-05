@@ -1,0 +1,34 @@
+---
+import Page from '../layouts/Page.astro';
+import { L } from '../lib/links';
+const tools = [
+  { id: 'passoire', who: 'Agents immobiliers', t: 'Sortie de passoire en visite', p: "Un F ou G en portefeuille ? Trois scénarios chiffrés, les aides de l'acheteur, l'effort par mois. Une fiche à lui remettre.", ask: 'DPE, surface, année, chauffage, budget acheteur', give: '3 scénarios, aides, mensualité, valeur après travaux, fiche PDF', when: 'Ouverture le 19 novembre', soon: false, to: '/valotravaux/', toLabel: 'ValoTravaux' },
+  { id: 'devis', who: 'Particuliers · pros', t: 'Mon devis est-il correct ?', p: "Un devis d'entreprise déposé : lignes manquantes, prix hors marché, mentions obligatoires. En 30 secondes.", ask: 'Le devis (photo ou PDF), le type de travaux, la ville', give: "Score, points à corriger, questions à poser à l'entreprise", when: 'Ouverture le 19 novembre', soon: false, to: '/projets/', toLabel: 'CourtierTravaux' },
+  { id: 'cout', who: 'Particuliers', t: 'Combien coûte mon projet ?', p: 'Maison neuve, extension, rénovation : la fourchette de votre ville, par m², selon les finitions.', ask: 'Type, ville, surface, niveau de finitions', give: 'Fourchette, honoraires de MOE, calendrier réaliste', when: 'Ouverture le 19 novembre', soon: false, to: '/projets/', toLabel: 'VosMaîtresdŒuvre' },
+  { id: 'cr', who: "Maîtres d'œuvre", t: 'Mon CR de chantier en 5 minutes', p: 'Dictez votre réunion, recevez le compte rendu structuré, diffusé avec accusés de lecture.', ask: 'Une dictée de 2 minutes', give: 'Un CR structuré par lot, actions et délais ; 3 par mois offerts', when: 'Bientôt', soon: true, to: '/moepilote/', toLabel: 'MOEpilote' },
+  { id: 'devis30', who: 'Artisans', t: 'Mon devis en 30 secondes', p: 'Trois lignes dictées, un devis PDF propre avec toutes les mentions légales. Trois par mois offerts.', ask: 'Métier, SIRET, trois lignes', give: 'Devis PDF conforme', when: 'Bientôt, avec Kōv', soon: true, to: '/kov/', toLabel: 'Kōv' },
+  { id: 'decennale', who: 'MOE · artisans · agents', t: 'Cette décennale est-elle valable ?', p: "Attestation lue, croisée avec le devis, confirmée auprès de l'assureur. Trafiquée, impayée ou hors activité : on le voit.", ask: "L'attestation (photo ou PDF), le devis", give: 'Validité, activités couvertes vs travaux, alertes', when: 'Bientôt', soon: true, to: '/moepilote/', toLabel: 'MOEpilote' },
+  { id: 'acte', who: 'Notaires', t: "Dossier travaux complet pour l'acte ?", p: 'Cinq questions, et la liste des pièces qui manqueront : permis, achèvement, assurances, DPE.', ask: '5 questions', give: 'Liste des pièces attendues et manquantes', when: '2027', soon: true, to: '/conformite-travaux/', toLabel: 'Conformité Travaux' },
+];
+---
+<Page title="Outils gratuits pour les pros du bâtiment — Kaërt" description="Sortie de passoire, vérification de devis, coût d'un projet : des outils sans compte, en 2 minutes, par les auteurs de Kōv et MOEpilote." path="/outils/">
+<header class="ph"><div class="wrap">
+  <div class="who">Outils gratuits · sans compte · en deux minutes</div>
+  <h1>Essayez avant de nous parler.</h1>
+  <p class="sub">Chaque logiciel a son outil en façade. Sans compte, en deux minutes, il règle un bout du problème tout de suite. Si vous voulez aller plus loin, le produit est derrière.</p>
+</div></header>
+<section class="sec"><div class="wrap">
+  <div class="grid2">
+    {tools.map(t => <div class="box" id={t.id} style={t.soon ? 'opacity:.85' : 'border-color:var(--fg)'}>
+      <div class="meta">{t.who} <span class="pill">{t.when}</span></div>
+      <b>{t.t}</b><p>{t.p}</p>
+      <dl style="margin:16px 0 0;display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:.92rem"><dt style="font-weight:700">Il demande</dt><dd style="margin:0;color:var(--fg2)">{t.ask}</dd><dt style="font-weight:700">Il rend</dt><dd style="margin:0;color:var(--fg2)">{t.give}</dd></dl>
+      <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+        {t.soon ? <a class="btn s" href={L('/demo/')} style="padding:10px 16px;font-size:.9rem">Être prévenu</a> : <a class="btn p" href={L('/demo/')} style="padding:10px 16px;font-size:.9rem">Ouvre le 19 novembre</a>}
+        <a href={L(t.to)} style="font-size:.9rem;color:var(--fg2)">Le produit derrière : <b style="display:inline;font:inherit;font-weight:700;color:var(--fg)">{t.toLabel}</b> →</a>
+      </div>
+    </div>)}
+  </div>
+  <p style="color:var(--fg2);margin-top:30px;max-width:70ch">Chaque outil se termine par une seule proposition, jamais deux. Les résultats vous sont envoyés par e-mail si vous le souhaitez : c'est là que naît votre dossier.</p>
+</div></section>
+</Page>

@@ -1,0 +1,50 @@
+---
+// Formulaire de démo partagé (accueil + /demo/). Envoi vers Supabase via PUBLIC_FORM_ENDPOINT ; sinon e-mail pré-rempli.
+const ENDPOINT = import.meta.env.PUBLIC_FORM_ENDPOINT ?? '';
+const ANON = import.meta.env.PUBLIC_SUPABASE_ANON ?? '';
+interface Props { label?: string; defaultRole?: string }
+const { label = 'Demander une démo', defaultRole } = Astro.props;
+const roles = ['Artisan / entreprise', "Maître d'œuvre", 'Agent immobilier', 'Notaire', 'Autre professionnel'];
+---
+<form class="demo" data-endpoint={ENDPOINT} data-anon={ANON} novalidate>
+  <label>Vous êtes<select name="role">{roles.map(r => <option selected={r === defaultRole}>{r}</option>)}</select></label>
+  <label>Nom et structure<input name="nom" placeholder="Prénom Nom — Entreprise / Cabinet / Agence" required autocomplete="name"></label>
+  <label>Téléphone ou e-mail<input name="contact" placeholder="06 … ou vous@…" required autocomplete="tel"></label>
+  <label>Ce qui vous prend du temps <small style="font-weight:400;color:var(--fg2)">(facultatif)</small><textarea name="message" rows="3" placeholder="Ex : mes devis le soir, mes comptes rendus le dimanche, les passoires que je ne vends plus…"></textarea></label>
+  <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+  <button class="btn p" type="submit" style="justify-content:center">{label}</button>
+  <div class="ok" data-ok hidden>Demande enregistrée. On vous rappelle sous 24 h ouvrées.</div>
+  <div class="err" data-err hidden></div>
+</form>
+<script>
+  document.querySelectorAll<HTMLFormElement>('form.demo').forEach((form) => {
+    const ok = form.querySelector('[data-ok]') as HTMLElement;
+    const err = form.querySelector('[data-err]') as HTMLElement;
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      err.hidden = true;
+      const fd = new FormData(form);
+      if ((fd.get('website') as string)?.length) return; // pot de miel anti-spam
+      const nom = (fd.get('nom') as string || '').trim();
+      const contact = (fd.get('contact') as string || '').trim();
+      if (!nom || !contact) { err.textContent = 'Indiquez votre nom et un moyen de vous joindre.'; err.hidden = false; return; }
+      const payload = { source: 'kaert.fr', role: fd.get('role'), nom, contact, message: (fd.get('message') as string || '').trim(), page: location.pathname, ua: navigator.userAgent };
+      const endpoint = form.dataset.endpoint || '';
+      const anon = form.dataset.anon || '';
+      const btn = form.querySelector('button[type=submit]') as HTMLButtonElement;
+      btn.disabled = true;
+      if (!endpoint) {
+        const body = encodeURIComponent(`Demande de démo — ${payload.role}\nNom : ${nom}\nContact : ${contact}\n\n${payload.message}`);
+        err.innerHTML = `Le formulaire sera actif très bientôt. En attendant, écrivez-nous à <b>contact@kaert.fr</b> — <a href="mailto:contact@kaert.fr?subject=Demande%20de%20d%C3%A9mo&body=${body}">ouvrir un e-mail pré-rempli</a>.`;
+        err.hidden = false; btn.disabled = false; return;
+      }
+      try {
+        const r = await fetch(endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json', 'apikey': anon, 'Authorization': 'Bearer ' + anon, 'Prefer': 'return=minimal' }, body: JSON.stringify(payload) });
+        if (!r.ok) throw new Error(String(r.status));
+        ok.hidden = false; form.reset();
+      } catch {
+        err.textContent = 'Envoi impossible pour le moment. Écrivez-nous à contact@kaert.fr.'; err.hidden = false; btn.disabled = false;
+      }
+    });
+  });
+</script>

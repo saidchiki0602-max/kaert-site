@@ -1,0 +1,30 @@
+---
+import { L } from '../lib/links';
+const products = [
+  ['Kōv', '/kov/'], ['MOEpilote', '/moepilote/'], ['MonChantier', '/monchantier/'],
+  ['ValoTravaux', '/valotravaux/'], ['Projets qualifiés', '/projets/'], ['Conformité Travaux', '/conformite-travaux/'],
+];
+---
+<nav class="nav" aria-label="Principale"><div class="wrap">
+  <a class="mark" href={L('/')} aria-label="Kaërt — accueil"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M6 36V4" stroke="currentColor" stroke-width="7" stroke-linecap="square"/><path d="M9 20 32 4" stroke="currentColor" stroke-width="7" stroke-linecap="square"/><path d="M14 20 34 36" stroke="currentColor" stroke-width="7" stroke-linecap="square" opacity=".45"/></svg>Kaërt</a>
+  <ul>
+    <li class="dd"><a href={L('/#produits')}>Produits</a>
+      <div class="menu">{products.map(([n, h]) => <a href={L(h)}>{n}</a>)}</div>
+    </li>
+    <li><a href={L('/le-chantier/')}>Le chantier</a></li>
+    <li><a href={L('/outils/')}>Outils gratuits</a></li>
+    <li><a href={L('/guides/')}>Guides</a></li>
+    <li><a href={L('/a-propos/')}>À propos</a></li>
+  </ul>
+  <a class="btn p dsk" href={L('/demo/')} style="padding:12px 18px">Demander une démo</a>
+  <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+</div>
+<div class="mob" id="mob" hidden>
+  <div class="t">Produits</div>{products.map(([n, h]) => <a href={L(h)}>{n}</a>)}
+  <div class="t">Kaërt</div><a href={L('/le-chantier/')}>Le chantier</a><a href={L('/outils/')}>Outils gratuits</a><a href={L('/guides/')}>Guides</a><a href={L('/a-propos/')}>À propos</a>
+  <a class="btn p" href={L('/demo/')} style="margin-top:14px;justify-content:center">Demander une démo</a>
+</div></nav>
+<script>
+  const b = document.querySelector('.burger') as HTMLButtonElement | null; const m = document.getElementById('mob');
+  b?.addEventListener('click', () => { const open = m!.hidden; m!.hidden = !open; b.setAttribute('aria-expanded', String(open)); document.body.classList.toggle('mopen', open); });
+</script>

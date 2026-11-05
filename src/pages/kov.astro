@@ -1,0 +1,29 @@
+---
+import Page from '../layouts/Page.astro';
+import Product from '../components/Product.astro';
+import DemoForm from '../components/DemoForm.astro';
+---
+<Page title="Kōv — L'appli des artisans : devis dicté, commandes, factures" description="Le devis en 30 secondes sur le chantier, les factures fournisseurs vérifiées, les impayés relancés. Kōv prépare, vous dites oui. Liste d'attente." path="/kov/">
+<Product who="Artisans · entreprises du bâtiment" status="En développement" color="var(--kov)"
+  title="Redeviens artisan. On s'occupe du reste."
+  sub="L'appli des artisans du bâtiment : le devis dicté sur le chantier, les commandes contrôlées, les factures envoyées, les impayés relancés. Sans soirée au bureau."
+  feats={[
+    { t: 'Le devis en 30 secondes.', p: "Vous dictez trois lignes en sortant du rendez-vous, Kōv sort un devis propre, avec vos prix, toutes les mentions légales, envoyé avant que le client ait refermé sa porte. Un devis envoyé dans la journée se signe trois fois plus." },
+    { t: 'Les commandes et les factures fournisseurs vérifiées.', p: "Quantités et prix comparés à votre devis et à votre bon de commande. L'écart de 186 € sur une facture CEDEO, Kōv le voit et rédige la réclamation." },
+    { t: "La facture et l'impayé.", p: "Facture au bon moment, acompte, situation, solde ; relance polie à J+7, ferme à J+21, sans que vous y pensiez. Facturation électronique prête pour 2027." },
+  ]}
+  oui={{ intro: "Chaque matin, Kōv a préparé ce qu'il y a à faire : le devis à relancer, la commande à passer, le client à rappeler. Vous validez en un tap. Rien ne part sans vous.", items: [
+    { b: 'Relancer le devis Lemoine — 8 420 €', s: 'Envoyé il y a 6 jours, pas de réponse. Message prêt.' },
+    { b: 'Réclamation CEDEO — écart de 186 €', s: 'Facture 2041 vs bon de commande 118. Courrier rédigé.' },
+    { b: 'Facture de situation — chantier Guérin', s: 'Étape « plomberie » terminée hier. 3 150 € TTC.' },
+  ] }}
+  client={{ label: 'Pour votre client', text: "Il reçoit un devis clair le jour même, suit son chantier sur MonChantier, et paie à l'étape. Un client qui sait où il en est ne vous appelle pas le soir." }}
+  price={{ big: '59 €', small: 'HT / mois', p: "Lancement 2027. Prix bloqué à vie pour les 500 premiers artisans.", items: ['Devis, commandes, factures, relances', 'MonChantier pour vos clients, inclus', 'Les chantiers de votre secteur via CourtierTravaux, inclus (jusqu’à 4 par mois)', 'Options à la carte'] }}
+  cta={{ label: "Rejoindre la liste d'attente", href: '/kov/#liste', note: 'Nom, métier, département, téléphone. Rien d’autre.' }}>
+  <svg slot="logo" viewBox="0 0 340 56" aria-hidden="true"><text x="0" y="44" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="46" fill="currentColor" letter-spacing="-2">K<tspan fill="var(--c)">ō</tspan>v</text></svg>
+</Product>
+<section class="contact" id="liste"><div class="wrap">
+  <div><div class="eyebrow">Liste d'attente</div><h2 style="margin-top:14px">Les 500 premiers gardent 59 € à vie.</h2><p class="lead">On vous prévient à l'ouverture dans votre département, et on vous propose de tester avant tout le monde. Pas de newsletter.</p></div>
+  <DemoForm label="Rejoindre la liste d'attente" defaultRole="Artisan / entreprise" />
+</div></section>
+</Page>

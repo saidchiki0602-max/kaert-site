@@ -1,10 +1,9 @@
 ---
-import Base from '../layouts/Base.astro';
-import '../styles/global.css';
+import Page from '../layouts/Page.astro';
+import { L } from '../lib/links';
 ---
-<Base title="Mentions légales — Kaërt" description="Mentions légales du site kaert.fr, édité par Kaërt Groupe SAS, Québriac." path="/mentions-legales/">
+<Page title="Mentions légales — Kaërt" description="Mentions légales du site kaert.fr, édité par Kaërt Groupe SAS, Québriac." path="/mentions-legales/">
 <main class="page"><div class="wrap">
-  <a class="back" href="/">← Retour</a>
   <h1>Mentions légales</h1>
   <h2>Éditeur</h2>
   <p>Kaërt Groupe, société par actions simplifiée (SAS), 13 rue de la Basse Ville, 35190 Québriac, France.<br>Président et directeur de la publication : Said Ligot Jeanne.<br>Immatriculée au RCS de Rennes — SIREN : <em>à compléter</em> · Capital social : <em>à compléter</em> · N° TVA intracommunautaire : <em>à compléter</em>.<br>Contact : contact@kaert.fr</p>
@@ -13,8 +12,8 @@ import '../styles/global.css';
   <h2>Propriété intellectuelle</h2>
   <p>Les marques Kaërt, Kōv, MOEpilote, MonChantier, ValoTravaux, CourtierTravaux, VosMaîtresdŒuvre et Conformité Travaux, les logos, textes et visuels de ce site sont la propriété de Kaërt Groupe. Toute reproduction sans autorisation écrite est interdite.</p>
   <h2>Données personnelles</h2>
-  <p>Les informations saisies dans le formulaire de démonstration (rôle, nom, structure, téléphone ou e-mail, message) sont utilisées uniquement pour vous recontacter. Elles sont conservées 24 mois au plus et ne sont jamais vendues. Vous pouvez demander leur accès, rectification ou suppression à contact@kaert.fr. Détails dans la <a href="/confidentialite/">politique de confidentialité</a>.</p>
+  <p>Les informations saisies dans le formulaire de démonstration (rôle, nom, structure, téléphone ou e-mail, message) sont utilisées uniquement pour vous recontacter. Elles sont conservées 24 mois au plus et ne sont jamais vendues. Vous pouvez demander leur accès, rectification ou suppression à contact@kaert.fr. Détails dans la <a href={L('/confidentialite/')}>politique de confidentialité</a>.</p>
   <h2>Cookies</h2>
   <p>Ce site ne dépose aucun cookie publicitaire. Une mesure d'audience respectueuse de la vie privée peut être utilisée ; elle ne permet pas de vous identifier.</p>
 </div></main>
-</Base>
+</Page>

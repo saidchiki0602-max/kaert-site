@@ -1,10 +1,9 @@
 ---
-import Base from '../layouts/Base.astro';
-import '../styles/global.css';
+import Page from '../layouts/Page.astro';
+import { L } from '../lib/links';
 ---
-<Base title="Confidentialité — Kaërt" description="Politique de confidentialité du site kaert.fr : données collectées, durée de conservation, vos droits." path="/confidentialite/">
+<Page title="Confidentialité — Kaërt" description="Politique de confidentialité du site kaert.fr : données collectées, durée de conservation, vos droits." path="/confidentialite/">
 <main class="page"><div class="wrap">
-  <a class="back" href="/">← Retour</a>
   <h1>Politique de confidentialité</h1>
   <p>Responsable du traitement : Kaërt Groupe SAS, 13 rue de la Basse Ville, 35190 Québriac — contact@kaert.fr.</p>
   <h2>Ce que nous collectons</h2>
@@ -18,4 +17,4 @@ import '../styles/global.css';
   <h2>Vos droits</h2>
   <p>Accès, rectification, suppression, opposition et portabilité : écrivez à contact@kaert.fr. Vous pouvez aussi saisir la CNIL (cnil.fr).</p>
 </div></main>
-</Base>
+</Page>

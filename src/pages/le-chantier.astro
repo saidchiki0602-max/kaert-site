@@ -1,0 +1,35 @@
+---
+import Page from '../layouts/Page.astro';
+import { L } from '../lib/links';
+const steps = [
+  ['Estimer', "L'agent chiffre les travaux à la visite et chiffre la sortie de passoire", 'ValoTravaux', '/valotravaux/', 'Un projet cadré et un acheteur décidé'],
+  ['Confier', "Le particulier choisit jusqu'à trois professionnels vérifiés, les rencontre, décide", 'CourtierTravaux · VosMaîtresdŒuvre', '/projets/', 'Un dossier cohérent : budget, surface, délai'],
+  ['Réaliser', "L'artisan devise, commande, planifie, facture", 'Kōv', '/kov/', 'Devis, planning, factures dans le dossier'],
+  ['Piloter', "Le maître d'œuvre ou le particulier suit, vérifie, paie à l'étape", 'MOEpilote · MonChantier', '/moepilote/', 'Comptes rendus, photos, décisions, paiements'],
+  ['Réceptionner', 'Réserves, PV, garanties, carnet du logement', 'Tous', '/le-chantier/', 'Le dossier de la maison, conservé dix ans'],
+  ['Acter', 'Le notaire trouve les pièces au lieu de les réclamer', 'Conformité Travaux', '/conformite-travaux/', 'Un acte sans report'],
+];
+---
+<Page title="Un seul chantier, tous les métiers — Kaërt" description="Comment les outils Kaërt se passent le dossier du bien, de l'estimation à l'acte notarié. Six étapes, un dossier qui suit la maison." path="/le-chantier/">
+<header class="ph"><div class="wrap">
+  <div class="who">Le chantier, de bout en bout</div>
+  <h1>Un seul chantier. Tous les métiers. Un dossier qui suit le bien.</h1>
+  <p class="sub">Une maison change de mains quatre fois en vingt ans : l'agent qui la vend, l'artisan qui la rénove, le maître d'œuvre qui la pilote, le notaire qui l'acte. Chacun refait le dossier que le précédent avait. Kaërt construit un outil par métier, et un seul dossier du bien qui passe de l'un à l'autre.</p>
+</div></header>
+<section class="sec"><div class="wrap">
+  <div class="eyebrow">Les six étapes</div>
+  <div class="steps" style="grid-template-columns:repeat(3,1fr)">
+    {steps.map(([t, w, p, h, n], i) => <div><div class="n">{i + 1}</div><b>{t}</b><p>{w}</p><a class="tag" href={L(h)} style="text-decoration:none">{p}</a><p style="margin-top:14px;font-size:.9rem"><span style="font-weight:700;color:var(--fg)">Le suivant reçoit :</span> {n}</p></div>)}
+  </div>
+</div></section>
+<section class="sec" style="background:var(--slate);color:var(--chalk)"><div class="wrap">
+  <div class="eyebrow" style="color:var(--mist)">Trois exemples concrets</div>
+  <div class="grid2" style="grid-template-columns:repeat(3,1fr)">
+    <div class="box" style="background:var(--slate2);border-color:var(--granite)"><div class="meta" style="color:var(--mist)">Kōv ↔ MOEpilote</div><p style="color:var(--chalk);font-size:1.05rem">L'artisan sur Kōv reçoit les plans à l'indice C du maître d'œuvre sur MOEpilote, avec accusé de lecture. Plus de « je n'avais pas la dernière version ».</p></div>
+    <div class="box" style="background:var(--slate2);border-color:var(--granite)"><div class="meta" style="color:var(--mist)">MonChantier ↔ Kōv ↔ MOEpilote</div><p style="color:var(--chalk);font-size:1.05rem">Le particulier sur MonChantier voit la facture de l'artisan et le visa du maître d'œuvre sur la même ligne. Il paie ce qui est vérifié.</p></div>
+    <div class="box" style="background:var(--slate2);border-color:var(--granite)"><div class="meta" style="color:var(--mist)">Conformité Travaux</div><p style="color:var(--chalk);font-size:1.05rem">Le notaire, cinq ans plus tard, ouvre le dossier de la maison : permis, PV de réception, attestations d'assurance. L'acte ne bloque pas.</p></div>
+  </div>
+</div></section>
+<section class="sec"><div class="wrap" style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn p" href={L('/#produits')}>Voir les produits</a><a class="btn s" href={L('/demo/')}>Demander une démo</a></div></section>
+<style>@media(max-width:860px){.grid2{grid-template-columns:1fr!important}}</style>
+</Page>

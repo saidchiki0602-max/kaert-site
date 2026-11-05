@@ -1,0 +1,26 @@
+---
+import Page from '../layouts/Page.astro';
+import { L } from '../lib/links';
+const guides = [
+  ['La MAP : les 29 points à verrouiller avec votre client avant d\'ouvrir le chantier', "Maîtres d'œuvre", '/moepilote/', 'MOEpilote'],
+  ['Attestation décennale : les 6 choses à vérifier avant de signer un marché', 'MOE · artisans · particuliers', '/outils/#decennale', 'Outil décennale'],
+  ['Compte rendu de chantier : le modèle qui évite les litiges (et les 5 erreurs qui les créent)', "Maîtres d'œuvre", '/outils/#cr', 'Outil CR'],
+  ['Lire un devis de maçonnerie : les 7 lignes où se cachent les surprises', 'Particuliers · MOE', '/outils/#devis', 'Mon devis est-il correct ?'],
+  ['Combien coûte un maître d\'œuvre en 2026, et ce qu\'il vous fait économiser', 'Particuliers', '/projets/', 'VosMaîtresdŒuvre'],
+  ['Sortir une maison du statut de passoire : les 3 scénarios et leur mensualité réelle', 'Agents · propriétaires', '/outils/#passoire', 'Sortie de passoire'],
+  ['Facturation électronique 2026-2027 : ce qui change pour un artisan, concrètement', 'Artisans', '/kov/', 'Kōv'],
+  ['Le client qui apprend le retard par le maçon : pourquoi la relation client est le vrai métier du MOE', "Maîtres d'œuvre", '/monchantier/', 'MonChantier'],
+];
+---
+<Page title="Guides du chantier — Kaërt" description="Mise au point, décennale, comptes rendus, devis, honoraires, passoires : des guides écrits par des gens de métier." path="/guides/">
+<header class="ph"><div class="wrap">
+  <div class="who">Guides · écrits par des gens de métier</div>
+  <h1>Ce qu'on aurait aimé lire avant d'ouvrir un chantier.</h1>
+  <p class="sub">Des réponses directes, des chiffres datés, une FAQ de trois questions, et un seul renvoi vers l'outil concerné. Deux guides par semaine. Les huit premiers arrivent à partir du 19 novembre.</p>
+</div></header>
+<section class="sec"><div class="wrap">
+  <div class="grid2">
+    {guides.map(([t, who, h, lab], i) => <article class="box"><div class="meta">Guide {i + 1} · {who} <span class="pill">Bientôt</span></div><b>{t}</b><p style="margin-top:12px">Renvoie vers <a href={L(h)}>{lab}</a>.</p></article>)}
+  </div>
+</div></section>
+</Page>

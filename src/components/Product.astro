@@ -1,0 +1,50 @@
+---
+// Gabarit commun des 6 pages produit : promesse, pour qui, 3 blocs, « il prépare / vous dites oui » (option), pour votre client, état et prix, bouton.
+import { L } from '../lib/links';
+interface Feat { t: string; p: string }
+interface Props {
+  who: string; title: string; sub: string; status: string; color: string;
+  feats: Feat[];
+  oui?: { intro: string; items: { b: string; s: string }[] };
+  client?: { label: string; text: string };
+  price: { big: string; small?: string; p: string; items?: string[] };
+  cta: { label: string; href: string; note?: string };
+}
+const { who, title, sub, status, color, feats, oui, client, price, cta } = Astro.props;
+---
+<header class="ph" style={`--c:${color}`}><div class="wrap">
+  <div class="who">{who} <span class="st" style="margin-left:10px">{status}</span></div>
+  <div class="lgwrap"><slot name="logo" /></div>
+  <h1>{title}</h1>
+  <p class="sub">{sub}</p>
+  <div class="cta"><a class="btn p" href={L(cta.href)}>{cta.label}</a>{cta.note && <span style="color:var(--fg2);font-size:.95rem">{cta.note}</span>}</div>
+</div></header>
+
+<section class="feat"><div class="wrap">
+  <div class="eyebrow">Ce que ça fait</div>
+  <div class="g" style="margin-top:22px">
+    {feats.map((f, i) => <div><div class="n">0{i + 1}</div><b>{f.t}</b><p>{f.p}</p></div>)}
+  </div>
+</div></section>
+
+{oui && <section class="oui"><div class="wrap">
+  <div><div class="eyebrow" style="color:var(--mist)">Il prépare, vous dites oui</div><h2 style="margin-top:14px">Rien ne part sans vous.</h2><p>{oui.intro}</p></div>
+  <div class="card"><div class="t">Ce matin · en attente de votre accord</div>
+    {oui.items.map(it => <div class="it"><div><b>{it.b}</b><span>{it.s}</span></div><span class="y">OUI</span></div>)}
+  </div>
+</div></section>}
+
+{client && <section class="cli"><div class="wrap">
+  <div><div class="eyebrow">{client.label}</div><h2 style="margin-top:14px;font-size:clamp(1.8rem,3.6vw,2.8rem)">Ce que ça change de son côté.</h2></div>
+  <p>{client.text}</p>
+</div></section>}
+
+<section class="pr" id="prix"><div class="wrap">
+  <div><div class="eyebrow">État et prix</div><h2 style="margin-top:14px;font-size:clamp(1.8rem,3.6vw,2.8rem)">{status}.</h2><p style="color:var(--fg2);margin-top:14px;max-width:46ch">{price.p}</p></div>
+  <div class="box">
+    <div class="big">{price.big}{price.small && <small> {price.small}</small>}</div>
+    {price.items && <ul>{price.items.map(i => <li>{i}</li>)}</ul>}
+    <div style="margin-top:22px"><a class="btn p" href={L(cta.href)} id="cta">{cta.label}</a></div>
+  </div>
+</div></section>
+<slot />
