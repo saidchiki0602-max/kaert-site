@@ -1,6 +1,6 @@
 {
-  "title": "Kōv — L'appli des artisans : devis dicté, commandes, factures",
-  "description": "Le devis en 30 secondes sur le chantier, les factures fournisseurs vérifiées, les impayés relancés. Kōv prépare, vous dites oui. Liste d'attente.",
+  "title": "Kōv — Logiciel de devis pour artisans, dicté sur le chantier",
+  "description": "Le logiciel de devis des artisans du bâtiment : devis dicté en 30 secondes, factures fournisseurs vérifiées, impayés relancés. Kōv prépare, vous dites oui.",
   "path": "/kov/",
   "faq": {
     "title": "Questions fréquentes",
@@ -34,7 +34,7 @@
   "product": {
     "who": "Artisans · entreprises du bâtiment",
     "title": "Redeviens artisan. On s'occupe du reste.",
-    "sub": "L'appli des artisans du bâtiment : le devis dicté sur le chantier, les commandes contrôlées, les factures envoyées, les impayés relancés. Sans soirée au bureau.",
+    "sub": "Le logiciel des artisans du bâtiment : le devis dicté sur le chantier, les commandes contrôlées, les factures envoyées, les impayés relancés. Sans soirée au bureau.",
     "status": "En développement",
     "color": "var(--kov)",
     "feats": [

@@ -1,6 +1,6 @@
 {
-  "title": "ValoTravaux — Chiffrage travaux et sortie de passoire en visite",
-  "description": "Pour les agents immobiliers : le coût des travaux pendant la visite, la sortie de passoire avec aides et mensualité, la valeur après travaux.",
+  "title": "ValoTravaux — Sortie de passoire thermique : coût, aides, valeur",
+  "description": "Agents immobiliers : le coût des travaux pendant la visite, la sortie de passoire thermique avec aides et mensualité, la valeur du bien après travaux.",
   "path": "/valotravaux/",
   "faq": {
     "title": "Questions fréquentes",
@@ -26,7 +26,7 @@
   "product": {
     "who": "Agents immobiliers",
     "title": "Vendez la maison d'après, pas la passoire d'aujourd'hui.",
-    "sub": "Pour les agents immobiliers : le chiffrage des travaux pendant la visite, la sortie de passoire avec les aides et la mensualité, le prix après travaux.",
+    "sub": "Pour les agents immobiliers : le coût des travaux chiffré pendant la visite, la sortie de passoire thermique avec les aides et la mensualité, le prix après travaux.",
     "status": "En cours",
     "color": "var(--esti)",
     "feats": [

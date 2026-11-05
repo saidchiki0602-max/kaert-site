@@ -1,6 +1,6 @@
 {
-  "title": "Conformité Travaux — Les pièces travaux avant l'acte",
-  "description": "Pour les notaires et vendeurs : permis, achèvement, dommages-ouvrage, décennales. Ce qui manque et comment le régulariser. Ouverture 2027.",
+  "title": "Pièces travaux pour la vente d'une maison — Conformité Travaux",
+  "description": "Notaires, vendeurs : les pièces travaux exigées pour la vente d'une maison — permis, achèvement, dommages-ouvrage, décennales — et comment régulariser.",
   "path": "/conformite-travaux/",
   "faq": {
     "title": "Questions fréquentes",
@@ -26,7 +26,7 @@
   "product": {
     "who": "Notaires · vendeurs",
     "title": "Les pièces travaux qui bloquent un acte, trouvées avant la signature.",
-    "sub": "Pour les notaires et les vendeurs : permis, déclaration d'achèvement, dommages-ouvrage, décennales, RE2020. Ce qui manque, et comment le régulariser.",
+    "sub": "Pour les notaires et les vendeurs : les pièces travaux exigées pour la vente d'une maison — permis, déclaration d'achèvement, dommages-ouvrage, décennales, RE2020. Ce qui manque, et comment le régulariser.",
     "status": "2027",
     "color": "var(--not)",
     "feats": [

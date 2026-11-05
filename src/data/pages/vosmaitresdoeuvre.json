@@ -1,6 +1,6 @@
 {
-  "title": "VosMaîtresdŒuvre — Le comparateur de maîtres d'œuvre",
-  "description": "Comparez jusqu'à trois maîtres d'œuvre vérifiés de votre secteur. Pour les MOE : fiche gratuite, projets de votre zone dès 39 € par mois.",
+  "title": "VosMaîtresdŒuvre — Trouver et comparer son maître d'œuvre",
+  "description": "Trouver un maître d'œuvre : comparez trois cabinets vérifiés de votre secteur, puis un rendez-vous. Pour les MOE : fiche gratuite, projets dès 39 € par mois.",
   "path": "/vosmaitresdoeuvre/",
   "faq": {
     "title": "Questions fréquentes",
@@ -33,8 +33,8 @@
   },
   "product": {
     "who": "Maîtres d'œuvre · architectes",
-    "title": "Le comparateur pour choisir son maître d'œuvre.",
-    "sub": "Maison neuve, extension, rénovation lourde : le particulier décrit son projet, son budget est vérifié contre les prix de sa ville, et il compare jusqu'à trois maîtres d'œuvre de son secteur. Il demande un rendez-vous ; honoraires et proposition viennent après la rencontre, comme vous le faites déjà.",
+    "title": "Trouver et comparer son maître d'œuvre.",
+    "sub": "Maison neuve, extension, rénovation lourde : le particulier décrit son projet, son budget est vérifié contre les prix de sa ville, et il trouve jusqu'à trois maîtres d'œuvre de son secteur à comparer. Il demande un rendez-vous ; honoraires et proposition viennent après la rencontre, comme vous le faites déjà.",
     "status": "Service",
     "color": "var(--vmo)",
     "feats": [

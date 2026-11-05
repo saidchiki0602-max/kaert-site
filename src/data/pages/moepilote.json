@@ -1,6 +1,6 @@
 {
-  "title": "MOEpilote — L'appli des maîtres d'œuvre",
-  "description": "Compte rendu de chantier dicté en 5 minutes, assurances des entreprises contrôlées, client informé sans appeler. Démo sur votre dernier CR.",
+  "title": "MOEpilote — Le logiciel des maîtres d'œuvre",
+  "description": "Logiciel de maîtrise d'œuvre : compte rendu de chantier dicté en 5 minutes, assurances des entreprises contrôlées, client informé. Démo sur votre CR.",
   "path": "/moepilote/",
   "faq": {
     "title": "Questions fréquentes",
@@ -34,7 +34,7 @@
   "product": {
     "who": "Maîtres d'œuvre · architectes",
     "title": "Dictez votre compte rendu. L'agent rédige. Tout le monde reçoit.",
-    "sub": "L'appli des maîtres d'œuvre : le CR de visite en 5 minutes, les entreprises relancées, les assurances contrôlées, et un client qui n'a plus besoin d'appeler.",
+    "sub": "Le logiciel des maîtres d'œuvre : le CR de visite en 5 minutes, les entreprises relancées, les assurances contrôlées, et un client qui n'a plus besoin d'appeler.",
     "status": "Démo disponible",
     "color": "var(--moe)",
     "feats": [

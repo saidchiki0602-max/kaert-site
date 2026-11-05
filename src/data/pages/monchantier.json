@@ -1,6 +1,6 @@
 {
-  "title": "MonChantier — Pilotez vos travaux vous-même, en clair",
-  "description": "L'appli du particulier qui pilote son chantier lui-même : artisans vérifiés, devis lus, chantier en clair lot par lot, paiements liés aux étapes.",
+  "title": "MonChantier — Le suivi de travaux du particulier, en clair",
+  "description": "Suivi de travaux pour le particulier qui pilote son chantier lui-même : artisans vérifiés, devis lus, chantier en clair, paiements liés aux étapes.",
   "path": "/monchantier/",
   "faq": {
     "title": "Questions fréquentes",
@@ -26,7 +26,7 @@
   "product": {
     "who": "Particuliers qui pilotent leurs travaux eux-mêmes",
     "title": "Vos travaux, lot par lot, sans vous faire avoir.",
-    "sub": "L'appli du particulier qui pilote son chantier lui-même, sans maître d'œuvre : les artisans vérifiés, les devis lus, le chantier en clair, les paiements liés aux étapes.",
+    "sub": "L'appli de suivi de travaux du particulier qui pilote son chantier lui-même, sans maître d'œuvre : les artisans vérifiés, les devis lus, le chantier en clair, les paiements liés aux étapes.",
     "status": "Prototype",
     "color": "var(--mc)",
     "feats": [
