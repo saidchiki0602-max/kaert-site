@@ -7,7 +7,8 @@
 - [MOEpilote](https://kaert.fr/moepilote/) : appli des maîtres d'œuvre — compte rendu de chantier dicté en 5 min et diffusé avec accusés de lecture, contrôle des décennales lot par lot, MAP signée par le client, situations visées. 79 € HT/mois, démo disponible, ouverture progressive.
 - [MonChantier](https://kaert.fr/monchantier/) : appli du particulier qui pilote son chantier lui-même — artisans vérifiés, devis lus, paiements liés aux étapes. Prototype, 2027.
 - [ValoTravaux](https://kaert.fr/valotravaux/) : pour agents immobiliers — chiffrage des travaux en visite, sortie de passoire thermique (3 scénarios, aides, mensualité), valeur après travaux. Outil gratuit dès le 19/11/2026.
-- [Projets qualifiés](https://kaert.fr/projets/) : CourtierTravaux.com (artisans) et VosMaîtresdŒuvre (maîtres d'œuvre) — projets avec budget vérifié, trois professionnels maximum consultés, référencement gratuit, pas de vente de leads.
+- [CourtierTravaux.com](https://kaert.fr/projets/#courtier) : courtage de travaux pour les particuliers — un courtier indépendant cadre le projet, consulte au plus trois entreprises vérifiées, compare les devis, négocie et suit ; commission annoncée, due sur chantier signé.
+- [VosMaîtresdŒuvre](https://kaert.fr/projets/#vmo) : comparateur de maîtres d'œuvre pour les particuliers — trois cabinets au plus, rendez-vous avant honoraires ; fiche gratuite pour le MOE, projets inclus dans MOEpilote.
 - [Conformité Travaux](https://kaert.fr/conformite-travaux/) : pour notaires et vendeurs — pièces travaux exigées pour l'acte, manquantes, régularisation. 2027.
 
 ## Pages utiles

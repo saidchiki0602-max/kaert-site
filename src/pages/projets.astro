@@ -1,39 +1,64 @@
 ---
 import Page from '../layouts/Page.astro';
 import Faq from '../components/Faq.astro';
-import Product from '../components/Product.astro';
 import DemoForm from '../components/DemoForm.astro';
+import { L } from '../lib/links';
 ---
-<Page title="Recevoir des projets qualifiés — CourtierTravaux & VosMaîtresdŒuvre" description="Des projets avec un budget, une date et un nom, trois professionnels maximum consultés. Référencement gratuit pour les artisans et maîtres d'œuvre." path="/projets/">
-<Product who="Artisans · maîtres d'œuvre" status="Service" color="var(--vmo)"
-  title="Des projets qui ont un budget, une date et un nom."
-  sub="Nos deux services d'apport : CourtierTravaux.com pour les artisans, VosMaîtresdŒuvre pour les maîtres d'œuvre. Pas des numéros de téléphone : des dossiers."
-  feats={[
-    { t: 'Un dossier, pas un formulaire.', p: "Le particulier passe par nos outils : son budget est vérifié contre les prix de sa ville, son projet est cadré, ses devis déjà reçus sont lus. Vous recevez un projet cohérent." },
-    { t: 'Trois professionnels maximum.', p: "Jamais cinq ou dix. Vous savez combien vous êtes, et vous répondez en deux minutes par un créneau de rendez-vous. Les honoraires et le devis viennent après la rencontre, comme vous le faites déjà." },
-    { t: 'Vos chiffres parlent pour vous.', p: "Si vous utilisez Kōv ou MOEpilote, votre fiche affiche ce que l'appli mesure : délai de réponse, chantiers livrés à la date, avis recueillis à la réception. Mesurés, donc crédibles." },
-  ]}
-  price={{ big: '0 €', small: 'référencement', p: "Les projets sont inclus dans l'abonnement Kōv ou MOEpilote, jusqu'à 4 par mois dans votre zone. Nous ne vendons pas de leads.", items: ['Fiche gratuite sur CourtierTravaux.com ou VosMaîtresdŒuvre', 'Jusqu’à 4 projets par mois dans votre zone, inclus dans l’abonnement', 'Vous répondez par un créneau ; le reste se passe au rendez-vous'] }}
-  cta={{ label: 'Référencer mon entreprise ou mon cabinet', href: '/projets/#ref' }}>
-  <svg slot="logo" viewBox="0 0 520 56" aria-hidden="true"><text x="0" y="44" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="30" fill="currentColor" letter-spacing="-1.2">Courtier<tspan fill="var(--c)">Travaux</tspan><tspan fill="currentColor" opacity=".35"> · </tspan>VosMaîtresd<tspan fill="var(--c)">Œuvre</tspan></text></svg>
-</Product>
-<section class="sec" style="border-top:2px solid var(--fg)"><div class="wrap">
-  <h2>Comment ça se passe, côté particulier</h2>
+<Page title="CourtierTravaux.com & VosMaîtresdŒuvre — Des projets cadrés pour les pros" description="CourtierTravaux.com : un vrai courtier en travaux pour les particuliers, commission annoncée. VosMaîtresdŒuvre : le comparateur pour choisir son maître d'œuvre. Pour les pros : des projets avec un budget, une date et un nom." path="/projets/">
+<div class="product" style="--c:var(--vmo)">
+<header class="ph"><div class="wrap">
+  <div class="who">Artisans · maîtres d'œuvre <span class="st" style="margin-left:10px">Service</span></div>
+  <h1>Des projets qui ont un budget, une date et un nom.</h1>
+  <p class="sub">Deux services, côté particuliers, qui vous amènent des chantiers cadrés : <b style="color:var(--fg)">CourtierTravaux.com</b>, un vrai courtier en travaux qui monte le projet et consulte les entreprises ; <b style="color:var(--fg)">VosMaîtresdŒuvre</b>, le comparateur pour choisir son maître d'œuvre. Pas des numéros de téléphone : des dossiers.</p>
+</div></header>
+
+<section class="sec" id="courtier"><div class="wrap">
+  <div class="eyebrow">CourtierTravaux.com · pour les particuliers, avec les artisans</div>
+  <h2 style="margin-top:14px">Un courtier en travaux. Un vrai.</h2>
+  <p class="lead">Le particulier confie son projet à un courtier indépendant : il cadre le besoin et le budget, consulte trois entreprises vérifiées au plus, compare les devis ligne à ligne, négocie, et suit le chantier jusqu'à la réception. Il est payé par une commission annoncée dès le départ — pas par des remises cachées des entreprises.</p>
   <div class="steps">
-    <div><div class="n">1</div><b>Il cadre son projet</b><p>Type, ville, surface, budget : nos outils vérifient que le budget tient face aux prix de sa ville, et lui disent sinon.</p></div>
-    <div><div class="n">2</div><b>Il compare jusqu'à trois professionnels</b><p>Fiches vérifiées (assurances, SIREN, avis à la réception). Il en retient trois au plus et demande un rendez-vous.</p></div>
-    <div><div class="n">3</div><b>Vous vous rencontrez</b><p>Vous acceptez un créneau en deux minutes. Honoraires, devis, proposition : après la rencontre, comme vous le faites déjà. Il choisit, le dossier suit dans MonChantier.</p></div>
+    <div><div class="n">1</div><b>Le projet est cadré</b><p>Visite ou visio, budget confronté aux prix de la ville, surface, délai, permis si nécessaire. Le particulier sait ce que son projet vaut avant de consulter.</p></div>
+    <div><div class="n">2</div><b>Trois entreprises consultées</b><p>Assurances décennales lues et valides pour les travaux, SIREN actif, avis recueillis à la réception. Jamais cinq ou dix : trois au plus, qui savent qu'elles sont trois.</p></div>
+    <div><div class="n">3</div><b>Les devis comparés, négociés, suivis</b><p>Comparaison ligne à ligne, questions posées aux entreprises, négociation, puis suivi dans MonChantier : étapes, photos, paiements liés à l'avancement, réception.</p></div>
+  </div>
+  <div class="grid2" style="margin-top:30px">
+    <div class="box" style="border-color:var(--fg)"><div class="meta">Pour vous, artisan</div><b>Des chantiers déjà cadrés, une commission annoncée</b><p>Vous recevez un dossier, pas un appel : besoin, budget vérifié, délai, plans s'il y en a. Vous répondez par un créneau de visite. La commission du courtier est connue avant que vous chiffriez, et elle n'est due que sur chantier signé. Rien à payer pour être consulté.</p></div>
+    <div class="box"><div class="meta">Avec Kōv</div><b>Vos chiffres parlent pour vous</b><p>Si vous utilisez Kōv, le courtier voit ce que l'appli mesure : délai de réponse, chantiers livrés à la date, avis à la réception. Les projets de votre secteur arrivent dans votre appli, jusqu'à quatre par mois.</p></div>
   </div>
 </div></section>
-<section class="contact" id="ref"><div class="wrap">
-  <div><div class="eyebrow">Référencement</div><h2 style="margin-top:14px">Référencer mon entreprise · mon cabinet</h2><p class="lead">On vérifie votre SIREN et vos assurances, on crée votre fiche, et vous recevez les projets de votre zone. Gratuit.</p></div>
-  <DemoForm label="Me référencer" />
+
+<section class="sec" style="background:var(--bg2);border-top:2px solid var(--fg)" id="vmo"><div class="wrap">
+  <div class="eyebrow">VosMaîtresdŒuvre · pour les particuliers, avec les maîtres d'œuvre</div>
+  <h2 style="margin-top:14px">Le comparateur pour choisir son maître d'œuvre.</h2>
+  <p class="lead">Maison neuve, extension, rénovation lourde : le particulier décrit son projet, son budget est vérifié contre les prix de sa ville, et il compare jusqu'à trois maîtres d'œuvre de son secteur. Il demande un rendez-vous ; honoraires et proposition viennent après la rencontre, comme vous le faites déjà.</p>
+  <div class="grid2">
+    <div class="box" style="background:var(--bg);border-color:var(--fg)"><div class="meta">Pour vous, maître d'œuvre</div><b>Référencement gratuit, projets inclus dans MOEpilote</b><p>Votre fiche est gratuite : assurances vérifiées, spécialités, zone, réalisations. Les projets de votre zone sont inclus dans l'abonnement MOEpilote, jusqu'à quatre par mois. Vous répondez par un créneau en deux minutes ; le dossier suit ensuite dans votre appli, jusqu'à la MAP.</p></div>
+    <div class="box" style="background:var(--bg)"><div class="meta">Ce que voit le particulier</div><b>Trois cabinets, des faits, pas des promesses</b><p>Trois fiches au plus, les mêmes critères pour chacune : assurances, réalisations, délai de réponse mesuré par MOEpilote, chantiers livrés à la date, avis recueillis à la réception.</p></div>
+  </div>
 </div></section>
+
+<section class="pr" id="prix"><div class="wrap">
+  <div><div class="eyebrow">Ce que ça coûte</div><h2 style="margin-top:14px;font-size:clamp(1.8rem,3.6vw,2.8rem)">Annoncé avant, jamais caché.</h2><p style="color:var(--fg2);margin-top:14px;max-width:46ch">Nous ne vendons pas de leads. Un courtier est payé pour un chantier signé ; un comparateur est payé par l'abonnement du professionnel. Dans les deux cas, le particulier sait qui paie quoi.</p></div>
+  <div class="box">
+    <div class="big">CourtierTravaux.com</div>
+    <ul><li>Particulier : honoraires de courtage annoncés au cadrage, pourcentage du montant des travaux</li><li>Artisan : commission annoncée avant le chiffrage, due uniquement sur chantier signé</li><li>Être consulté ne coûte rien</li></ul>
+    <div class="big" style="margin-top:26px">VosMaîtresdŒuvre</div>
+    <ul><li>Maître d'œuvre : fiche gratuite ; projets inclus dans MOEpilote, jusqu'à 4 par mois</li><li>Particulier : gratuit</li></ul>
+    <div style="margin-top:22px"><a class="btn p" href={L('/projets/#ref')}>Référencer mon entreprise ou mon cabinet</a></div>
+  </div>
+</div></section>
+</div>
+
+<section class="contact" id="ref"><div class="wrap">
+  <div><div class="eyebrow">Référencement</div><h2 style="margin-top:14px">Référencer mon entreprise · mon cabinet</h2><p class="lead">On vérifie votre SIREN et vos assurances, on crée votre fiche, et vous recevez les projets de votre zone.</p></div>
+  <DemoForm label="Me référencer" />
+</section>
 <Faq items={[
-  ["Quelle différence entre CourtierTravaux.com et VosMaîtresdŒuvre ?", "CourtierTravaux.com apporte des projets aux artisans, lot par lot. VosMaîtresdŒuvre apporte des projets complets (maison neuve, extension, rénovation lourde) aux maîtres d'œuvre. Même principe des deux côtés : un dossier cadré, trois professionnels au plus consultés."],
-  ["Est-ce que vous vendez des leads ?", "Non. Le référencement est gratuit et les projets sont inclus dans l'abonnement Kōv ou MOEpilote, jusqu'à quatre par mois dans votre zone. Nous ne facturons ni le contact ni le rendez-vous."],
-  ["Dois-je envoyer un devis ou des honoraires avant d'avoir rencontré le client ?", "Non. Vous répondez par un créneau de rendez-vous. Honoraires, proposition et devis viennent après la rencontre, comme vous le faites déjà. Le particulier compare au plus trois professionnels."],
-  ["Comment le projet est-il qualifié ?", "Le particulier passe par nos outils : son budget est confronté aux prix de sa ville, son projet est cadré (type, surface, délai, permis), ses devis déjà reçus sont lus. Vous recevez un dossier, pas un numéro de téléphone."],
-  ["Que voit le particulier sur ma fiche ?", "Vos assurances vérifiées, vos spécialités, votre zone, et, si vous utilisez Kōv ou MOEpilote, ce que l'application mesure : délai de réponse, chantiers livrés à la date, avis recueillis à la réception."],
+  ["Quelle différence entre CourtierTravaux.com et VosMaîtresdŒuvre ?", "CourtierTravaux.com est un service de courtage en travaux : un courtier indépendant cadre le projet du particulier, consulte au plus trois entreprises vérifiées, compare les devis, négocie et suit le chantier. VosMaîtresdŒuvre est un comparateur : le particulier choisit lui-même son maître d'œuvre parmi trois cabinets, puis travaille directement avec lui."],
+  ["Qu'est-ce qu'un courtier en travaux ?", "Un intermédiaire indépendant qui représente le particulier face aux entreprises : il définit le besoin, consulte, compare les devis ligne à ligne, négocie et suit la réalisation. À la différence d'un maître d'œuvre, il ne conçoit pas et ne dirige pas les travaux ; à la différence d'une plateforme de leads, il ne vend pas de contacts."],
+  ["Comment le courtier est-il payé ?", "Par des honoraires annoncés au particulier dès le cadrage, et une commission annoncée à l'entreprise avant qu'elle chiffre, due uniquement si le chantier est signé. Pas de remise cachée, pas de commission dissimulée dans le devis."],
+  ["Est-ce que vous vendez des leads ?", "Non. Être consulté par CourtierTravaux.com ne coûte rien à l'artisan. Sur VosMaîtresdŒuvre, la fiche est gratuite et les projets sont inclus dans l'abonnement MOEpilote. Nous ne facturons ni le contact ni le rendez-vous."],
+  ["Dois-je envoyer des honoraires avant d'avoir rencontré le client ?", "Non, sur VosMaîtresdŒuvre vous répondez par un créneau de rendez-vous ; honoraires et proposition viennent après la rencontre. Sur CourtierTravaux.com, vous recevez un dossier cadré et vous chiffrez après visite, comme d'habitude."],
+  ["Combien de professionnels sont consultés sur un projet ?", "Trois au plus, dans les deux services. Chacun sait combien ils sont."],
 ]} />
 </Page>
