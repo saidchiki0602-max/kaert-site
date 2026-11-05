@@ -1,0 +1,72 @@
+{
+  "title": "ValoTravaux — Chiffrage travaux et sortie de passoire en visite",
+  "description": "Pour les agents immobiliers : le coût des travaux pendant la visite, la sortie de passoire avec aides et mensualité, la valeur après travaux.",
+  "path": "/valotravaux/",
+  "faq": {
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "q": "Qu'est-ce que ValoTravaux ?",
+        "a": "Un outil pour agents immobiliers qui chiffre les travaux d'un bien pendant la visite, propose trois scénarios de sortie de passoire thermique (travaux, aides, reste à charge, mensualité) et estime la valeur du bien après rénovation."
+      },
+      {
+        "q": "Qu'est-ce qu'une passoire thermique et pourquoi ça bloque une vente ?",
+        "a": "Un logement classé F ou G au DPE. Les G sont interdits à la location depuis 2025, les F le seront en 2028 : les acheteurs décotent fortement ou renoncent. Montrer un chemin chiffré vers un D ou un C transforme le bien en projet."
+      },
+      {
+        "q": "Sur quoi reposent les chiffres de ValoTravaux ?",
+        "a": "Sur les prix de travaux constatés dans votre secteur, les barèmes d'aides en vigueur (MaPrimeRénov', CEE, éco-PTZ) et les taux de crédit du moment. Les hypothèses sont affichées sur la fiche remise à l'acheteur, avec la date."
+      },
+      {
+        "q": "ValoTravaux est-il gratuit ?",
+        "a": "L'outil de sortie de passoire est gratuit, sans compte, dès le 19 novembre 2026. La version complète pour agences (chiffrage en visite, valeur après travaux, fiches à votre marque) arrive en 2027."
+      }
+    ]
+  },
+  "product": {
+    "who": "Agents immobiliers",
+    "title": "Vendez la maison d'après, pas la passoire d'aujourd'hui.",
+    "sub": "Pour les agents immobiliers : le chiffrage des travaux pendant la visite, la sortie de passoire avec les aides et la mensualité, le prix après travaux.",
+    "status": "En cours",
+    "color": "var(--esti)",
+    "feats": [
+      {
+        "t": "Le chiffrage en visite.",
+        "p": "Surface, état, DPE : une fourchette de travaux crédible avant de sortir de la maison, basée sur les prix constatés dans votre secteur."
+      },
+      {
+        "t": "La sortie de passoire.",
+        "p": "Trois scénarios pour un F ou un G : travaux, aides mobilisables, reste à charge, mensualité. Une fiche à remettre à l'acheteur, qui transforme un bien invendable en projet."
+      },
+      {
+        "t": "La valeur après travaux.",
+        "p": "Ce que vaut le bien une fois rénové, pour négocier sur la valeur et pas sur la décote."
+      }
+    ],
+    "client": {
+      "label": "Pour votre acheteur",
+      "text": "Il repart avec un projet chiffré et des professionnels vérifiés à contacter (CourtierTravaux, VosMaîtresdŒuvre). Vous êtes l'agent qui a rendu l'achat possible."
+    },
+    "price": {
+      "big": "Gratuit",
+      "small": "dès le 19 novembre",
+      "p": "L'outil de sortie de passoire ouvre le 19 novembre, sans compte. Version complète pour agences en 2027.",
+      "items": [
+        "3 scénarios chiffrés, aides, mensualité",
+        "Valeur après travaux",
+        "Fiche PDF à remettre à l’acheteur"
+      ]
+    },
+    "cta": {
+      "label": "Essayer la sortie de passoire",
+      "href": "/outils/#passoire"
+    }
+  },
+  "app": {
+    "name": "ValoTravaux",
+    "url": "/valotravaux/",
+    "audience": "Agents immobiliers",
+    "status": "Outil gratuit dès le 19 novembre 2026, version agences en 2027",
+    "description": "Outil pour agents immobiliers : chiffrage des travaux pendant la visite, scénarios de sortie de passoire thermique avec aides et mensualité, valeur du bien après travaux."
+  }
+}

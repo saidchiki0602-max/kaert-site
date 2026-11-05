@@ -1,0 +1,26 @@
+{
+  "title": "À propos de Kaërt — Dix ans de chantier avant le logiciel",
+  "description": "Né à Québriac de dix ans de maîtrise d'œuvre, Kaërt fait des logiciels qui règlent une douleur, sans formation, testés sur de vrais chantiers bretons.",
+  "path": "/a-propos/",
+  "faq": {
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "q": "Qui est derrière Kaërt ?",
+        "a": "Kaërt Groupe est une SAS créée en 2024 à Québriac (Ille-et-Vilaine), fondée par un maître d'œuvre ayant dix ans de conduite d'opération et de pilotage de chantiers. L'équipe réunit des gens du bâtiment et des développeurs."
+      },
+      {
+        "q": "Quel est le lien entre Kaërt et Webenvue ?",
+        "a": "Webenvue est la première activité de Kaërt Groupe : des sites internet pour les artisans et les commerces. C'est en écoutant ces artisans qu'est née l'édition de logiciels pour le chantier."
+      },
+      {
+        "q": "Kaërt a-t-il levé des fonds ?",
+        "a": "Non. Kaërt Groupe est financée par son activité (Webenvue et les premiers abonnements). C'est plus lent, et c'est ce qui permet de construire avec les utilisateurs plutôt qu'avec un plan marketing."
+      },
+      {
+        "q": "Comment contacter Kaërt ?",
+        "a": "Par e-mail à contact@kaert.fr, ou par le formulaire de démo. Pour la presse : logos et visuels sur demande à la même adresse."
+      }
+    ]
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "title": "Kōv — L'appli des artisans : devis dicté, commandes, factures",
+  "description": "Le devis en 30 secondes sur le chantier, les factures fournisseurs vérifiées, les impayés relancés. Kōv prépare, vous dites oui. Liste d'attente.",
+  "path": "/kov/",
+  "faq": {
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "q": "Qu'est-ce que Kōv ?",
+        "a": "Kōv est l'application des artisans du bâtiment éditée par Kaërt : le devis dicté sur le chantier et envoyé dans la journée, les bons de commande et factures fournisseurs comparés au devis, la facturation (acompte, situation, solde) et les relances automatiques. L'artisan valide chaque action en un tap."
+      },
+      {
+        "q": "Combien coûte Kōv ?",
+        "a": "59 € HT par mois en base, options à la carte, prix bloqué à vie pour les 500 premiers artisans inscrits sur la liste d'attente. Lancement en 2027."
+      },
+      {
+        "q": "Comment Kōv fait-il un devis en 30 secondes ?",
+        "a": "Vous dictez trois lignes en sortant du rendez-vous (par exemple : « salle de bain 6 m², dépose carrelage, pose faïence, meuble vasque »). Kōv reconnaît les ouvrages, applique vos prix, ajoute les mentions légales obligatoires et produit un devis PDF prêt à envoyer. Vous relisez, vous envoyez."
+      },
+      {
+        "q": "Kōv est-il conforme à la facturation électronique obligatoire ?",
+        "a": "Oui. Kōv est conçu pour l'obligation de réception (2026) et d'émission (2027 pour les TPE) de factures électroniques, via une plateforme agréée."
+      },
+      {
+        "q": "Mes clients doivent-ils installer quelque chose ?",
+        "a": "Non. Votre client reçoit un lien vers son espace client : avancement, photos, devis, factures, paiement à l'étape. Sans compte ni application à installer."
+      },
+      {
+        "q": "Kōv m'apporte-t-il des chantiers ?",
+        "a": "Oui, par CourtierTravaux.com, notre service de courtage : jusqu'à quatre projets cadrés par mois dans votre zone. Être consulté ne coûte rien ; la commission du courtier est annoncée avant le chiffrage et due uniquement sur chantier signé."
+      }
+    ]
+  },
+  "product": {
+    "who": "Artisans · entreprises du bâtiment",
+    "title": "Redeviens artisan. On s'occupe du reste.",
+    "sub": "L'appli des artisans du bâtiment : le devis dicté sur le chantier, les commandes contrôlées, les factures envoyées, les impayés relancés. Sans soirée au bureau.",
+    "status": "En développement",
+    "color": "var(--kov)",
+    "feats": [
+      {
+        "t": "Le devis en 30 secondes.",
+        "p": "Vous dictez trois lignes en sortant du rendez-vous, Kōv sort un devis propre, avec vos prix, toutes les mentions légales, envoyé avant que le client ait refermé sa porte. Un devis envoyé dans la journée se signe trois fois plus."
+      },
+      {
+        "t": "Les commandes et les factures fournisseurs vérifiées.",
+        "p": "Quantités et prix comparés à votre devis et à votre bon de commande. L'écart de 186 € sur une facture CEDEO, Kōv le voit et rédige la réclamation."
+      },
+      {
+        "t": "La facture et l'impayé.",
+        "p": "Facture au bon moment, acompte, situation, solde ; relance polie à J+7, ferme à J+21, sans que vous y pensiez. Facturation électronique prête pour 2027."
+      }
+    ],
+    "oui": {
+      "intro": "Chaque matin, Kōv a préparé ce qu'il y a à faire : le devis à relancer, la commande à passer, le client à rappeler. Vous validez en un tap. Rien ne part sans vous.",
+      "items": [
+        {
+          "b": "Relancer le devis Lemoine — 8 420 €",
+          "s": "Envoyé il y a 6 jours, pas de réponse. Message prêt."
+        },
+        {
+          "b": "Réclamation CEDEO — écart de 186 €",
+          "s": "Facture 2041 vs bon de commande 118. Courrier rédigé."
+        },
+        {
+          "b": "Facture de situation — chantier Guérin",
+          "s": "Étape « plomberie » terminée hier. 3 150 € TTC."
+        }
+      ]
+    },
+    "client": {
+      "label": "Pour votre client",
+      "text": "Il reçoit un devis clair le jour même, suit son chantier dans son espace client (photos, étapes, factures), et paie à l'étape. Un client qui sait où il en est ne vous appelle pas le soir."
+    },
+    "price": {
+      "big": "59 €",
+      "small": "HT / mois",
+      "p": "Lancement 2027. Prix bloqué à vie pour les 500 premiers artisans.",
+      "items": [
+        "Devis, commandes, factures, relances",
+        "Espace client inclus : suivi, photos, paiements à l’étape",
+        "Les chantiers cadrés par CourtierTravaux.com dans votre secteur, jusqu’à 4 par mois",
+        "Options à la carte"
+      ]
+    },
+    "cta": {
+      "label": "Rejoindre la liste d'attente",
+      "href": "/kov/#liste",
+      "note": "Nom, métier, département, téléphone. Rien d’autre."
+    }
+  },
+  "app": {
+    "name": "Kōv",
+    "url": "/kov/",
+    "audience": "Artisans et entreprises du bâtiment",
+    "price": "59",
+    "status": "En développement, lancement 2027",
+    "description": "Application pour artisans du bâtiment : devis dicté en 30 secondes, commandes et factures fournisseurs vérifiées, facturation et relances d'impayés, espace client inclus."
+  }
+}

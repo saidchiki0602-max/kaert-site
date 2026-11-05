@@ -1,0 +1,26 @@
+{
+  "title": "Demander une démo — 15 minutes sur votre cas réel",
+  "description": "Apportez votre dernier compte rendu, devis ou annonce : on refait le travail devant vous. Réponse sous 24 h ouvrées.",
+  "path": "/demo/",
+  "faq": {
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "q": "Combien de temps dure la démo ?",
+        "a": "Quinze minutes, sur votre document : votre dernier compte rendu, un devis, une annonce de bien à rénover. On refait le travail devant vous."
+      },
+      {
+        "q": "La démo est-elle en visio ou sur place ?",
+        "a": "Les deux : en visio partout en France, sur place en Ille-et-Vilaine."
+      },
+      {
+        "q": "Et si l'outil n'est pas prêt pour mon métier ?",
+        "a": "On vous le dit tout de suite, et on vous prévient à l'ouverture. Nous ne faisons pas de démo d'un produit qui n'existe pas."
+      },
+      {
+        "q": "Que faites-vous de mes coordonnées ?",
+        "a": "Elles servent à vous rappeler, et à rien d'autre. Conservées 24 mois au plus, jamais vendues. Suppression sur simple demande à contact@kaert.fr."
+      }
+    ]
+  }
+}

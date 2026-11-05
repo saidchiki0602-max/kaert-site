@@ -1,5 +1,6 @@
 ---
 import Page from '../layouts/Page.astro';
+import data from '../data/pages/outils.json';
 import Faq from '../components/Faq.astro';
 import { L } from '../lib/links';
 const tools = [
@@ -12,7 +13,7 @@ const tools = [
   { id: 'acte', who: 'Notaires', t: "Dossier travaux complet pour l'acte ?", p: 'Cinq questions, et la liste des pièces qui manqueront : permis, achèvement, assurances, DPE.', ask: '5 questions', give: 'Liste des pièces attendues et manquantes', when: '2027', soon: true, to: '/conformite-travaux/', toLabel: 'Conformité Travaux' },
 ];
 ---
-<Page title="Outils gratuits pour les pros du bâtiment — Kaërt" description="Sortie de passoire, vérification de devis, coût d'un projet : des outils sans compte, en 2 minutes, par les auteurs de Kōv et MOEpilote." path="/outils/">
+<Page title={data.title} description={data.description} path={data.path}>
 <header class="ph"><div class="wrap">
   <div class="who">Outils gratuits · sans compte · en deux minutes</div>
   <h1>Essayez avant de nous parler.</h1>
@@ -32,9 +33,5 @@ const tools = [
   </div>
   <p style="color:var(--fg2);margin-top:30px;max-width:70ch">Chaque outil se termine par une seule proposition, jamais deux. Les résultats vous sont envoyés par e-mail si vous le souhaitez : c'est là que naît votre dossier.</p>
 </div></section>
-<Faq items={[
-  ["Les outils sont-ils vraiment gratuits ?", "Oui, sans compte et sans carte bancaire. Certains ont une limite mensuelle (par exemple trois comptes rendus ou trois devis par mois). Le résultat vous est envoyé par e-mail si vous le souhaitez."],
-  ["Que faites-vous de mon devis ou de mon attestation ?", "Ils servent à produire votre résultat, puis sont supprimés sous 30 jours sauf si vous créez un dossier. Ils ne sont ni revendus ni utilisés pour autre chose. Détails dans la politique de confidentialité."],
-  ["Pourquoi offrir ces outils ?", "Parce que c'est la meilleure démonstration de ce que font nos logiciels : si l'outil règle votre problème du jour en deux minutes, vous savez ce que vaut le produit derrière."],
-]} />
+<Faq title={data.faq.title} items={data.faq.items.map((i: any) => [i.q, i.a] as [string, string])} />
 </Page>

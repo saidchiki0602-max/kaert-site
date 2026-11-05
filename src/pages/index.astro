@@ -1,10 +1,11 @@
 ---
 import Page from '../layouts/Page.astro';
+import data from '../data/pages/index.json';
 import Faq from '../components/Faq.astro';
 import DemoForm from '../components/DemoForm.astro';
 import { L } from '../lib/links';
 ---
-<Page title="Kaërt — Logiciels pour les métiers du chantier" description="Kaërt édite les logiciels qui manquent aux artisans, maîtres d'œuvre, agents immobiliers et notaires : Kōv, MOEpilote, MonChantier, ValoTravaux, CourtierTravaux. Faits en Bretagne par des gens qui ont tenu un chantier.">
+<Page title={data.title} description={data.description} path={data.path}>
 
 <header class="hero" id="top"><div class="wrap">
   <svg class="k" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M6 36V4" stroke="currentColor" stroke-width="7"/><path d="M9 20 32 4" stroke="currentColor" stroke-width="7"/><path d="M14 20 34 36" stroke="currentColor" stroke-width="7"/></svg>
@@ -135,11 +136,5 @@ import { L } from '../lib/links';
     try { navigator.clipboard.writeText(m).catch(sel); } catch { sel(); }
   });
 </script>
-<Faq title="Ce qu'on nous demande le plus" items={[
-  ["Qu'est-ce que Kaërt ?", "Kaërt Groupe est un éditeur breton de logiciels pour les métiers du chantier : Kōv pour les artisans, MOEpilote pour les maîtres d'œuvre, MonChantier pour les particuliers qui pilotent leurs travaux eux-mêmes, ValoTravaux pour les agents immobiliers, Conformité Travaux pour les notaires, et deux services d'apport de projets, CourtierTravaux.com et VosMaîtresdŒuvre. Siège à Québriac, Ille-et-Vilaine."],
-  ["Les logiciels Kaërt sont-ils déjà disponibles ?", "MOEpilote se montre en démo et ouvre progressivement, cabinet par cabinet. Kōv ouvre en 2027 avec une liste d'attente. Les premiers outils gratuits (sortie de passoire, vérification de devis, coût d'un projet) ouvrent le 19 novembre 2026. Conformité Travaux arrive en 2027."],
-  ["Faut-il créer un compte pour que mes entreprises ou mes clients utilisent l'outil ?", "Non. Les entreprises et les clients que vous invitez ouvrent un lien, sans compte ni installation. Seul le professionnel abonné a un compte."],
-  ["Que fait l'intelligence artificielle dans vos logiciels ?", "Elle prépare le travail : rédiger un compte rendu à partir d'une dictée, lire une attestation d'assurance, rédiger une relance, comparer une facture au devis. Rien ne part sans que le professionnel ait dit oui. L'IA propose, l'humain décide et signe."],
-  ["Où travaillez-vous ?", "Nos outils sont testés sur de vrais chantiers en Ille-et-Vilaine et en Bretagne. Les logiciels fonctionnent partout en France ; les démos se font en visio, ou sur place en Ille-et-Vilaine."],
-]} />
+<Faq title={data.faq.title} items={data.faq.items.map((i: any) => [i.q, i.a] as [string, string])} />
 </Page>

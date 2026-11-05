@@ -1,8 +1,9 @@
 ---
 import Page from '../layouts/Page.astro';
+import data from '../data/pages/404.json';
 import { L } from '../lib/links';
 ---
-<Page title="Page introuvable — Kaërt" description="Cette page n'existe pas." path="/404">
+<Page title={data.title} description={data.description} path={data.path}>
 <main class="page"><div class="wrap">
   <h1>Pas de chantier ici.</h1>
   <p>La page que vous cherchez n'existe pas ou a déménagé.</p>

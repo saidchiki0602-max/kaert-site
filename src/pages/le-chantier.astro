@@ -1,5 +1,6 @@
 ---
 import Page from '../layouts/Page.astro';
+import data from '../data/pages/le-chantier.json';
 import Faq from '../components/Faq.astro';
 import { L } from '../lib/links';
 const steps = [
@@ -11,7 +12,7 @@ const steps = [
   ['Acter', 'Le notaire trouve les pièces au lieu de les réclamer', 'Conformité Travaux', '/conformite-travaux/', 'Un acte sans report'],
 ];
 ---
-<Page title="Un seul chantier, tous les métiers — Kaërt" description="Comment les outils Kaërt se passent le dossier du bien, de l'estimation à l'acte notarié. Six étapes, un dossier qui suit la maison." path="/le-chantier/">
+<Page title={data.title} description={data.description} path={data.path}>
 <header class="ph"><div class="wrap">
   <div class="who">Le chantier, de bout en bout</div>
   <h1>Un seul chantier. Tous les métiers. Un dossier qui suit le bien.</h1>
@@ -33,9 +34,5 @@ const steps = [
 </div></section>
 <section class="sec"><div class="wrap" style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn p" href={L('/#produits')}>Voir les produits</a><a class="btn s" href={L('/demo/')}>Demander une démo</a></div></section>
 <style>@media(max-width:860px){.grid2{grid-template-columns:1fr!important}}</style>
-<Faq items={[
-  ["Pourquoi six produits et pas un seul logiciel ?", "Parce qu'un artisan, un maître d'œuvre, un agent immobilier et un notaire n'ont ni le même métier ni les mêmes journées. Chacun a son outil, simple, sans formation. Ce qu'ils partagent, c'est le dossier du bien, qui passe de l'un à l'autre."],
-  ["Qu'est-ce que le « dossier du bien » ?", "L'ensemble des pièces d'une maison au fil des travaux : estimation, devis, plans à jour, comptes rendus, photos, factures, PV de réception, attestations d'assurance, garanties. Il est conservé dix ans et transmis au notaire le jour de la vente."],
-  ["Dois-je utiliser tous les produits Kaërt ?", "Non. Chaque produit fonctionne seul. Les passerelles s'activent quand deux utilisateurs se croisent sur le même chantier : un artisan Kōv reçoit automatiquement les plans du maître d'œuvre MOEpilote, par exemple."],
-]} />
+<Faq title={data.faq.title} items={data.faq.items.map((i: any) => [i.q, i.a] as [string, string])} />
 </Page>

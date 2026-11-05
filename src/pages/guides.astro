@@ -1,5 +1,6 @@
 ---
 import Page from '../layouts/Page.astro';
+import data from '../data/pages/guides.json';
 import Faq from '../components/Faq.astro';
 import { L } from '../lib/links';
 const guides = [
@@ -13,7 +14,7 @@ const guides = [
   ['Le client qui apprend le retard par le maçon : pourquoi la relation client est le vrai métier du MOE', "Maîtres d'œuvre", '/moepilote/', 'MOEpilote (espace client)'],
 ];
 ---
-<Page title="Guides du chantier — Kaërt" description="Mise au point, décennale, comptes rendus, devis, honoraires, passoires : des guides écrits par des gens de métier." path="/guides/">
+<Page title={data.title} description={data.description} path={data.path}>
 <header class="ph"><div class="wrap">
   <div class="who">Guides · écrits par des gens de métier</div>
   <h1>Ce qu'on aurait aimé lire avant d'ouvrir un chantier.</h1>
@@ -24,9 +25,5 @@ const guides = [
     {guides.map(([t, who, h, lab], i) => <article class="box"><div class="meta">Guide {i + 1} · {who} <span class="pill">Bientôt</span></div><b>{t}</b><p style="margin-top:12px">Renvoie vers <a href={L(h)}>{lab}</a>.</p></article>)}
   </div>
 </div></section>
-<Faq items={[
-  ["Qui écrit les guides Kaërt ?", "Des gens de métier : les guides sont rédigés à partir de dix ans de maîtrise d'œuvre et relus par l'équipe. Chaque chiffre est daté et sourcé."],
-  ["À quel rythme publiez-vous ?", "Deux guides par semaine. Les huit premiers arrivent à partir du 19 novembre 2026."],
-  ["Puis-je proposer un sujet ?", "Oui, à contact@kaert.fr. Les questions qui reviennent en démo deviennent des guides."],
-]} />
+<Faq title={data.faq.title} items={data.faq.items.map((i: any) => [i.q, i.a] as [string, string])} />
 </Page>

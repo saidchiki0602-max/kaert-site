@@ -1,0 +1,89 @@
+{
+  "title": "MonChantier — Pilotez vos travaux vous-même, en clair",
+  "description": "L'appli du particulier qui pilote son chantier lui-même : artisans vérifiés, devis lus, chantier en clair lot par lot, paiements liés aux étapes.",
+  "path": "/monchantier/",
+  "faq": {
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "q": "À qui s'adresse MonChantier ?",
+        "a": "Au particulier qui fait ses travaux sans maître d'œuvre et coordonne lui-même plusieurs artisans : rénovation d'une maison, salle de bain et cuisine, extension légère. Si vous avez un maître d'œuvre MOEpilote ou un artisan Kōv, vous avez déjà votre espace client dans leur application."
+      },
+      {
+        "q": "Comment MonChantier vérifie-t-il un artisan ?",
+        "a": "SIREN actif, attestation d'assurance décennale lue et valide pour les travaux concernés, avis recueillis à la réception des chantiers précédents. Si vous le souhaitez, un courtier CourtierTravaux.com consulte les entreprises et compare les devis pour vous."
+      },
+      {
+        "q": "Que veut dire « paiement lié aux étapes » ?",
+        "a": "Chaque lot est découpé en étapes avec un montant. Vous payez une étape quand elle est terminée et vérifiée (photos conformes au devis), pas quand l'artisan le demande. Acompte, situations et solde sont prévus dès le départ."
+      },
+      {
+        "q": "MonChantier est-il disponible ?",
+        "a": "C'est un prototype testé avec des particuliers en Bretagne. Lancement en 2027. Laissez vos coordonnées pour être prévenu à l'ouverture."
+      }
+    ]
+  },
+  "product": {
+    "who": "Particuliers qui pilotent leurs travaux eux-mêmes",
+    "title": "Vos travaux, lot par lot, sans vous faire avoir.",
+    "sub": "L'appli du particulier qui pilote son chantier lui-même, sans maître d'œuvre : les artisans vérifiés, les devis lus, le chantier en clair, les paiements liés aux étapes.",
+    "status": "Prototype",
+    "color": "var(--mc)",
+    "feats": [
+      {
+        "t": "Les artisans vérifiés et les devis lus.",
+        "p": "Assurance décennale, SIREN, avis recueillis à la réception : vous choisissez parmi des entreprises contrôlées. Chaque devis reçu est lu : lignes manquantes, prix hors marché, mentions obligatoires, questions à poser avant de signer."
+      },
+      {
+        "t": "Le chantier en clair, lot par lot.",
+        "p": "Qui vient quand, ce qui doit être fait avant que le suivant arrive, la photo du jour, la prochaine étape. Le carreleur n'arrive plus avant que le plombier ait fini."
+      },
+      {
+        "t": "Les paiements liés aux étapes.",
+        "p": "Vous voyez ce qui est prévu, ce qui est fait, ce qui est dû, et pourquoi. Acompte, situation, solde : vous payez ce qui est vérifié, pas ce qui est demandé. À la fin, PV de réception et garanties conservés dix ans."
+      }
+    ],
+    "oui": {
+      "intro": "Vous n'êtes pas du métier, l'appli l'est. Elle prépare la relance de l'artisan en retard, la question à poser sur un devis, le paiement d'étape à débloquer. Vous décidez, en un clic.",
+      "items": [
+        {
+          "b": "Relancer le plombier — étape « alimentation » en retard",
+          "s": "Prévu lundi, rien hier. Message poli prêt."
+        },
+        {
+          "b": "Devis électricité — 2 points à vérifier",
+          "s": "Tableau non chiffré, pas de date de validité. Questions rédigées."
+        },
+        {
+          "b": "Débloquer le paiement — carrelage, 2 850 €",
+          "s": "Étape terminée, photos conformes au devis."
+        }
+      ]
+    },
+    "client": {
+      "label": "Et si vous avez un artisan Kōv ou un maître d’œuvre MOEpilote ?",
+      "text": "Vous n'avez pas besoin de MonChantier : leur appli vous ouvre déjà votre espace client, avec le même suivi, les mêmes photos et les mêmes paiements à l'étape. MonChantier est pour ceux qui n'ont ni l'un ni l'autre et font le chantier eux-mêmes."
+    },
+    "price": {
+      "big": "2027",
+      "p": "Prototype testé avec des particuliers en Bretagne. Lancement 2027.",
+      "items": [
+        "Aucune installation : ça marche sur votre téléphone",
+        "Vos artisans ouvrent un lien, sans compte",
+        "Le dossier de la maison conservé dix ans, utile le jour de la revente"
+      ]
+    },
+    "cta": {
+      "label": "Voir la démo",
+      "href": "/demo/",
+      "note": "Démo interactive de l’appli."
+    }
+  },
+  "app": {
+    "name": "MonChantier",
+    "url": "/monchantier/",
+    "audience": "Particuliers qui pilotent leurs travaux eux-mêmes",
+    "status": "Prototype, lancement 2027",
+    "description": "Application pour le particulier qui pilote son chantier lui-même : artisans vérifiés, devis lus, chantier en clair lot par lot, paiements liés aux étapes, garanties conservées dix ans."
+  }
+}

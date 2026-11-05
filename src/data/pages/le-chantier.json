@@ -1,0 +1,22 @@
+{
+  "title": "Un seul chantier, tous les métiers — Kaërt",
+  "description": "Comment les outils Kaërt se passent le dossier du bien, de l'estimation à l'acte notarié. Six étapes, un dossier qui suit la maison.",
+  "path": "/le-chantier/",
+  "faq": {
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "q": "Pourquoi six produits et pas un seul logiciel ?",
+        "a": "Parce qu'un artisan, un maître d'œuvre, un agent immobilier et un notaire n'ont ni le même métier ni les mêmes journées. Chacun a son outil, simple, sans formation. Ce qu'ils partagent, c'est le dossier du bien, qui passe de l'un à l'autre."
+      },
+      {
+        "q": "Qu'est-ce que le « dossier du bien » ?",
+        "a": "L'ensemble des pièces d'une maison au fil des travaux : estimation, devis, plans à jour, comptes rendus, photos, factures, PV de réception, attestations d'assurance, garanties. Il est conservé dix ans et transmis au notaire le jour de la vente."
+      },
+      {
+        "q": "Dois-je utiliser tous les produits Kaërt ?",
+        "a": "Non. Chaque produit fonctionne seul. Les passerelles s'activent quand deux utilisateurs se croisent sur le même chantier : un artisan Kōv reçoit automatiquement les plans du maître d'œuvre MOEpilote, par exemple."
+      }
+    ]
+  }
+}

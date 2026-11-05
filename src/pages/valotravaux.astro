@@ -1,33 +1,19 @@
 ---
 import Page from '../layouts/Page.astro';
+import data from '../data/pages/valotravaux.json';
 import Faq from '../components/Faq.astro';
 import AppLd from '../components/AppLd.astro';
 import Product from '../components/Product.astro';
 import DemoForm from '../components/DemoForm.astro';
 ---
-<Page title="ValoTravaux — Chiffrage travaux et sortie de passoire en visite" description="Pour les agents immobiliers : le coût des travaux pendant la visite, la sortie de passoire avec aides et mensualité, la valeur après travaux." path="/valotravaux/">
-<Product who="Agents immobiliers" status="En cours" color="var(--esti)"
-  title="Vendez la maison d'après, pas la passoire d'aujourd'hui."
-  sub="Pour les agents immobiliers : le chiffrage des travaux pendant la visite, la sortie de passoire avec les aides et la mensualité, le prix après travaux."
-  feats={[
-    { t: 'Le chiffrage en visite.', p: "Surface, état, DPE : une fourchette de travaux crédible avant de sortir de la maison, basée sur les prix constatés dans votre secteur." },
-    { t: 'La sortie de passoire.', p: "Trois scénarios pour un F ou un G : travaux, aides mobilisables, reste à charge, mensualité. Une fiche à remettre à l'acheteur, qui transforme un bien invendable en projet." },
-    { t: 'La valeur après travaux.', p: "Ce que vaut le bien une fois rénové, pour négocier sur la valeur et pas sur la décote." },
-  ]}
-  client={{ label: 'Pour votre acheteur', text: "Il repart avec un projet chiffré et des professionnels vérifiés à contacter (CourtierTravaux, VosMaîtresdŒuvre). Vous êtes l'agent qui a rendu l'achat possible." }}
-  price={{ big: 'Gratuit', small: 'dès le 19 novembre', p: "L'outil de sortie de passoire ouvre le 19 novembre, sans compte. Version complète pour agences en 2027.", items: ['3 scénarios chiffrés, aides, mensualité', 'Valeur après travaux', 'Fiche PDF à remettre à l’acheteur'] }}
-  cta={{ label: 'Essayer la sortie de passoire', href: '/outils/#passoire' }}>
+<Page title={data.title} description={data.description} path={data.path}>
+<Product {...data.product}>
   <svg slot="logo" viewBox="0 0 340 56" aria-hidden="true"><rect x="4" y="12" width="32" height="32" rx="6" fill="var(--c)"/><text x="11" y="36" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="24" fill="#fff">V</text><text x="48" y="44" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="36" fill="currentColor" letter-spacing="-1.5">Valo<tspan fill="var(--c)">Travaux</tspan></text></svg>
 </Product>
 <section class="contact" id="demo"><div class="wrap">
   <div><div class="eyebrow">Pour les agences</div><h2 style="margin-top:14px">Apportez une annonce de bien à rénover.</h2><p class="lead">On chiffre les travaux et la sortie de passoire devant vous, en 15 minutes. Vous repartez avec la fiche.</p></div>
   <DemoForm label="Demander une démo" defaultRole="Agent immobilier" />
 </div></section>
-<AppLd name="ValoTravaux" url="/valotravaux/" audience="Agents immobiliers" status="Outil gratuit dès le 19 novembre 2026, version agences en 2027" description="Outil pour agents immobiliers : chiffrage des travaux pendant la visite, scénarios de sortie de passoire thermique avec aides et mensualité, valeur du bien après travaux." />
-<Faq items={[
-  ["Qu'est-ce que ValoTravaux ?", "Un outil pour agents immobiliers qui chiffre les travaux d'un bien pendant la visite, propose trois scénarios de sortie de passoire thermique (travaux, aides, reste à charge, mensualité) et estime la valeur du bien après rénovation."],
-  ["Qu'est-ce qu'une passoire thermique et pourquoi ça bloque une vente ?", "Un logement classé F ou G au DPE. Les G sont interdits à la location depuis 2025, les F le seront en 2028 : les acheteurs décotent fortement ou renoncent. Montrer un chemin chiffré vers un D ou un C transforme le bien en projet."],
-  ["Sur quoi reposent les chiffres de ValoTravaux ?", "Sur les prix de travaux constatés dans votre secteur, les barèmes d'aides en vigueur (MaPrimeRénov', CEE, éco-PTZ) et les taux de crédit du moment. Les hypothèses sont affichées sur la fiche remise à l'acheteur, avec la date."],
-  ["ValoTravaux est-il gratuit ?", "L'outil de sortie de passoire est gratuit, sans compte, dès le 19 novembre 2026. La version complète pour agences (chiffrage en visite, valeur après travaux, fiches à votre marque) arrive en 2027."],
-]} />
+<AppLd {...(data as any).app} />
+<Faq title={data.faq.title} items={data.faq.items.map((i: any) => [i.q, i.a] as [string, string])} />
 </Page>

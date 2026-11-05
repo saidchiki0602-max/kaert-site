@@ -1,0 +1,74 @@
+{
+  "title": "VosMaîtresdŒuvre — Le comparateur de maîtres d'œuvre",
+  "description": "Comparez jusqu'à trois maîtres d'œuvre vérifiés de votre secteur et demandez un rendez-vous. Pour les MOE : fiche gratuite, projets de votre zone dès 39 € par mois.",
+  "path": "/vosmaitresdoeuvre/",
+  "faq": {
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "q": "Qu'est-ce que VosMaîtresdŒuvre ?",
+        "a": "Un comparateur de maîtres d'œuvre pour les particuliers qui ont un projet de maison neuve, d'extension ou de rénovation lourde : jusqu'à trois cabinets vérifiés du secteur, comparés sur les mêmes critères, puis un rendez-vous. Édité par Kaërt, qui fait aussi MOEpilote."
+      },
+      {
+        "q": "Dois-je envoyer des honoraires avant d'avoir rencontré le client ?",
+        "a": "Non. Vous répondez par un créneau de rendez-vous. Honoraires, proposition et contrat viennent après la rencontre, comme vous le faites déjà."
+      },
+      {
+        "q": "Combien ça coûte pour un maître d'œuvre ?",
+        "a": "La fiche est gratuite. Pour recevoir les projets de votre zone, l'abonnement VosMaîtresdŒuvre est à 39 € HT par mois, sans engagement, jusqu'à quatre projets par mois. Il est inclus dans MOEpilote. Nous ne vendons pas de leads à l'unité : ni le contact ni le rendez-vous ne sont facturés."
+      },
+      {
+        "q": "Combien de maîtres d'œuvre sont consultés sur un projet ?",
+        "a": "Trois au plus. Vous savez combien vous êtes."
+      },
+      {
+        "q": "Faut-il être abonné à MOEpilote ?",
+        "a": "Non. L'abonnement VosMaîtresdŒuvre seul (39 € HT par mois) suffit pour recevoir les projets. MOEpilote l'inclut, et ajoute sur votre fiche les chiffres mesurés par l'appli, qui font la différence auprès du particulier."
+      },
+      {
+        "q": "Quelle différence avec CourtierTravaux.com ?",
+        "a": "CourtierTravaux.com est un service de courtage : un courtier accompagne le particulier et consulte des entreprises pour des travaux sans conception. VosMaîtresdŒuvre met le particulier directement en relation avec un maître d'œuvre, qui conçoit et dirige le projet."
+      }
+    ]
+  },
+  "product": {
+    "who": "Maîtres d'œuvre · architectes",
+    "title": "Le comparateur pour choisir son maître d'œuvre.",
+    "sub": "Maison neuve, extension, rénovation lourde : le particulier décrit son projet, son budget est vérifié contre les prix de sa ville, et il compare jusqu'à trois maîtres d'œuvre de son secteur. Il demande un rendez-vous ; honoraires et proposition viennent après la rencontre, comme vous le faites déjà.",
+    "status": "Service",
+    "color": "var(--vmo)",
+    "feats": [
+      {
+        "t": "Un dossier, pas un formulaire.",
+        "p": "Type de projet, ville, surface, budget confronté aux prix locaux, permis à prévoir ou non. Si le budget ne tient pas, on le dit au particulier avant de vous déranger."
+      },
+      {
+        "t": "Trois cabinets maximum, rendez-vous d’abord.",
+        "p": "Jamais cinq ou dix. Vous savez combien vous êtes, vous répondez en deux minutes par un créneau de rendez-vous. Pas d'honoraires ni de proposition à envoyer avant d'avoir rencontré le client."
+      },
+      {
+        "t": "Vos chiffres parlent pour vous.",
+        "p": "Avec l'abonnement, vous recevez les projets de votre zone. Si vous utilisez MOEpilote, votre fiche affiche en plus ce que l'appli mesure : délai de réponse, chantiers livrés à la date, avis recueillis à la réception. Mesurés, donc crédibles."
+      }
+    ],
+    "client": {
+      "label": "Ce que voit le particulier",
+      "text": "Trois fiches au plus, les mêmes critères pour chacune : assurances vérifiées, réalisations, spécialités, zone, et les chiffres mesurés par MOEpilote. Il choisit après vous avoir rencontrés ; le cabinet retenu lui ouvre son espace client, jusqu'à la MAP et au chantier."
+    },
+    "price": {
+      "big": "39 €",
+      "small": "HT / mois — ou inclus dans MOEpilote",
+      "p": "La fiche est gratuite pour tous les maîtres d'œuvre. Pour recevoir les projets de votre zone : 39 € HT par mois, sans engagement. Inclus dans MOEpilote. Nous ne vendons pas de leads à l'unité.",
+      "items": [
+        "Fiche gratuite : assurances vérifiées, spécialités, zone, réalisations",
+        "Abonnement VosMaîtresdŒuvre 39 € HT / mois : les projets de votre zone, jusqu’à 4 par mois, sans engagement",
+        "Abonnés MOEpilote (79 €) : inclus, avec les chiffres mesurés sur votre fiche",
+        "Gratuit pour le particulier"
+      ]
+    },
+    "cta": {
+      "label": "Référencer mon cabinet",
+      "href": "/vosmaitresdoeuvre/#ref"
+    }
+  }
+}

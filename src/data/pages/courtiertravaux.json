@@ -1,0 +1,69 @@
+{
+  "title": "CourtierTravaux.com — Courtier en travaux pour particuliers",
+  "description": "Un courtier indépendant cadre votre projet, consulte trois entreprises vérifiées, compare les devis, négocie et suit. Commission annoncée. Artisans : être consulté est gratuit.",
+  "path": "/courtiertravaux/",
+  "faq": {
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "q": "Qu'est-ce qu'un courtier en travaux ?",
+        "a": "Un intermédiaire indépendant qui représente le particulier face aux entreprises : il définit le besoin, consulte, compare les devis ligne à ligne, négocie et suit la réalisation. À la différence d'un maître d'œuvre, il ne conçoit pas et ne dirige pas les travaux ; à la différence d'une plateforme de leads, il ne vend pas de contacts."
+      },
+      {
+        "q": "Comment le courtier est-il payé ?",
+        "a": "Par des honoraires annoncés au particulier dès le cadrage, en pourcentage du montant des travaux, et une commission annoncée à l'entreprise avant qu'elle chiffre, due uniquement si le chantier est signé. Pas de remise cachée, pas de commission dissimulée dans le devis."
+      },
+      {
+        "q": "Est-ce que vous vendez des leads aux artisans ?",
+        "a": "Non. Être consulté ne coûte rien. L'artisan reçoit un dossier cadré, répond par un créneau de visite, et chiffre après. La commission n'existe que si le chantier se signe."
+      },
+      {
+        "q": "Combien d'entreprises sont consultées sur un projet ?",
+        "a": "Trois au plus. Chacune sait combien elles sont, et le particulier reçoit une comparaison ligne à ligne."
+      },
+      {
+        "q": "Quels travaux prend en charge CourtierTravaux.com ?",
+        "a": "Rénovation, extension, salle de bain, cuisine, toiture, isolation, chauffage : les projets de particuliers de 10 000 à 300 000 € environ, en Bretagne d'abord. Pour une maison neuve ou une rénovation lourde avec conception, le particulier est orienté vers un maître d'œuvre via VosMaîtresdŒuvre."
+      }
+    ]
+  },
+  "product": {
+    "who": "Courtage de travaux · particuliers et artisans",
+    "title": "Un courtier en travaux. Un vrai.",
+    "sub": "Le particulier confie son projet à un courtier indépendant : il cadre le besoin et le budget, consulte trois entreprises vérifiées au plus, compare les devis ligne à ligne, négocie, et suit le chantier jusqu'à la réception. Payé par une commission annoncée dès le départ — pas par des remises cachées.",
+    "status": "Service",
+    "color": "var(--esti)",
+    "feats": [
+      {
+        "t": "Le projet est cadré.",
+        "p": "Visite ou visio, budget confronté aux prix de la ville, surface, délai, permis si nécessaire. Le particulier sait ce que son projet vaut avant de consulter, et l'entreprise reçoit un dossier, pas un appel."
+      },
+      {
+        "t": "Trois entreprises consultées, pas dix.",
+        "p": "Assurances décennales lues et valides pour les travaux, SIREN actif, avis recueillis à la réception. Trois au plus, qui savent qu'elles sont trois."
+      },
+      {
+        "t": "Les devis comparés, négociés, suivis.",
+        "p": "Comparaison ligne à ligne, questions posées aux entreprises, négociation, puis suivi dans MonChantier : étapes, photos, paiements liés à l'avancement, réception."
+      }
+    ],
+    "client": {
+      "label": "Pour vous, artisan",
+      "text": "Vous recevez un dossier cadré : besoin, budget vérifié, délai, plans s'il y en a. Vous répondez par un créneau de visite et vous chiffrez après, comme d'habitude. La commission du courtier est connue avant que vous chiffriez, et n'est due que sur chantier signé. Être consulté ne coûte rien. Si vous utilisez Kōv, les projets de votre secteur arrivent dans votre appli, jusqu'à quatre par mois."
+    },
+    "price": {
+      "big": "Annoncé avant",
+      "small": "jamais caché",
+      "p": "Nous ne vendons pas de leads. Un courtier est payé pour un chantier signé, et le particulier sait qui paie quoi.",
+      "items": [
+        "Particulier : honoraires de courtage annoncés au cadrage, en pourcentage du montant des travaux",
+        "Artisan : commission annoncée avant le chiffrage, due uniquement sur chantier signé",
+        "Être consulté ne coûte rien"
+      ]
+    },
+    "cta": {
+      "label": "Être consulté sur les chantiers de mon secteur",
+      "href": "/courtiertravaux/#ref"
+    }
+  }
+}
