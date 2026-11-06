@@ -1,3 +1,24 @@
+# kaertgroupe.com — tout le monde est bienvenu, les robots d'IA compris.
 User-agent: *
 Allow: /
+Disallow: /audit/
+
+# Robots des IA génératives : accès explicitement autorisé (GEO)
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+User-agent: Bingbot
+Allow: /
+
 Sitemap: https://kaertgroupe.com/sitemap.xml

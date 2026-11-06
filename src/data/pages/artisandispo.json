@@ -1,0 +1,76 @@
+{
+  "title": "ArtisanDispo — Un artisan disponible pour votre urgence",
+  "description": "Fuite, panne, serrure : un artisan vérifié, disponible aujourd'hui pour votre urgence, à prix annoncé avant. Pour l'artisan : ses trous de planning remplis.",
+  "path": "/artisandispo/",
+  "product": {
+    "who": "Particuliers en urgence · artisans",
+    "title": "Une urgence chez vous, un artisan disponible aujourd'hui.",
+    "sub": "ArtisanDispo met en relation votre urgence — fuite, panne de chauffage, serrure, vitre, tuile — avec un artisan vérifié, disponible dans la journée parce qu'il a un trou dans son planning. Prix annoncé avant qu'il parte. Pour l'artisan : une annulation ne coûte plus une journée.",
+    "status": "En préparation",
+    "color": "var(--urgence, #F97316)",
+    "feats": [
+      {
+        "t": "Côté particulier : l'urgence, avec photo.",
+        "p": "Vous décrivez en trente secondes : quoi, où, une photo. ArtisanDispo cherche les artisans vérifiés du métier qui ont un créneau libre dans votre zone, aujourd'hui ou demain matin, et vous propose un nom, une heure, un prix."
+      },
+      {
+        "t": "Côté artisan : le créneau libre, en un tap.",
+        "p": "Une annulation, un chantier qui finit plus tôt, un jeudi après-midi vide : vous déclarez le créneau, votre métier et votre rayon. Quand une urgence correspond, vous acceptez ou non. Rien ne vous est imposé."
+      },
+      {
+        "t": "Le prix, avant de partir.",
+        "p": "Déplacement et taux horaire affichés par l'artisan à l'avance, acceptés par le particulier avant la mise en relation. Pas de devis gonflé sur le pas de la porte, pas de « ça dépend ». Paiement à la fin, intervention tracée."
+      }
+    ],
+    "client": {
+      "label": "Pourquoi « vérifié » change tout",
+      "text": "Le dépannage d'urgence est le secteur où les particuliers se font le plus avoir : prix multipliés par cinq, entreprises sans assurance, réparations bâclées. Sur ArtisanDispo, chaque artisan a un SIREN actif, une décennale lue et valide pour ses travaux, et des avis recueillis après chaque intervention. C'est la seule façon de faire de l'urgence sans piège."
+    },
+    "price": {
+      "big": "Gratuit",
+      "small": "pour le particulier",
+      "p": "Pour l'artisan : déclarer ses créneaux est gratuit. Une commission annoncée, uniquement sur intervention réalisée. Ouverture en Ille-et-Vilaine d'abord, sur trois métiers d'urgence.",
+      "items": [
+        "Plomberie, chauffage, serrurerie et vitrerie pour commencer",
+        "Ille-et-Vilaine, puis la Bretagne",
+        "Artisans vérifiés : SIREN, décennale, avis"
+      ]
+    },
+    "cta": {
+      "label": "Être prévenu à l'ouverture",
+      "href": "/artisandispo/#alerte"
+    }
+  },
+  "app": {
+    "name": "ArtisanDispo",
+    "url": "/artisandispo/",
+    "audience": "Particuliers en urgence et artisans du bâtiment",
+    "status": "En préparation, ouverture Ille-et-Vilaine",
+    "description": "Mise en relation entre une urgence de particulier (fuite, panne, serrure) et un artisan vérifié disposant d'un créneau libre le jour même, à prix annoncé."
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "q": "Qu'est-ce qu'ArtisanDispo ?",
+        "a": "Un service qui met en relation une urgence de particulier (fuite d'eau, panne de chauffage, serrure bloquée, vitre cassée, tuile envolée) avec un artisan vérifié qui a un créneau libre dans la journée, à prix annoncé avant le déplacement. Édité par Kaërt Groupe."
+      },
+      {
+        "q": "Comment le prix est-il fixé ?",
+        "a": "Chaque artisan affiche à l'avance son forfait déplacement et son taux horaire. Le particulier les voit et les accepte avant la mise en relation. Le prix final dépend du temps passé et des pièces, mais jamais d'une négociation sur le pas de la porte."
+      },
+      {
+        "q": "Comment les artisans sont-ils vérifiés ?",
+        "a": "SIREN actif, attestation d'assurance décennale lue et valide pour le métier déclaré, avis recueillis après chaque intervention. Un artisan dont l'attestation expire est suspendu jusqu'à régularisation."
+      },
+      {
+        "q": "Combien ça coûte à l'artisan ?",
+        "a": "Déclarer ses créneaux libres est gratuit. Une commission, annoncée à l'inscription, n'est due que sur une intervention réellement réalisée. Rien si vous refusez ou si l'urgence ne se présente pas."
+      },
+      {
+        "q": "Quand et où ArtisanDispo ouvre-t-il ?",
+        "a": "En Ille-et-Vilaine d'abord, sur plomberie, chauffage, serrurerie et vitrerie, dès qu'il y a assez d'artisans vérifiés pour répondre en moins d'une heure. Laissez votre e-mail pour être prévenu."
+      }
+    ]
+  }
+}

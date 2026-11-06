@@ -9,6 +9,7 @@
 - [ValoTravaux](https://kaertgroupe.com/valotravaux/) : pour agents immobiliers — chiffrage des travaux en visite, sortie de passoire thermique (3 scénarios, aides, mensualité), valeur après travaux. Outil gratuit dès le 19/11/2026.
 - [CourtierTravaux.com](https://kaertgroupe.com/courtiertravaux/) : courtage de travaux pour les particuliers — un courtier indépendant cadre le projet, consulte au plus trois entreprises vérifiées, compare les devis, négocie et suit ; commission annoncée, due sur chantier signé.
 - [VosMaîtresdŒuvre](https://kaertgroupe.com/vosmaitresdoeuvre/) : comparateur de maîtres d'œuvre pour les particuliers — trois cabinets au plus, rendez-vous avant honoraires ; fiche gratuite pour le MOE, projets de sa zone pour 39 € HT/mois (inclus dans MOEpilote).
+- [ArtisanDispo](https://kaertgroupe.com/artisandispo/) : mise en relation entre une urgence de particulier (fuite, panne, serrure) et un artisan vérifié qui a un créneau libre le jour même, prix annoncé avant. En préparation, Ille-et-Vilaine d'abord.
 - [Conformité Travaux](https://kaertgroupe.com/conformite-travaux/) : pour notaires et vendeurs — pièces travaux exigées pour l'acte, manquantes, régularisation. 2027.
 
 ## Pages utiles

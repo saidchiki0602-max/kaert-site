@@ -152,5 +152,17 @@
     ],
     "intention": "Conversion. Pas de trafic organique attendu.",
     "pourquoi": "Titre orienté action (« 15 minutes sur votre cas réel »), pas de mot-clé : la page reçoit, elle ne cherche pas à être trouvée."
+  },
+  "artisandispo": {
+    "requete": "artisan disponible urgence",
+    "variantes": [
+      "plombier urgence",
+      "dépannage chauffage urgent",
+      "serrurier urgence prix",
+      "artisan disponible aujourd'hui",
+      "dépannage sans arnaque"
+    ],
+    "intention": "Un particulier en panique qui cherche quelqu'un tout de suite, et a peur de se faire avoir. Requêtes locales et très concurrentielles (annuaires, plateformes de dépannage).",
+    "pourquoi": "On ne gagne pas « plombier urgence » en national ; on prend l'angle « vérifié » et « prix annoncé avant », et la zone (Ille-et-Vilaine) — le site artisandispo.com fera le local, cette page présente le service."
   }
 }
