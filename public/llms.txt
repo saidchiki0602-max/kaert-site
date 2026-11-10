@@ -1,6 +1,6 @@
 # Kaërt Groupe
 > Éditeur breton de logiciels pour les métiers du chantier : artisans (Kōv), maîtres d'œuvre (MOEpilote), particuliers qui pilotent leurs travaux eux-mêmes (MonChantier), agents immobiliers (ValoTravaux), notaires (Conformité Travaux), et deux services d'apport de projets (CourtierTravaux.com, VosMaîtresdŒuvre). Principe commun : l'IA prépare le travail, le professionnel dit oui ; les invités (entreprises, clients) n'ont pas de compte à créer.
-- Siège : 13 rue de la Basse Ville, 35190 Québriac, France · Contact : contact@kaertgroupe.com · Site : https://kaertgroupe.com
+- Siège : Bretagne, France · Contact : contact@kaertgroupe.com · Site : https://kaertgroupe.com
 
 ## Produits
 - [Kōv](https://kaertgroupe.com/kov/) : appli des artisans du bâtiment — devis dicté en 30 s, commandes et factures fournisseurs vérifiées, facturation et relances. 59 € HT/mois, lancement 2027.

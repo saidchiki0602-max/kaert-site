@@ -1,13 +1,13 @@
 {
   "title": "À propos de Kaërt Groupe — Dix ans de chantier avant le code",
-  "description": "Kaërt Groupe est né à Québriac de dix ans de maîtrise d'œuvre : des logiciels qui règlent une douleur, sans formation, testés sur de vrais chantiers bretons.",
+  "description": "Kaërt Groupe est né en Bretagne de dix ans de maîtrise d'œuvre : des logiciels qui règlent une douleur, sans formation, testés sur de vrais chantiers bretons.",
   "path": "/a-propos/",
   "faq": {
     "title": "Questions fréquentes",
     "items": [
       {
         "q": "Qui est derrière Kaërt ?",
-        "a": "Kaërt Groupe est une SAS créée en 2024 à Québriac (Ille-et-Vilaine), fondée par un maître d'œuvre ayant dix ans de conduite d'opération et de pilotage de chantiers. L'équipe réunit des gens du bâtiment et des développeurs."
+        "a": "Kaërt Groupe est une SAS créée en 2024 en Bretagne, fondée par un maître d'œuvre ayant dix ans de conduite d'opération et de pilotage de chantiers. L'équipe réunit des gens du bâtiment et des développeurs."
       },
       {
         "q": "Quel est le lien entre Kaërt et Webenvue ?",

@@ -137,12 +137,12 @@
   "a-propos": {
     "requete": "Kaërt Groupe",
     "variantes": [
-      "Kaërt Québriac",
+      "Kaërt Bretagne",
       "Kaërt Groupe avis",
       "qui est Kaërt"
     ],
     "intention": "Vérification avant de répondre à une démo, presse. Requête de marque.",
-    "pourquoi": "La page répond en une phrase à « qu'est-ce que Kaërt » (ce que les IA citent), donne les faits (SAS, 2024, Québriac, fondateur) et les dates. Elle porte le schema Organization avec l'adresse pour le référencement local."
+    "pourquoi": "La page répond en une phrase à « qu'est-ce que Kaërt » (ce que les IA citent), donne les faits (SAS, 2024, Bretagne, fondateur) et les dates. Elle porte le schema Organization avec l'adresse pour le référencement local."
   },
   "demo": {
     "requete": "démo MOEpilote",
