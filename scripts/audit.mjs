@@ -34,6 +34,9 @@ for (const f of files) {
   const snippet = mainTxt.slice(0, 180).trim();
   const uiNoise = ['Copier', 'Copié', 'Fermer', 'Menu', 'Ouvrir'].filter(w => new RegExp('\\b' + w + '\\b').test(mainTxt));
   const hasAddr = /\b\d{1,3}\s+(rue|avenue|boulevard|bd|place|chemin|impasse|all\u00e9e)\b|\b\d{5}\s+[A-Z\u00c9\u00c8]/i.test(mainTxt);
+  // densité : mots propres (vocabulaire porteur, hors interface) — une page mince ne s'indexe pas
+  const own = new Set((norm(mainTxt).match(/[a-z']{4,}/g) || []).filter(w => !STOP.has(w)).map(stem));
+  const ownN = own.size;
   // pertinence
   const s = seo[p]; let kw = null;
   if (s) {
@@ -46,7 +49,7 @@ for (const f of files) {
     kw.score = score;
     if (score < 3 && !legal && p !== 'demo' && p !== 'guides') warns.push(`${p}: requête « ${q} » peu présente (score ${score}/5 : titre ${kw.title ? 'oui' : 'non'}, h1 ${kw.h1 ? 'oui' : 'non'}, description ${kw.desc ? 'oui' : 'non'}, corps ×${kw.body})`);
   } else if (!legal) warns.push(`${p}: pas d'entrée dans seo.json (requête visée non définie)`);
-  pages.push({ page: p, title, desc, h1s, h2s, canonical, lds, words, faqN, broken, imgsNoAlt, kw, legal, snippet, uiNoise, hasAddr });
+  pages.push({ page: p, title, desc, h1s, h2s, canonical, lds, words, faqN, broken, imgsNoAlt, kw, legal, snippet, uiNoise, hasAddr, ownN });
   if (!title) errs.push(`${p}: pas de <title>`); else if (title.length > 65) warns.push(`${p}: title ${title.length} caractères (> 60)`);
   if (!desc) errs.push(`${p}: pas de description`); else if (desc.length > 160) warns.push(`${p}: description ${desc.length} caractères (> 155)`);
   if (h1s.length !== 1 && p !== 'demo') (legal ? warns : errs).push(`${p}: ${h1s.length} <h1> (il en faut un)`);
@@ -54,6 +57,7 @@ for (const f of files) {
   if (lds.includes('INVALID')) errs.push(`${p}: JSON-LD invalide`);
   if (!lds.includes('FAQPage') && !legal) warns.push(`${p}: pas de FAQ balisée (GEO)`);
   if (words < 300 && !legal) warns.push(`${p}: ${words} mots, page mince`);
+  if (!legal && p !== '404' && p !== 'demo' && ownN < 200) warns.push(`${p}: ${ownN} mots propres (< 200) — Google risque de l'explorer sans l'indexer`);
   if (broken.length) errs.push(`${p}: liens cassés → ${[...new Set(broken)].join(', ')}`);
   if (imgsNoAlt) warns.push(`${p}: ${imgsNoAlt} image(s) sans alt`);
   if (uiNoise.length) warns.push(`${p}: texte d'interface lisible par Google (peut finir dans l'extrait) → ${uiNoise.join(', ')}`);
@@ -63,7 +67,7 @@ for (const f of files) {
 }
 // console
 console.log(`\nAudit SEO/GEO — ${files.length} pages\n`);
-console.table(pages.map(({ page, title, desc, h1s, lds, words, faqN, kw }) => ({ page, titre: title.length, desc: desc.length, h1: h1s.length, 'JSON-LD': lds.join('+'), mots: words, FAQ: faqN, requête: kw ? `${kw.score}/5` : '—' })));
+console.table(pages.map(({ page, title, desc, h1s, lds, words, faqN, kw, ownN }) => ({ page, titre: title.length, desc: desc.length, h1: h1s.length, 'JSON-LD': lds.join('+'), mots: words, propres: ownN, FAQ: faqN, requête: kw ? `${kw.score}/5` : '—' })));
 if (errs.length) { console.log('\nERREURS (bloquantes) :'); errs.forEach(e => console.log(' ✗ ' + e)); }
 if (warns.length) { console.log('\nÀ AMÉLIORER :'); warns.forEach(w => console.log(' • ' + w)); }
 if (!errs.length && !warns.length) console.log('Rien à signaler.');
@@ -72,7 +76,7 @@ const ok = (b) => b ? '<span class="y">oui</span>' : '<span class="n">non</span>
 const now = new Date().toLocaleString('fr-FR', { timeZone: 'Europe/Paris', dateStyle: 'full', timeStyle: 'short' });
 const rows = pages.filter(x => !x.legal && x.page !== '404').map(x => `
 <section class="pg" id="${x.page}">
-  <h2>/${x.page === 'index' ? '' : x.page + '/'} <small>${x.words} mots · ${x.faqN} questions FAQ · ${x.lds.join(' + ')}</small></h2>
+  <h2>/${x.page === 'index' ? '' : x.page + '/'} <small>${x.words} mots · ${x.ownN} propres · ${x.faqN} questions FAQ · ${x.lds.join(' + ')}</small></h2>
   <table class="t"><tr><th>Titre Google</th><td>${esc(x.title)} <em>(${x.title.length}/60)</em></td></tr>
   <tr><th>Description</th><td>${esc(x.desc)} <em>(${x.desc.length}/155)</em></td></tr>
   <tr><th>Extrait probable</th><td class="sn">${esc(x.snippet)}…</td></tr>
