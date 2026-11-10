@@ -29,6 +29,11 @@ for (const f of files) {
   const broken = links.filter(u => { const t = u.replace(/^\//, '').replace(/\/$/, ''); return ![t, t + '.html', t + '/index.html', (t || 'index') + '.html'].some(c => fs.existsSync(path.join(dir, c))); });
   const imgsNoAlt = (h.match(/<img(?![^>]*alt=)[^>]*>/g) || []).length;
   const faqN = (h.match(/<details>/g) || []).length;
+  // extrait : ce que Google peut composer, et le bruit d'interface qu'il peut y mettre
+  const mainTxt = strip(h.replace(/<nav[\s\S]*?<\/nav>|<footer[\s\S]*?<\/footer>/g, ''));
+  const snippet = mainTxt.slice(0, 180).trim();
+  const uiNoise = ['Copier', 'Copié', 'Fermer', 'Menu', 'Ouvrir'].filter(w => new RegExp('\\b' + w + '\\b').test(mainTxt));
+  const hasAddr = /\b\d{1,3}\s+(rue|avenue|boulevard|bd|place|chemin|impasse|all\u00e9e)\b|\b\d{5}\s+[A-Z\u00c9\u00c8]/i.test(mainTxt);
   // pertinence
   const s = seo[p]; let kw = null;
   if (s) {
@@ -41,7 +46,7 @@ for (const f of files) {
     kw.score = score;
     if (score < 3 && !legal && p !== 'demo' && p !== 'guides') warns.push(`${p}: requête « ${q} » peu présente (score ${score}/5 : titre ${kw.title ? 'oui' : 'non'}, h1 ${kw.h1 ? 'oui' : 'non'}, description ${kw.desc ? 'oui' : 'non'}, corps ×${kw.body})`);
   } else if (!legal) warns.push(`${p}: pas d'entrée dans seo.json (requête visée non définie)`);
-  pages.push({ page: p, title, desc, h1s, h2s, canonical, lds, words, faqN, broken, imgsNoAlt, kw, legal });
+  pages.push({ page: p, title, desc, h1s, h2s, canonical, lds, words, faqN, broken, imgsNoAlt, kw, legal, snippet, uiNoise, hasAddr });
   if (!title) errs.push(`${p}: pas de <title>`); else if (title.length > 65) warns.push(`${p}: title ${title.length} caractères (> 60)`);
   if (!desc) errs.push(`${p}: pas de description`); else if (desc.length > 160) warns.push(`${p}: description ${desc.length} caractères (> 155)`);
   if (h1s.length !== 1 && p !== 'demo') (legal ? warns : errs).push(`${p}: ${h1s.length} <h1> (il en faut un)`);
@@ -51,6 +56,8 @@ for (const f of files) {
   if (words < 300 && !legal) warns.push(`${p}: ${words} mots, page mince`);
   if (broken.length) errs.push(`${p}: liens cassés → ${[...new Set(broken)].join(', ')}`);
   if (imgsNoAlt) warns.push(`${p}: ${imgsNoAlt} image(s) sans alt`);
+  if (uiNoise.length) warns.push(`${p}: texte d'interface lisible par Google (peut finir dans l'extrait) → ${uiNoise.join(', ')}`);
+  if (hasAddr && !legal) warns.push(`${p}: adresse postale dans le texte de la page (Google peut l'afficher dans l'extrait)`);
   if (!legal && p !== '404' && sitemap && !sitemap.includes(`/${p === 'index' ? '' : p + '/'}<`)) warns.push(`${p}: absente du sitemap`);
   if (!legal && p !== '404' && p !== 'index' && llms && !llms.includes(`/${p}/`)) warns.push(`${p}: absente de llms.txt`);
 }
@@ -68,6 +75,7 @@ const rows = pages.filter(x => !x.legal && x.page !== '404').map(x => `
   <h2>/${x.page === 'index' ? '' : x.page + '/'} <small>${x.words} mots · ${x.faqN} questions FAQ · ${x.lds.join(' + ')}</small></h2>
   <table class="t"><tr><th>Titre Google</th><td>${esc(x.title)} <em>(${x.title.length}/60)</em></td></tr>
   <tr><th>Description</th><td>${esc(x.desc)} <em>(${x.desc.length}/155)</em></td></tr>
+  <tr><th>Extrait probable</th><td class="sn">${esc(x.snippet)}…</td></tr>
   <tr><th>H1</th><td>${x.h1s.map(esc).join('<br>') || '<span class="n">aucun</span>'} ${x.h1s.length === 1 ? '' : '<span class="n">(' + x.h1s.length + ')</span>'}</td></tr>
   <tr><th>H2</th><td>${x.h2s.map(esc).join(' · ')}</td></tr>
   <tr><th>Technique</th><td>canonical ${ok(x.canonical)} · liens cassés ${x.broken.length ? '<span class="n">' + x.broken.length + '</span>' : '<span class="y">0</span>'} · images sans alt ${x.imgsNoAlt ? '<span class="n">' + x.imgsNoAlt + '</span>' : '<span class="y">0</span>'}</td></tr></table>
