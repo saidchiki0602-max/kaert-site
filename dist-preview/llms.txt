@@ -1,11 +1,11 @@
 # Kaërt Groupe
-> Éditeur breton de logiciels pour les métiers du chantier : artisans (Kōv), maîtres d'œuvre (MOEpilote), particuliers qui pilotent leurs travaux eux-mêmes (MonChantier), agents immobiliers (ValoTravaux), notaires (Conformité Travaux), et deux services d'apport de projets (CourtierTravaux.com, VosMaîtresdŒuvre). Principe commun : l'IA prépare le travail, le professionnel dit oui ; les invités (entreprises, clients) n'ont pas de compte à créer.
-- Siège : 13 rue de la Basse Ville, 35190 Québriac, France · Contact : contact@kaertgroupe.com · Site : https://kaertgroupe.com
+> Éditeur breton de logiciels pour les métiers du chantier : artisans (Kōv), maîtres d'œuvre (MOEpilote), particuliers qui pilotent leurs travaux eux-mêmes (Travaux Sans Piège), agents immobiliers (ValoTravaux), notaires (Conformité Travaux), et deux services d'apport de projets (CourtierTravaux.com, VosMaîtresdŒuvre). Principe commun : l'IA prépare le travail, le professionnel dit oui ; les invités (entreprises, clients) n'ont pas de compte à créer.
+- Siège : Bretagne, France · Contact : contact@kaertgroupe.com · Site : https://kaertgroupe.com
 
 ## Produits
 - [Kōv](https://kaertgroupe.com/kov/) : appli des artisans du bâtiment — devis dicté en 30 s, commandes et factures fournisseurs vérifiées, facturation et relances. 59 € HT/mois, lancement 2027.
 - [MOEpilote](https://kaertgroupe.com/moepilote/) : appli des maîtres d'œuvre — compte rendu de chantier dicté en 5 min et diffusé avec accusés de lecture, contrôle des décennales lot par lot, MAP signée par le client, situations visées. 79 € HT/mois, démo disponible, ouverture progressive.
-- [MonChantier](https://kaertgroupe.com/monchantier/) : appli du particulier qui pilote son chantier lui-même — artisans vérifiés, devis lus, paiements liés aux étapes. Prototype, 2027.
+- [Travaux Sans Piège](https://kaertgroupe.com/travaux-sans-piege/) : appli du particulier qui pilote son chantier lui-même — artisans vérifiés, devis lus, paiements liés aux étapes. Prototype, 2027.
 - [ValoTravaux](https://kaertgroupe.com/valotravaux/) : pour agents immobiliers — chiffrage des travaux en visite, sortie de passoire thermique (3 scénarios, aides, mensualité), valeur après travaux. Outil gratuit dès le 19/11/2026.
 - [CourtierTravaux.com](https://kaertgroupe.com/courtiertravaux/) : courtage de travaux pour les particuliers — un courtier indépendant cadre le projet, consulte au plus trois entreprises vérifiées, compare les devis, négocie et suit ; commission annoncée, due sur chantier signé.
 - [VosMaîtresdŒuvre](https://kaertgroupe.com/vosmaitresdoeuvre/) : comparateur de maîtres d'œuvre pour les particuliers — trois cabinets au plus, rendez-vous avant honoraires ; fiche gratuite pour le MOE, projets de sa zone pour 39 € HT/mois (inclus dans MOEpilote).

@@ -35,9 +35,10 @@
     "intention": "Un MOE qui cherche un outil, ou qui cherche d'abord une réponse pratique (modèle de CR, vérification décennale) — c'est par ces questions qu'on l'attrape.",
     "pourquoi": "« Logiciel maître d'œuvre » est peu concurrentiel comparé au marché artisan : le titre le prend de front. Les requêtes « compte rendu de chantier » et « attestation décennale » sont plus cherchées que le logiciel lui-même : elles sont portées par les blocs, la FAQ, et surtout les guides 1, 2 et 3 qui renvoient ici."
   },
-  "monchantier": {
+  "travaux-sans-piege": {
     "requete": "suivi de travaux particulier",
     "variantes": [
+      "Travaux Sans Piège",
       "application suivi travaux particulier",
       "suivre ses travaux soi-même",
       "gérer son chantier sans maître d'œuvre",
@@ -46,7 +47,7 @@
       "vérifier un artisan"
     ],
     "intention": "Un particulier qui rénove sans MOE et a peur de se faire avoir. Intention mixte : information puis outil.",
-    "pourquoi": "Les requêtes « application suivi travaux » sont dominées par des acteurs généralistes ; on prend l'angle « sans se faire avoir » et « payer à l'étape », qui sont les vraies peurs. Le titre dit « pilotez vos travaux vous-même » : c'est la formulation du particulier, pas celle du logiciel."
+    "pourquoi": "Les requêtes « application suivi travaux » sont dominées par des acteurs généralistes ; on prend l'angle « sans se faire avoir » et « payer à l'étape », qui sont les vraies peurs — et qui sont désormais dans le nom même du produit. Le titre dit « pilotez vos travaux vous-même » : c'est la formulation du particulier, pas celle du logiciel. La marque « Travaux Sans Piège » est une requête de marque à construire (l'ancien nom MonChantier était déposé par Point.P)."
   },
   "valotravaux": {
     "requete": "sortie de passoire thermique coût",

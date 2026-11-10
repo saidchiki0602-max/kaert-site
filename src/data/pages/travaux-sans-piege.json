@@ -1,16 +1,16 @@
 {
-  "title": "MonChantier — Le suivi de travaux du particulier, en clair",
+  "title": "Travaux Sans Piège — le suivi de travaux du particulier",
   "description": "Suivi de travaux pour le particulier qui pilote son chantier lui-même : artisans vérifiés, devis lus, chantier en clair, paiements liés aux étapes.",
-  "path": "/monchantier/",
+  "path": "/travaux-sans-piege/",
   "faq": {
     "title": "Questions fréquentes",
     "items": [
       {
-        "q": "À qui s'adresse MonChantier ?",
+        "q": "À qui s'adresse Travaux Sans Piège ?",
         "a": "Au particulier qui fait ses travaux sans maître d'œuvre et coordonne lui-même plusieurs artisans : rénovation d'une maison, salle de bain et cuisine, extension légère. Si vous avez un maître d'œuvre MOEpilote ou un artisan Kōv, vous avez déjà votre espace client dans leur application."
       },
       {
-        "q": "Comment MonChantier vérifie-t-il un artisan ?",
+        "q": "Comment Travaux Sans Piège vérifie-t-il un artisan ?",
         "a": "SIREN actif, attestation d'assurance décennale lue et valide pour les travaux concernés, avis recueillis à la réception des chantiers précédents. Si vous le souhaitez, un courtier CourtierTravaux.com consulte les entreprises et compare les devis pour vous."
       },
       {
@@ -18,8 +18,12 @@
         "a": "Chaque lot est découpé en étapes avec un montant. Vous payez une étape quand elle est terminée et vérifiée (photos conformes au devis), pas quand l'artisan le demande. Acompte, situations et solde sont prévus dès le départ."
       },
       {
-        "q": "MonChantier est-il disponible ?",
+        "q": "Travaux Sans Piège est-il disponible ?",
         "a": "C'est un prototype testé avec des particuliers en Bretagne. Lancement en 2027. Laissez vos coordonnées pour être prévenu à l'ouverture."
+      },
+      {
+        "q": "Qui est Fernand ?",
+        "a": "Fernand est la voix de l'application : l'ancien du bâtiment qui vous explique, en français courant, ce qui se passe sur votre chantier, ce qu'il faut vérifier avant de payer et la question à poser à l'artisan. C'est lui qui prépare les messages ; vous décidez de les envoyer."
       }
     ]
   },
@@ -44,7 +48,7 @@
       }
     ],
     "oui": {
-      "intro": "Vous n'êtes pas du métier, l'appli l'est. Elle prépare la relance de l'artisan en retard, la question à poser sur un devis, le paiement d'étape à débloquer. Vous décidez, en un clic.",
+      "intro": "Vous n'êtes pas du métier, Fernand l'est. Il prépare la relance de l'artisan en retard, la question à poser sur un devis, le paiement d'étape à débloquer. Vous décidez, en un clic.",
       "items": [
         {
           "b": "Relancer le plombier — étape « alimentation » en retard",
@@ -62,7 +66,7 @@
     },
     "client": {
       "label": "Et si vous avez un artisan Kōv ou un maître d’œuvre MOEpilote ?",
-      "text": "Vous n'avez pas besoin de MonChantier : leur appli vous ouvre déjà votre espace client, avec le même suivi, les mêmes photos et les mêmes paiements à l'étape. MonChantier est pour ceux qui n'ont ni l'un ni l'autre et font le chantier eux-mêmes."
+      "text": "Vous n'avez pas besoin de Travaux Sans Piège : leur appli vous ouvre déjà votre espace client, avec le même suivi, les mêmes photos et les mêmes paiements à l'étape. Travaux Sans Piège est pour ceux qui n'ont ni l'un ni l'autre et font le chantier eux-mêmes."
     },
     "price": {
       "big": "2027",
@@ -80,8 +84,8 @@
     }
   },
   "app": {
-    "name": "MonChantier",
-    "url": "/monchantier/",
+    "name": "Travaux Sans Piège",
+    "url": "/travaux-sans-piege/",
     "audience": "Particuliers qui pilotent leurs travaux eux-mêmes",
     "status": "Prototype, lancement 2027",
     "description": "Application pour le particulier qui pilote son chantier lui-même : artisans vérifiés, devis lus, chantier en clair lot par lot, paiements liés aux étapes, garanties conservées dix ans."

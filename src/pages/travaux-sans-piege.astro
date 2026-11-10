@@ -1,6 +1,6 @@
 ---
 import Page from '../layouts/Page.astro';
-import data from '../data/pages/monchantier.json';
+import data from '../data/pages/travaux-sans-piege.json';
 import Faq from '../components/Faq.astro';
 import AppLd from '../components/AppLd.astro';
 import Product from '../components/Product.astro';
@@ -8,7 +8,7 @@ import { L } from '../lib/links';
 ---
 <Page title={data.title} description={data.description} path={data.path}>
 <Product {...data.product}>
-  <svg slot="logo" viewBox="0 0 340 56" fill="none" aria-hidden="true"><path d="M6 30 22 16l16 14" stroke="var(--c)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 28v16h22V28" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="m17 36 3 3 6-7" stroke="var(--c)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><text x="50" y="44" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="36" fill="currentColor" letter-spacing="-1.5">Mon<tspan fill="var(--c)">Chantier</tspan></text></svg>
+  <svg slot="logo" viewBox="0 0 420 56" fill="none" aria-hidden="true"><path d="M6 30 22 16l16 14" stroke="var(--c)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 28v16h22V28" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="m17 36 3 3 6-7" stroke="var(--c)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><text x="50" y="44" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="34" fill="currentColor" letter-spacing="-1.5">Travaux <tspan fill="var(--c)">Sans Piège</tspan></text></svg>
 </Product>
 <section class="sec" style="border-top:2px solid var(--fg)"><div class="wrap">
   <h2>Vous préférez être accompagné ?</h2>
