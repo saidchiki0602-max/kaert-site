@@ -1,13 +1,13 @@
 {
-  "title": "Travaux Sans Piège — le suivi de travaux du particulier",
-  "description": "Suivi de travaux pour le particulier qui pilote son chantier lui-même : artisans vérifiés, devis lus, chantier en clair, paiements liés aux étapes.",
+  "title": "Travaux Sans Piège — application de suivi de travaux particulier",
+  "description": "L'application de suivi de travaux du particulier qui pilote son chantier lui-même : artisans vérifiés, devis lus, paiements liés aux étapes.",
   "path": "/travaux-sans-piege/",
   "faq": {
     "title": "Questions fréquentes",
     "items": [
       {
-        "q": "À qui s'adresse ce suivi de travaux pour particulier ?",
-        "a": "Au particulier qui fait ses travaux sans maître d'œuvre et coordonne lui-même plusieurs artisans : rénovation d'une maison, salle de bain et cuisine, extension légère. Si vous avez un maître d'œuvre MOEpilote ou un artisan Kōv, vous avez déjà votre espace client dans leur application."
+        "q": "À qui s'adresse cette application de suivi de travaux pour particulier ?",
+        "a": "Au particulier qui fait ses travaux sans maître d'œuvre et coordonne lui-même plusieurs artisans : rénovation d'une maison, salle de bain et cuisine, extension légère. Si vous avez un maître d'œuvre MOEpilote ou un artisan Kōv, vous avez déjà votre espace client dans leur application. Autrement dit : suivre ses travaux soi-même et gérer son chantier sans maître d'œuvre, sans y laisser toutes ses soirées."
       },
       {
         "q": "Comment Travaux Sans Piège vérifie-t-il un artisan ?",
@@ -33,8 +33,8 @@
   },
   "product": {
     "who": "Particuliers qui pilotent leurs travaux eux-mêmes",
-    "title": "Le suivi de travaux du particulier. Vos travaux, lot par lot, sans vous faire avoir.",
-    "sub": "L'appli de suivi de travaux du particulier qui pilote son chantier lui-même, sans maître d'œuvre : les artisans vérifiés, les devis lus, le chantier en clair, les paiements liés aux étapes.",
+    "title": "L'application de suivi de travaux du particulier. Vos travaux, lot par lot, sans vous faire avoir.",
+    "sub": "L'application de suivi de travaux du particulier qui pilote son chantier lui-même, sans maître d'œuvre : les artisans vérifiés, les devis lus, le chantier en clair, les paiements liés aux étapes.",
     "status": "Prototype",
     "color": "var(--mc)",
     "feats": [
@@ -92,6 +92,6 @@
     "url": "/travaux-sans-piege/",
     "audience": "Particuliers qui pilotent leurs travaux eux-mêmes",
     "status": "Prototype, lancement 2027",
-    "description": "Application pour le particulier qui pilote son chantier lui-même : artisans vérifiés, devis lus, chantier en clair lot par lot, paiements liés aux étapes, garanties conservées dix ans."
+    "description": "Application de suivi de travaux pour le particulier qui pilote son chantier lui-même : artisans vérifiés, devis lus, chantier en clair, paiements liés aux étapes."
   }
 }
