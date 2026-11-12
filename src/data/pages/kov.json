@@ -7,7 +7,7 @@
     "items": [
       {
         "q": "Qu'est-ce que Kōv ?",
-        "a": "Kōv est l'application des artisans du bâtiment éditée par Kaërt : le devis dicté sur le chantier et envoyé dans la journée, les bons de commande et factures fournisseurs comparés au devis, la facturation (acompte, situation, solde) et les relances automatiques. L'artisan valide chaque action en un tap."
+        "a": "Kōv est le logiciel de devis des artisans du bâtiment, édité par Kaërt : le devis dicté sur le chantier et envoyé dans la journée, les bons de commande et factures fournisseurs comparés au devis, la facturation (acompte, situation, solde) et les relances automatiques. L'artisan valide chaque action en un tap."
       },
       {
         "q": "Combien coûte Kōv ?",
@@ -33,7 +33,7 @@
   },
   "product": {
     "who": "Artisans · entreprises du bâtiment",
-    "title": "Redeviens artisan. On s'occupe du reste.",
+    "title": "Le logiciel de devis des artisans. Redeviens artisan, on s'occupe du reste.",
     "sub": "Le logiciel des artisans du bâtiment : le devis dicté sur le chantier, les commandes contrôlées, les factures envoyées, les impayés relancés. Sans soirée au bureau.",
     "status": "En développement",
     "color": "var(--kov)",

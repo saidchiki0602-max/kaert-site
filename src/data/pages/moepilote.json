@@ -6,7 +6,7 @@
     "title": "Questions fréquentes",
     "items": [
       {
-        "q": "Qu'est-ce que MOEpilote ?",
+        "q": "Qu'est-ce que MOEpilote, et à quel logiciel de maître d'œuvre ça ressemble ?",
         "a": "MOEpilote est l'application des maîtres d'œuvre éditée par Kaërt. Elle rédige le compte rendu de chantier à partir d'une dictée, le diffuse avec accusés de lecture et relances, contrôle les attestations d'assurance des entreprises lot par lot, fait signer la mise au point au client et vise les situations sur l'avancement réel. Chaque action attend le OUI du maître d'œuvre."
       },
       {
@@ -33,7 +33,7 @@
   },
   "product": {
     "who": "Maîtres d'œuvre · architectes",
-    "title": "Dictez votre compte rendu. L'agent rédige. Tout le monde reçoit.",
+    "title": "Le logiciel des maîtres d'œuvre. Dictez votre compte rendu, l'agent rédige, tout le monde reçoit.",
     "sub": "Le logiciel des maîtres d'œuvre : le CR de visite en 5 minutes, les entreprises relancées, les assurances contrôlées, et un client qui n'a plus besoin d'appeler.",
     "status": "Démo disponible",
     "color": "var(--moe)",

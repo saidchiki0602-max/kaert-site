@@ -6,7 +6,7 @@
     "title": "Questions fréquentes",
     "items": [
       {
-        "q": "À qui s'adresse Travaux Sans Piège ?",
+        "q": "À qui s'adresse ce suivi de travaux pour particulier ?",
         "a": "Au particulier qui fait ses travaux sans maître d'œuvre et coordonne lui-même plusieurs artisans : rénovation d'une maison, salle de bain et cuisine, extension légère. Si vous avez un maître d'œuvre MOEpilote ou un artisan Kōv, vous avez déjà votre espace client dans leur application."
       },
       {
@@ -33,7 +33,7 @@
   },
   "product": {
     "who": "Particuliers qui pilotent leurs travaux eux-mêmes",
-    "title": "Vos travaux, lot par lot, sans vous faire avoir.",
+    "title": "Le suivi de travaux du particulier. Vos travaux, lot par lot, sans vous faire avoir.",
     "sub": "L'appli de suivi de travaux du particulier qui pilote son chantier lui-même, sans maître d'œuvre : les artisans vérifiés, les devis lus, le chantier en clair, les paiements liés aux étapes.",
     "status": "Prototype",
     "color": "var(--mc)",

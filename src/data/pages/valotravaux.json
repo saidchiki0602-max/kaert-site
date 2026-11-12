@@ -15,7 +15,7 @@
       },
       {
         "q": "Sur quoi reposent les chiffres de ValoTravaux ?",
-        "a": "Sur les prix de travaux constatés dans votre secteur, les barèmes d'aides en vigueur (MaPrimeRénov', CEE, éco-PTZ) et les taux de crédit du moment. Les hypothèses sont affichées sur la fiche remise à l'acheteur, avec la date."
+        "a": "Sur les prix de travaux constatés dans votre secteur, les barèmes d'aides en vigueur (MaPrimeRénov', CEE, éco-PTZ) et les taux de crédit du moment. Le coût d'une sortie de passoire thermique est donné en fourchette, avec les hypothèses et la date affichées sur la fiche remise à l'acheteur."
       },
       {
         "q": "ValoTravaux est-il gratuit ?",
@@ -33,7 +33,7 @@
   },
   "product": {
     "who": "Agents immobiliers",
-    "title": "Vendez la maison d'après, pas la passoire d'aujourd'hui.",
+    "title": "Le coût d'une sortie de passoire thermique, avant la visite.",
     "sub": "Pour les agents immobiliers : le coût des travaux chiffré pendant la visite, la sortie de passoire thermique avec les aides et la mensualité, le prix après travaux.",
     "status": "En cours",
     "color": "var(--esti)",

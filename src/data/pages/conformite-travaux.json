@@ -6,7 +6,7 @@
     "title": "Questions fréquentes",
     "items": [
       {
-        "q": "Quelles pièces travaux un notaire demande-t-il pour une vente ?",
+        "q": "Quelles pièces travaux un notaire demande-t-il pour la vente d'une maison ?",
         "a": "Selon les travaux réalisés : autorisation d'urbanisme (permis ou déclaration préalable), déclaration attestant l'achèvement et la conformité (DAACT), attestation d'assurance dommages-ouvrage, attestations décennales des entreprises, PV de réception, factures, attestation RE2020 ou RT2012 pour les constructions récentes, diagnostics."
       },
       {
@@ -33,7 +33,7 @@
   },
   "product": {
     "who": "Notaires · vendeurs",
-    "title": "Les pièces travaux qui bloquent un acte, trouvées avant la signature.",
+    "title": "Les pièces travaux exigées pour la vente d'une maison, trouvées avant la signature.",
     "sub": "Pour les notaires et les vendeurs : les pièces travaux exigées pour la vente d'une maison — permis, déclaration d'achèvement, dommages-ouvrage, décennales, RE2020. Ce qui manque, et comment le régulariser.",
     "status": "2027",
     "color": "var(--not)",

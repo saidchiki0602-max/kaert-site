@@ -1,13 +1,13 @@
 {
-  "title": "Guides du chantier — Kaërt",
-  "description": "Mise au point, décennale, comptes rendus, devis, honoraires, passoires : des guides écrits par des gens de métier.",
+  "title": "Guides du chantier pour maîtres d'œuvre et artisans — Kaërt",
+  "description": "Guides de chantier pour maîtres d'œuvre et artisans : mise au point, décennale, comptes rendus, devis, honoraires, passoires. Écrits par des gens de métier.",
   "path": "/guides/",
   "faq": {
     "title": "Questions fréquentes",
     "items": [
       {
-        "q": "Qui écrit les guides Kaërt ?",
-        "a": "Des gens de métier : les guides sont rédigés à partir de dix ans de maîtrise d'œuvre et relus par l'équipe. Chaque chiffre est daté et sourcé."
+        "q": "Qui écrit les guides de chantier Kaërt ?",
+        "a": "Des gens de métier : les guides sont rédigés à partir de dix ans de maîtrise d'œuvre sur des chantiers réels, et relus par l'équipe. Chaque chiffre est daté et sourcé."
       },
       {
         "q": "À quel rythme publiez-vous ?",

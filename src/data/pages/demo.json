@@ -1,6 +1,6 @@
 {
-  "title": "Demander une démo — 15 minutes sur votre cas réel",
-  "description": "Apportez votre dernier compte rendu, devis ou annonce : on refait le travail devant vous. Réponse sous 24 h ouvrées.",
+  "title": "Démo MOEpilote et Kaërt — 15 minutes sur votre cas réel",
+  "description": "Démo de MOEpilote, Kōv ou ValoTravaux : apportez votre dernier compte rendu, devis ou annonce, on refait le travail devant vous. Réponse sous 24 h ouvrées.",
   "path": "/demo/",
   "faq": {
     "title": "Questions fréquentes",
@@ -15,7 +15,7 @@
       },
       {
         "q": "Et si l'outil n'est pas prêt pour mon métier ?",
-        "a": "On vous le dit tout de suite, et on vous prévient à l'ouverture. Nous ne faisons pas de démo d'un produit qui n'existe pas."
+        "a": "On vous le dit tout de suite, et on vous prévient à l'ouverture. MOEpilote est le plus avancé ; les autres suivent. Nous ne faisons pas de démo d'un produit qui n'existe pas."
       },
       {
         "q": "Que faites-vous de mes coordonnées ?",
