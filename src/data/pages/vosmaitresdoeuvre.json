@@ -40,7 +40,7 @@
     "feats": [
       {
         "t": "Un dossier, pas un formulaire.",
-        "p": "Type de projet, ville, surface, budget confronté aux prix locaux, permis à prévoir ou non. Si le budget ne tient pas, on le dit au particulier avant de vous déranger."
+        "p": "Type de projet, ville, surface, budget confronté aux prix locaux, permis à déposer ou non, contraintes connues : zone protégée, assainissement, accès au terrain. Si le budget ne tient pas, on le dit au particulier avant de vous déranger."
       },
       {
         "t": "Trois cabinets maximum, rendez-vous d’abord.",
@@ -48,12 +48,12 @@
       },
       {
         "t": "Vos chiffres parlent pour vous.",
-        "p": "Avec l'abonnement, vous recevez les projets de votre zone. Si vous utilisez MOEpilote, votre fiche affiche en plus ce que l'appli mesure : délai de réponse, chantiers livrés à la date, avis recueillis à la réception. Mesurés, donc crédibles."
+        "p": "Avec l'abonnement, vous recevez les projets de votre zone. Si vous utilisez MOEpilote, votre fiche affiche en plus ce que l'appli mesure : délai de réponse, chantiers livrés à la date, avis recueillis à la réception. Mesurés, donc crédibles — pas une note d'étoiles laissée par un inconnu."
       }
     ],
     "client": {
       "label": "Ce que voit le particulier",
-      "text": "Trois fiches au plus, les mêmes critères pour chacune : assurances vérifiées, réalisations, spécialités, zone, et les chiffres mesurés par MOEpilote. Il choisit après vous avoir rencontrés ; le cabinet retenu lui ouvre son espace client, jusqu'à la MAP et au chantier."
+      "text": "Trois fiches au plus, les mêmes critères pour chacune : assurances vérifiées, réalisations, spécialités, zone, et les chiffres mesurés par MOEpilote. Il choisit après vous avoir rencontrés ; le cabinet retenu lui ouvre son espace client, de l'esquisse au dépôt du permis, puis de la consultation des entreprises à la réception des travaux."
     },
     "price": {
       "big": "39 €",
@@ -69,6 +69,23 @@
     "cta": {
       "label": "Référencer mon cabinet",
       "href": "/vosmaitresdoeuvre/#ref"
+    },
+    "oui": {
+      "intro": "Un projet tombe dans votre secteur : le budget a déjà été confronté aux prix de la commune, la description relue, le besoin de permis repéré. Vous proposez un créneau, ou vous passez votre tour. Deux minutes.",
+      "items": [
+        {
+          "b": "Extension de 40 m² — Bruz",
+          "s": "Budget cohérent. Permis à déposer. Vous êtes le deuxième consulté."
+        },
+        {
+          "b": "Rénovation lourde — Betton",
+          "s": "Maison de 1972. Budget serré : signalé au particulier avant envoi."
+        },
+        {
+          "b": "Maison neuve — Pleurtuit",
+          "s": "Terrain acquis, règles d'urbanisme vérifiées. Rendez-vous souhaité en soirée."
+        }
+      ]
     }
   }
 }

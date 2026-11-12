@@ -24,6 +24,10 @@
       {
         "q": "Quels travaux prend en charge CourtierTravaux.com ?",
         "a": "Rénovation, extension, salle de bain, cuisine, toiture, isolation, chauffage : les projets de particuliers de 10 000 à 300 000 € environ, en Bretagne d'abord. Pour une maison neuve ou une rénovation lourde avec conception, le particulier est orienté vers un maître d'œuvre via VosMaîtresdŒuvre."
+      },
+      {
+        "q": "Quelle différence avec une plateforme de mise en relation ?",
+        "a": "Une plateforme revend votre coordonnée à plusieurs entreprises et s'arrête là. Le courtier reste jusqu'à la signature : il rédige le cahier des charges, consulte, compare les devis ligne à ligne, discute les écarts et vous accompagne à la réunion de chantier si vous le souhaitez. Vous n'êtes jamais rappelé par dix numéros inconnus."
       }
     ]
   },
@@ -64,6 +68,23 @@
     "cta": {
       "label": "Être consulté sur les chantiers de mon secteur",
       "href": "/courtiertravaux/#ref"
+    },
+    "oui": {
+      "intro": "Le courtier prépare, vous décidez. Rien n'est envoyé à une entreprise, ni signé, sans votre accord explicite.",
+      "items": [
+        {
+          "b": "Cahier des charges — rénovation 90 m²",
+          "s": "Relu avec vous avant toute consultation."
+        },
+        {
+          "b": "Trois devis comparés ligne à ligne",
+          "s": "Écarts expliqués : quantité, qualité, prestation absente."
+        },
+        {
+          "b": "Échéancier de paiement proposé",
+          "s": "Acompte, situations, solde à la réception."
+        }
+      ]
     }
   }
 }

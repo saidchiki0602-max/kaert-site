@@ -24,6 +24,10 @@
       {
         "q": "Qui est Fernand ?",
         "a": "Fernand est la voix de l'application : l'ancien du bâtiment qui vous explique, en français courant, ce qui se passe sur votre chantier, ce qu'il faut vérifier avant de payer et la question à poser à l'artisan. C'est lui qui prépare les messages ; vous décidez de les envoyer."
+      },
+      {
+        "q": "Et si l'artisan refuse de découper le paiement en étapes ?",
+        "a": "C'est négociable, et c'est l'usage : acompte à la commande, situations en cours de chantier, solde à la réception. Vous pouvez aussi prévoir une retenue de garantie de 5 %, libérée un an après la réception si aucune réserve ne subsiste. Fernand vous prépare la phrase à dire et la clause à ajouter au devis avant signature."
       }
     ]
   },

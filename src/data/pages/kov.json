@@ -44,11 +44,11 @@
       },
       {
         "t": "Les commandes et les factures fournisseurs vérifiées.",
-        "p": "Quantités et prix comparés à votre devis et à votre bon de commande. L'écart de 186 € sur une facture CEDEO, Kōv le voit et rédige la réclamation."
+        "p": "Quantités, métré et prix comparés à votre devis et à votre bon de commande. L'écart de 186 € sur une facture CEDEO, Kōv le voit et rédige la réclamation."
       },
       {
         "t": "La facture et l'impayé.",
-        "p": "Facture au bon moment, acompte, situation, solde ; relance polie à J+7, ferme à J+21, sans que vous y pensiez. Facturation électronique prête pour 2027."
+        "p": "Facture au bon moment, acompte, situation, solde ; relance polie à J+7, ferme à J+21, sans que vous y pensiez. Facturation électronique prête pour 2027, avec archivage des pièces justificatives."
       }
     ],
     "oui": {
@@ -70,7 +70,7 @@
     },
     "client": {
       "label": "Pour votre client",
-      "text": "Il reçoit un devis clair le jour même, suit son chantier dans son espace client (photos, étapes, factures), et paie à l'étape. Un client qui sait où il en est ne vous appelle pas le soir."
+      "text": "Il reçoit un devis clair le jour même, suit son chantier dans son espace client (photos, étapes, factures), et paie à l'étape. Un client qui sait où il en est ne vous appelle pas le soir, et ne conteste pas la facture à la fin."
     },
     "price": {
       "big": "59 €",

@@ -20,6 +20,14 @@
       {
         "q": "Quand Conformité Travaux sera-t-il disponible ?",
         "a": "En 2027. Un premier outil gratuit, « Dossier travaux complet pour l'acte ? », ouvre avant : cinq questions et la liste des pièces attendues et manquantes."
+      },
+      {
+        "q": "Combien de temps faut-il conserver les pièces d'un chantier ?",
+        "a": "Dix ans au minimum : c'est la durée de la garantie décennale. Les attestations d'assurance, les procès-verbaux de réception et les plans conformes à l'exécution servent bien au-delà, à chaque mutation du bien et à chaque sinistre déclaré."
+      },
+      {
+        "q": "Qui est responsable si une pièce manque le jour de la signature ?",
+        "a": "Le vendeur doit fournir, le notaire ne peut pas instrumenter sans. En pratique l'acte est reporté, assorti d'une condition suspensive ou d'une somme séquestrée jusqu'à régularisation. D'où l'intérêt de rassembler le dossier dès la mise en vente, et non la semaine du rendez-vous."
       }
     ]
   },
@@ -40,7 +48,7 @@
       },
       {
         "t": "La régularisation",
-        "p": "qui contacter, quel délai, quel coût : mairie, assureur, entreprise, bureau de contrôle. Le chemin pour signer à la date prévue."
+        "p": "qui contacter, quel délai, quel coût : mairie, assureur, entreprise, bureau de contrôle, géomètre si la surface a changé. Le chemin le plus court pour signer à la date prévue."
       }
     ],
     "price": {
@@ -55,6 +63,27 @@
     "cta": {
       "label": "Être prévenu à l’ouverture",
       "href": "/conformite-travaux/#alerte"
+    },
+    "oui": {
+      "intro": "Dès l'ouverture du dossier, Conformité Travaux liste ce qui manque et à qui le demander. Vous relancez en un clic, et vous voyez ce qui est revenu.",
+      "items": [
+        {
+          "b": "Déclaration d'achèvement introuvable",
+          "s": "Courrier à la mairie prêt, avec les références du permis."
+        },
+        {
+          "b": "Dommages-ouvrage non produite",
+          "s": "Demande à l'assureur du vendeur rédigée."
+        },
+        {
+          "b": "Véranda non déclarée",
+          "s": "Régularisation à engager avant le compromis."
+        }
+      ]
+    },
+    "client": {
+      "label": "Pour l'acquéreur et sa banque",
+      "text": "Il sait ce qui a été fait, par qui, et ce qui demeure couvert. Une extension sans autorisation ou une garantie introuvable se découvre avant l'offre, pas trois ans plus tard quand la toiture fuit. Sa banque finance plus facilement un logement dont le dossier tient debout ; et le jour où il revendra, il aura les mêmes documents sous la main."
     }
   },
   "app": {

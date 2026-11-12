@@ -39,6 +39,23 @@
     "cta": {
       "label": "Être prévenu à l'ouverture",
       "href": "/artisandispo/#alerte"
+    },
+    "oui": {
+      "intro": "Une urgence arrive, ArtisanDispo a déjà regardé qui peut la prendre : qui travaille dans le secteur, qui a un trou dans sa journée, qui est assuré pour ce type d'intervention. Vous acceptez, ou vous passez.",
+      "items": [
+        {
+          "b": "Fuite sous évier — 4 km",
+          "s": "Créneau libre à 14 h. Plombier assuré, noté par ses clients."
+        },
+        {
+          "b": "Panne de chauffage — 11 km",
+          "s": "Déplacement groupé avec une autre intervention du secteur."
+        },
+        {
+          "b": "Vitre cassée — intervention du soir",
+          "s": "Majoration annoncée avant que vous disiez oui."
+        }
+      ]
     }
   },
   "app": {
@@ -70,6 +87,10 @@
       {
         "q": "Quand et où ArtisanDispo ouvre-t-il ?",
         "a": "En Ille-et-Vilaine d'abord, sur plomberie, chauffage, serrurerie et vitrerie, dès qu'il y a assez d'artisans vérifiés pour répondre en moins d'une heure. Laissez votre e-mail pour être prévenu."
+      },
+      {
+        "q": "Et si aucun artisan n'est disponible tout de suite ?",
+        "a": "Vous le savez immédiatement, pas après trois heures d'attente. Le rayon de recherche s'élargit, et on vous propose le premier créneau réellement tenable — parfois le lendemain matin. Un rendez-vous ferme vaut mieux qu'une promesse de passage que personne ne tient."
       }
     ]
   }

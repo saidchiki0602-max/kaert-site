@@ -20,6 +20,14 @@
       {
         "q": "ValoTravaux est-il gratuit ?",
         "a": "L'outil de sortie de passoire est gratuit, sans compte, dès le 19 novembre 2026. La version complète pour agences (chiffrage en visite, valeur après travaux, fiches à votre marque) arrive en 2027."
+      },
+      {
+        "q": "Quelles aides peut-on mobiliser pour sortir une passoire thermique ?",
+        "a": "MaPrimeRénov' et son parcours accompagné pour les rénovations d'ampleur, les certificats d'économies d'énergie versés par les fournisseurs, l'éco-prêt à taux zéro, la TVA réduite sur les travaux d'amélioration énergétique, et les aides de la région, du département ou de l'intercommunalité. Les barèmes changent chaque année : l'outil affiche ceux du jour, avec leur date."
+      },
+      {
+        "q": "Un agent immobilier a-t-il le droit de chiffrer des travaux ?",
+        "a": "Chiffrer n'est pas concevoir. Vous donnez un ordre de grandeur et vous orientez vers des entreprises qualifiées, un courtier ou un maître d'œuvre ; vous ne faites ni maîtrise d'œuvre ni diagnostic. La fiche remise à l'acheteur porte ses hypothèses et sa date, ce qui sert votre devoir de conseil sans engager votre responsabilité sur le chiffrage d'une entreprise."
       }
     ]
   },
@@ -32,7 +40,7 @@
     "feats": [
       {
         "t": "Le chiffrage en visite.",
-        "p": "Surface, état, DPE : une fourchette de travaux crédible avant de sortir de la maison, basée sur les prix constatés dans votre secteur."
+        "p": "Surface, état, DPE : une fourchette de travaux crédible avant de sortir de la maison, basée sur les prix constatés dans votre secteur. L'audit énergétique, obligatoire à la vente d'un logement classé F ou G, donne déjà l'essentiel : l'outil le traduit en coût, en aides et en mensualité."
       },
       {
         "t": "La sortie de passoire.",
@@ -40,26 +48,45 @@
       },
       {
         "t": "La valeur après travaux.",
-        "p": "Ce que vaut le bien une fois rénové, pour négocier sur la valeur et pas sur la décote."
+        "p": "Ce que vaut le bien une fois rénové, estimé sur les ventes comparables du quartier et le gain de classe énergétique, pour négocier sur la valeur et pas sur la décote."
       }
     ],
     "client": {
       "label": "Pour votre acheteur",
-      "text": "Il repart avec un projet chiffré et des professionnels vérifiés à contacter (CourtierTravaux, VosMaîtresdŒuvre). Vous êtes l'agent qui a rendu l'achat possible."
+      "text": "Il repart avec un projet chiffré, un calendrier de travaux et des professionnels vérifiés à contacter (CourtierTravaux, VosMaîtresdŒuvre). Il sait ce qu'il emprunte, ce qu'il touche en aides et ce que vaudra le bien. Vous êtes l'agent qui a rendu l'achat possible."
     },
     "price": {
       "big": "Gratuit",
       "small": "dès le 19 novembre",
-      "p": "L'outil de sortie de passoire ouvre le 19 novembre, sans compte. Version complète pour agences en 2027.",
+      "p": "L'outil de sortie de passoire ouvre le 19 novembre, sans compte ni carte bancaire. La version complète pour agences, avec vos fiches à votre marque et le suivi de vos mandats, arrive en 2027.",
       "items": [
         "3 scénarios chiffrés, aides, mensualité",
         "Valeur après travaux",
-        "Fiche PDF à remettre à l’acheteur"
+        "Fiche PDF à remettre à l’acheteur",
+        "Hypothèses et date affichées sur chaque fiche remise"
       ]
     },
     "cta": {
       "label": "Essayer la sortie de passoire",
-      "href": "/outils/#passoire"
+      "href": "/outils/#passoire",
+      "note": "Sans compte, sans carte bancaire. Résultat affiché à l'écran, envoyé par e-mail si vous le souhaitez."
+    },
+    "oui": {
+      "intro": "Avant la visite, ValoTravaux a lu l'annonce et le diagnostic : il vous dit ce que le bien coûte à rénover, ce que l'acheteur peut toucher en aides et ce qu'il vaudra après. Vous arrivez avec des chiffres, pas avec des promesses.",
+      "items": [
+        {
+          "b": "Maison 1968, 110 m², classée G",
+          "s": "Sortie en classe C : trois scénarios chiffrés."
+        },
+        {
+          "b": "Reste à charge et mensualité",
+          "s": "Calculés aux barèmes du jour. Fiche prête pour l'acheteur."
+        },
+        {
+          "b": "Valeur après rénovation",
+          "s": "Ventes comparables du quartier, gain de classe énergétique."
+        }
+      ]
     }
   },
   "app": {

@@ -16,7 +16,77 @@
       {
         "q": "Puis-je proposer un sujet ?",
         "a": "Oui, à contact@kaertgroupe.com. Les questions qui reviennent en démo deviennent des guides."
+      },
+      {
+        "q": "Les guides sont-ils réservés aux clients Kaërt ?",
+        "a": "Non. Ils sont publics, gratuits, sans compte ni inscription. Chacun renvoie vers un seul outil, celui qui règle le problème dont il parle. Vous pouvez les lire, les imprimer et les transmettre à votre client ou à votre artisan."
+      },
+      {
+        "q": "Les chiffres cités restent-ils valables ?",
+        "a": "Chaque montant, seuil ou pourcentage porte sa date et sa source. Les règles bougent — barèmes d'aides, seuils de permis, calendrier de la facturation électronique : un guide dont les chiffres ont vieilli est corrigé, et la date de mise à jour est affichée en haut de page."
+      },
+      {
+        "q": "Peut-on s'en servir pour préparer un rendez-vous avec un professionnel ?",
+        "a": "C'est l'usage prévu. Chaque guide finit par les questions à poser et les pièces à réclamer : attestation, planning, échéancier, garantie. Arriver avec la bonne question change la discussion plus sûrement que n'importe quelle négociation de prix."
       }
     ]
-  }
+  },
+  "guides": [
+    {
+      "t": "La MAP : les 29 points à verrouiller avec votre client avant d'ouvrir le chantier",
+      "who": "Maîtres d'œuvre",
+      "href": "/moepilote/",
+      "lab": "MOEpilote",
+      "r": "Qui décide quoi, qui paie quoi, ce qu'on fait si le client change d'avis en cours de route : la réunion de mise au point se prépare, elle ne s'improvise pas."
+    },
+    {
+      "t": "Attestation décennale : les 6 choses à vérifier avant de signer un marché",
+      "who": "MOE · artisans · particuliers",
+      "href": "/outils/#decennale",
+      "lab": "Outil décennale",
+      "r": "Activité garantie, période de validité, plafond, raison sociale exacte : une attestation valable sur un métier ne couvre pas forcément celui qu'on vous facture."
+    },
+    {
+      "t": "Compte rendu de chantier : le modèle qui évite les litiges (et les 5 erreurs qui les créent)",
+      "who": "Maîtres d'œuvre",
+      "href": "/outils/#cr",
+      "lab": "Outil CR",
+      "r": "Qui était présent, ce qui a été décidé, qui doit quoi pour quand. Un compte rendu diffusé sous 48 heures fait preuve ; un compte rendu vague ne vaut rien."
+    },
+    {
+      "t": "Lire un devis de maçonnerie : les 7 lignes où se cachent les surprises",
+      "who": "Particuliers · MOE",
+      "href": "/outils/#devis",
+      "lab": "Mon devis est-il correct ?",
+      "r": "Terrassement évacué ou laissé sur place, fondations selon étude de sol, enduit compris ou non : les lignes où l'avenant se prépare dès la signature."
+    },
+    {
+      "t": "Combien coûte un maître d'œuvre en 2026, et ce qu'il vous fait économiser",
+      "who": "Particuliers",
+      "href": "/vosmaitresdoeuvre/",
+      "lab": "VosMaîtresdŒuvre",
+      "r": "Pourcentage sur travaux ou forfait, mission complète ou partielle : ce que recouvre un honoraire, et ce qu'un chantier dirigé évite en reprises et en malfaçons."
+    },
+    {
+      "t": "Sortir une maison du statut de passoire : les 3 scénarios et leur mensualité réelle",
+      "who": "Agents · propriétaires",
+      "href": "/outils/#passoire",
+      "lab": "Sortie de passoire",
+      "r": "Isolation, menuiseries, ventilation, chauffage : l'ordre des travaux pèse sur la facture autant que le montant des aides obtenues."
+    },
+    {
+      "t": "Facturation électronique 2026-2027 : ce qui change pour un artisan, concrètement",
+      "who": "Artisans",
+      "href": "/kov/",
+      "lab": "Kōv",
+      "r": "Obligation de réception puis d'émission, plateforme agréée, mentions nouvelles : le calendrier réel pour une entreprise de moins de dix salariés."
+    },
+    {
+      "t": "Le client qui apprend le retard par le maçon : pourquoi la relation client est le vrai métier du MOE",
+      "who": "Maîtres d'œuvre",
+      "href": "/moepilote/",
+      "lab": "MOEpilote (espace client)",
+      "r": "Le retard n'est pas le problème ; l'apprendre par quelqu'un d'autre en est un. Tenir le client informé sans y passer ses soirées."
+    }
+  ]
 }

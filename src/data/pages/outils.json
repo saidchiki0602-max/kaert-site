@@ -16,6 +16,18 @@
       {
         "q": "Pourquoi offrir ces outils ?",
         "a": "Parce que c'est la meilleure démonstration de ce que font nos logiciels : si l'outil règle votre problème du jour en deux minutes, vous savez ce que vaut le produit derrière."
+      },
+      {
+        "q": "Quels outils sont disponibles aujourd'hui ?",
+        "a": "La sortie de passoire thermique, qui chiffre trois scénarios pour un logement classé F ou G ; la vérification d'un devis de travaux, ligne par ligne ; l'estimation du coût d'un projet avant de consulter des entreprises. D'autres suivent : lecture d'une attestation d'assurance décennale, compte rendu de visite de chantier."
+      },
+      {
+        "q": "Faut-il être un professionnel pour s'en servir ?",
+        "a": "Non. Un propriétaire, un bailleur ou un conseil syndical les utilisent aussi bien qu'un artisan ou un agent immobilier. Tout est écrit en français courant, sans jargon de métier et sans abréviation à deviner."
+      },
+      {
+        "q": "Les chiffres affichés sont-ils fiables ?",
+        "a": "Ce sont des ordres de grandeur, calculés sur des prix constatés et les barèmes publics en vigueur, avec la date et les hypothèses affichées sur le résultat. Un outil gratuit ne remplace ni un diagnostic réglementaire, ni un devis d'entreprise, ni l'étude d'un bureau d'études thermiques."
       }
     ]
   }

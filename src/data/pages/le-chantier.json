@@ -16,6 +16,18 @@
       {
         "q": "Dois-je utiliser tous les produits Kaërt ?",
         "a": "Non. Chaque produit fonctionne seul. Les passerelles s'activent quand deux utilisateurs se croisent sur le même chantier : un artisan Kōv reçoit automatiquement les plans du maître d'œuvre MOEpilote, par exemple."
+      },
+      {
+        "q": "Comment le dossier passe-t-il d'un professionnel à l'autre ?",
+        "a": "Par autorisation du propriétaire, jamais automatiquement. Il ouvre l'accès à un intervenant, pour la durée de sa mission et pour les seules pièces qui le concernent. Chaque dépôt et chaque consultation sont horodatés : on sait qui a déposé quelle version, et qui l'a lue."
+      },
+      {
+        "q": "À qui appartiennent les documents du dossier ?",
+        "a": "Au propriétaire du bien. Il peut tout exporter ou tout supprimer, à n'importe quel moment. Les données sont hébergées en France et traitées conformément au RGPD. Quand un professionnel quitte le chantier, il perd l'accès ; le dossier, lui, reste attaché à la maison."
+      },
+      {
+        "q": "Et le jour de la vente ?",
+        "a": "Le propriétaire transmet le dossier à l'acquéreur et au notaire : permis, devis, factures, procès-verbaux de réception, attestations d'assurance, garanties encore courantes. C'est l'esprit du carnet d'information du logement, obligatoire depuis 2023 pour le neuf et pour les rénovations énergétiques importantes."
       }
     ]
   }

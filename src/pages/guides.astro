@@ -3,16 +3,7 @@ import Page from '../layouts/Page.astro';
 import data from '../data/pages/guides.json';
 import Faq from '../components/Faq.astro';
 import { L } from '../lib/links';
-const guides = [
-  ['La MAP : les 29 points à verrouiller avec votre client avant d\'ouvrir le chantier', "Maîtres d'œuvre", '/moepilote/', 'MOEpilote'],
-  ['Attestation décennale : les 6 choses à vérifier avant de signer un marché', 'MOE · artisans · particuliers', '/outils/#decennale', 'Outil décennale'],
-  ['Compte rendu de chantier : le modèle qui évite les litiges (et les 5 erreurs qui les créent)', "Maîtres d'œuvre", '/outils/#cr', 'Outil CR'],
-  ['Lire un devis de maçonnerie : les 7 lignes où se cachent les surprises', 'Particuliers · MOE', '/outils/#devis', 'Mon devis est-il correct ?'],
-  ['Combien coûte un maître d\'œuvre en 2026, et ce qu\'il vous fait économiser', 'Particuliers', '/vosmaitresdoeuvre/', 'VosMaîtresdŒuvre'],
-  ['Sortir une maison du statut de passoire : les 3 scénarios et leur mensualité réelle', 'Agents · propriétaires', '/outils/#passoire', 'Sortie de passoire'],
-  ['Facturation électronique 2026-2027 : ce qui change pour un artisan, concrètement', 'Artisans', '/kov/', 'Kōv'],
-  ['Le client qui apprend le retard par le maçon : pourquoi la relation client est le vrai métier du MOE', "Maîtres d'œuvre", '/moepilote/', 'MOEpilote (espace client)'],
-];
+const guides = data.guides;
 ---
 <Page title={data.title} description={data.description} path={data.path}>
 <header class="ph"><div class="wrap">
@@ -22,7 +13,7 @@ const guides = [
 </div></header>
 <section class="sec"><div class="wrap">
   <div class="grid2">
-    {guides.map(([t, who, h, lab], i) => <article class="box"><div class="meta">Guide {i + 1} · {who} <span class="pill">Bientôt</span></div><b>{t}</b><p style="margin-top:12px">Renvoie vers <a href={L(h)}>{lab}</a>.</p></article>)}
+    {guides.map((g: any, i: number) => <article class="box"><div class="meta">Guide {i + 1} · {g.who} <span class="pill">Bientôt</span></div><b>{g.t}</b><p style="margin-top:12px">{g.r}</p><p style="margin-top:10px">Renvoie vers <a href={L(g.href)}>{g.lab}</a>.</p></article>)}
   </div>
 </div></section>
 <Faq title={data.faq.title} items={data.faq.items.map((i: any) => [i.q, i.a] as [string, string])} />
