@@ -3,7 +3,13 @@
 import fs from 'node:fs'; import path from 'node:path';
 const dir = process.argv[2] || 'dist';
 const seo = JSON.parse(fs.readFileSync('src/data/seo.json', 'utf8'));
-const files = fs.readdirSync(dir).filter(f => f.endsWith('.html'));
+// parcourt les sous-dossiers : le build de production sort /kov/index.html, l'aperçu sort kov.html
+const walk = (d, base = '') => fs.readdirSync(d, { withFileTypes: true }).flatMap(e => {
+  const rel = base ? base + '/' + e.name : e.name;
+  if (e.isDirectory()) return rel === 'audit' ? [] : walk(path.join(d, e.name), rel);
+  return e.name.endsWith('.html') ? [rel] : [];
+});
+const files = walk(dir).sort();
 const errs = [], warns = [], pages = [];
 const strip = (h) => dec(h.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/g, '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' '));
 const norm = (s) => s.toLowerCase().replace(/œ/g, 'oe').normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[’'\-]/g, ' ').replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ');
@@ -17,7 +23,9 @@ const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
 const llms = fs.existsSync(path.join(dir, 'llms.txt')) ? fs.readFileSync(path.join(dir, 'llms.txt'), 'utf8') : '';
 const sitemap = fs.existsSync(path.join(dir, 'sitemap.xml')) ? fs.readFileSync(path.join(dir, 'sitemap.xml'), 'utf8') : '';
 for (const f of files) {
-  const h = fs.readFileSync(path.join(dir, f), 'utf8'); const p = f.replace('.html', ''); const legal = /^(404|mentions-legales|confidentialite)$/.test(p);
+  const h = fs.readFileSync(path.join(dir, f), 'utf8');
+  if (/<meta name="robots" content="[^"]*noindex/.test(h)) continue; // redirections et pages hors index : rien à auditer
+  const p = f.replace(/\/?index\.html$/, '').replace(/\.html$/, '') || 'index'; const legal = /^(404|mentions-legales|confidentialite)$/.test(p);
   const title = dec((h.match(/<title>([^<]*)<\/title>/) || [])[1] || '');
   const desc = dec((h.match(/<meta name="description" content="([^"]*)"/) || [])[1] || '');
   const h1s = [...h.matchAll(/<h1[^>]*>([\s\S]*?)<\/h1>/g)].map(m => strip(m[1]).trim());
@@ -66,7 +74,7 @@ for (const f of files) {
   if (!legal && p !== '404' && p !== 'index' && llms && !llms.includes(`/${p}/`)) warns.push(`${p}: absente de llms.txt`);
 }
 // console
-console.log(`\nAudit SEO/GEO — ${files.length} pages\n`);
+console.log(`\nAudit SEO/GEO — ${pages.length} pages\n`);
 console.table(pages.map(({ page, title, desc, h1s, lds, words, faqN, kw, ownN }) => ({ page, titre: title.length, desc: desc.length, h1: h1s.length, 'JSON-LD': lds.join('+'), mots: words, propres: ownN, FAQ: faqN, requête: kw ? `${kw.score}/5` : '—' })));
 if (errs.length) { console.log('\nERREURS (bloquantes) :'); errs.forEach(e => console.log(' ✗ ' + e)); }
 if (warns.length) { console.log('\nÀ AMÉLIORER :'); warns.forEach(w => console.log(' • ' + w)); }
