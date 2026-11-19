@@ -165,5 +165,16 @@
     ],
     "intention": "Un particulier en panique qui cherche quelqu'un tout de suite, et a peur de se faire avoir. Requêtes locales et très concurrentielles (annuaires, plateformes de dépannage).",
     "pourquoi": "On ne gagne pas « plombier urgence » en national ; on prend l'angle « vérifié » et « prix annoncé avant », et la zone (Ille-et-Vilaine) — le site artisandispo.com fera le local, cette page présente le service."
+  },
+  "guides/verifier-attestation-decennale": {
+    "requete": "vérifier attestation décennale",
+    "variantes": [
+      "attestation décennale mentions obligatoires",
+      "attestation décennale activités garanties",
+      "attestation décennale sous-traitant",
+      "attestation décennale avant de signer le marché"
+    ],
+    "intention": "Un maître d'œuvre ou une entreprise principale qui a une attestation entre les mains avant de signer un marché et veut savoir quoi regarder. Intention pratique, immédiate.",
+    "pourquoi": "La requête est plus cherchée que « logiciel maître d'œuvre » et les réponses en ligne viennent surtout de comparateurs d'assurance, tournés vers le particulier. L'angle professionnel (lot par lot, sous-traitance, limites du contrat) est peu couvert ; le guide renvoie vers MOEpilote, qui fait ce contrôle."
   }
 }

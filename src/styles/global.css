@@ -267,3 +267,26 @@ footer .cols a:hover{color:var(--chalk)}
 .faq details[open] summary::after{content:'–'}
 .faq details p{color:var(--fg2);font-size:1.05rem;line-height:1.65;padding:0 0 22px;max-width:70ch}
 .shelf::after{content:"";background:var(--slate);display:block}
+/* guides */
+.ph.gh h1{font-size:clamp(2rem,5vw,3.9rem);max-width:22ch;line-height:1.02}
+.ph.gh .who a{text-decoration:underline;text-underline-offset:3px}
+.ph.gh .gmeta{margin-top:20px;font-size:.9rem;color:var(--fg2)}
+.prose{max-width:760px;padding-block:clamp(36px,6vw,72px)}
+.prose h2{font-size:clamp(1.6rem,3vw,2.3rem);line-height:1.06;margin:52px 0 16px}
+.prose h3{font-size:1.3rem;line-height:1.15;margin:34px 0 10px}
+.prose p{margin:0 0 16px;font-size:1.08rem;line-height:1.7}
+.prose ul,.prose ol{margin:0 0 18px;padding-left:22px;font-size:1.08rem;line-height:1.7}
+.prose li{margin:6px 0}
+.prose a{font-weight:600;text-underline-offset:3px}
+.prose blockquote{margin:24px 0;padding:18px 22px;background:var(--bg2);border-left:4px solid var(--fg);font-size:1.02rem}
+.prose blockquote p{margin:0}
+.prose table{width:100%;border-collapse:collapse;margin:8px 0 24px;font-size:.98rem;border:2px solid var(--fg)}
+.prose th,.prose td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.prose th{font-family:var(--display);background:var(--bg2);border-bottom:2px solid var(--fg)}
+.prose .tldr{border:2px solid var(--fg);padding:22px 24px;margin-bottom:8px}
+.prose .tldr p{margin:10px 0 0}
+.prose .gcta{display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap;border:2px solid var(--fg);background:var(--bg2);padding:26px;margin:52px 0 0}
+.prose .gcta h3{margin:0 0 6px}
+.prose .gcta p{margin:0;color:var(--fg2);font-size:1rem;max-width:46ch}
+.prose .disc{font-size:.88rem;color:var(--fg2);margin:22px 0 0;line-height:1.55}
+@media(max-width:640px){.prose table{font-size:.9rem}.prose th,.prose td{padding:9px 10px}}
