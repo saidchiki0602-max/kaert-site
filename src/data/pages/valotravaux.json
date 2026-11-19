@@ -19,7 +19,7 @@
       },
       {
         "q": "ValoTravaux est-il gratuit ?",
-        "a": "L'outil de sortie de passoire est gratuit, sans compte, dès le 19 novembre 2026. La version complète pour agences (chiffrage en visite, valeur après travaux, fiches à votre marque) arrive en 2027."
+        "a": "L'outil de sortie de passoire sera gratuit, sans compte, et ouvre bientôt. La version complète pour agences (chiffrage en visite, valeur après travaux, fiches à votre marque) arrive en 2027."
       },
       {
         "q": "Quelles aides peut-on mobiliser pour sortir une passoire thermique ?",
@@ -58,8 +58,8 @@
     },
     "price": {
       "big": "Gratuit",
-      "small": "dès le 19 novembre",
-      "p": "L'outil de sortie de passoire ouvre le 19 novembre, sans compte ni carte bancaire. La version complète pour agences, avec vos fiches à votre marque et le suivi de vos mandats, arrive en 2027.",
+      "small": "bientôt",
+      "p": "L'outil de sortie de passoire ouvre bientôt, sans compte ni carte bancaire. La version complète pour agences, avec vos fiches à votre marque et le suivi de vos mandats, arrive en 2027.",
       "items": [
         "3 scénarios chiffrés, aides, mensualité",
         "Valeur après travaux",
@@ -94,7 +94,7 @@
     "name": "ValoTravaux",
     "url": "/valotravaux/",
     "audience": "Agents immobiliers",
-    "status": "Outil gratuit dès le 19 novembre 2026, version agences en 2027",
+    "status": "Outil gratuit bientôt ouvert, version agences en 2027",
     "description": "Outil pour agents immobiliers : chiffrage des travaux pendant la visite, scénarios de sortie de passoire thermique avec aides et mensualité, valeur du bien après travaux."
   }
 }
