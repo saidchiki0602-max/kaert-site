@@ -37,13 +37,14 @@
     "sub": "Maison neuve, extension, rénovation lourde : le particulier décrit son projet, son budget est vérifié contre les prix de sa ville, et il trouve jusqu'à trois maîtres d'œuvre de son secteur à comparer. Il demande un rendez-vous ; honoraires et proposition viennent après la rencontre, comme vous le faites déjà.",
     "status": "Service",
     "color": "var(--vmo)",
+    "featsTitle": "Comment un particulier va trouver son maître d'œuvre ici.",
     "feats": [
       {
         "t": "Un dossier, pas un formulaire.",
         "p": "Type de projet, ville, surface, budget confronté aux prix locaux, permis à déposer ou non, contraintes connues : zone protégée, assainissement, accès au terrain. Si le budget ne tient pas, on le dit au particulier avant de vous déranger."
       },
       {
-        "t": "Trois cabinets maximum, rendez-vous d’abord.",
+        "t": "Comparer trois maîtres d'œuvre maximum, rendez-vous d'abord.",
         "p": "Jamais cinq ou dix. Vous savez combien vous êtes, vous répondez en deux minutes par un créneau de rendez-vous. Pas d'honoraires ni de proposition à envoyer avant d'avoir rencontré le client."
       },
       {

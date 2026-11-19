@@ -13,7 +13,7 @@ const guides = data.guides;
 </div></header>
 <section class="sec"><div class="wrap">
   <div class="grid2">
-    {guides.map((g: any, i: number) => <article class="box"><div class="meta">Guide {i + 1} · {g.who} <span class="pill">Bientôt</span></div><b>{g.t}</b><p style="margin-top:12px">{g.r}</p><p style="margin-top:10px">Renvoie vers <a href={L(g.href)}>{g.lab}</a>.</p></article>)}
+    {guides.map((g: any, i: number) => <article class="box"><div class="meta">Guide {i + 1} · {g.who} <span class="pill">Bientôt</span></div><h3>{g.t}</h3><p style="margin-top:12px">{g.r}</p><p style="margin-top:10px">Renvoie vers <a href={L(g.href)}>{g.lab}</a>.</p></article>)}
   </div>
 </div></section>
 <Faq title={data.faq.title} items={data.faq.items.map((i: any) => [i.q, i.a] as [string, string])} />

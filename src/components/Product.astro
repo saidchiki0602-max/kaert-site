@@ -4,13 +4,13 @@ import { L } from '../lib/links';
 interface Feat { t: string; p: string }
 interface Props {
   who: string; title: string; sub: string; status: string; color: string;
-  feats: Feat[];
-  oui?: { intro: string; items: { b: string; s: string }[] };
-  client?: { label: string; text: string };
+  featsTitle: string; feats: Feat[];
+  oui?: { title?: string; intro: string; items: { b: string; s: string }[] };
+  client?: { title?: string; label: string; text: string };
   price: { big: string; small?: string; p: string; items?: string[] };
   cta: { label: string; href: string; note?: string };
 }
-const { who, title, sub, status, color, feats, oui, client, price, cta } = Astro.props;
+const { who, title, sub, status, color, featsTitle, feats, oui, client, price, cta } = Astro.props;
 ---
 <div class="product" style={`--c:${color}`}>
 <header class="ph"><div class="wrap">
@@ -23,20 +23,21 @@ const { who, title, sub, status, color, feats, oui, client, price, cta } = Astro
 
 <section class="feat"><div class="wrap">
   <div class="eyebrow">Ce que ça fait</div>
-  <div class="g" style="margin-top:22px">
-    {feats.map((f, i) => <div><div class="n">0{i + 1}</div><b>{f.t}</b><p>{f.p}</p></div>)}
+  <h2 style="margin-top:14px;font-size:clamp(1.8rem,3.6vw,2.8rem);max-width:24ch">{featsTitle}</h2>
+  <div class="g" style="margin-top:28px">
+    {feats.map((f, i) => <div><div class="n">0{i + 1}</div><h3>{f.t}</h3><p>{f.p}</p></div>)}
   </div>
 </div></section>
 
 {oui && <section class="oui"><div class="wrap">
-  <div><div class="eyebrow" style="color:var(--mist)">Il prépare, vous dites oui</div><h2 style="margin-top:14px">Rien ne part sans vous.</h2><p>{oui.intro}</p></div>
+  <div><div class="eyebrow" style="color:var(--mist)">Il prépare, vous dites oui</div><h2 style="margin-top:14px">{oui.title || 'Rien ne part sans vous.'}</h2><p>{oui.intro}</p></div>
   <div class="card"><div class="t">Ce matin · en attente de votre accord</div>
     {oui.items.map(it => <div class="it"><div><b>{it.b}</b><span>{it.s}</span></div><span class="y">OUI</span></div>)}
   </div>
 </div></section>}
 
 {client && <section class="cli"><div class="wrap">
-  <div><div class="eyebrow">{client.label}</div><h2 style="margin-top:14px;font-size:clamp(1.8rem,3.6vw,2.8rem)">Ce que ça change de son côté.</h2></div>
+  <div><div class="eyebrow">{client.label}</div><h2 style="margin-top:14px;font-size:clamp(1.8rem,3.6vw,2.8rem)">{client.title || 'Ce que ça change de son côté.'}</h2></div>
   <p>{client.text}</p>
 </div></section>}
 

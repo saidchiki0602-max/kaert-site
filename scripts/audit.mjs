@@ -11,6 +11,8 @@ const walk = (d, base = '') => fs.readdirSync(d, { withFileTypes: true }).flatMa
 });
 const files = walk(dir).sort();
 const errs = [], warns = [], pages = [];
+// pages sans intention de recherche à couvrir par les sous-titres (formulaire, page marque)
+const SANS_REQUETE_SOUS_TITRES = new Set(['demo', 'a-propos', '404']);
 const strip = (h) => dec(h.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/g, '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' '));
 const norm = (s) => s.toLowerCase().replace(/œ/g, 'oe').normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[’'\-]/g, ' ').replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ');
 const STOP = new Set(['de','du','des','la','le','les','un','une','en','pour','et','ses','soi','meme','a','au','aux','d','l','sur','dans','par','ou','mon','ma','mes','son','sa','votre','vos','ce','cet','cette','qui','que','est','avant','pres','chez','moi']);
@@ -30,6 +32,11 @@ for (const f of files) {
   const desc = dec((h.match(/<meta name="description" content="([^"]*)"/) || [])[1] || '');
   const h1s = [...h.matchAll(/<h1[^>]*>([\s\S]*?)<\/h1>/g)].map(m => strip(m[1]).trim());
   const h2s = [...h.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/g)].map(m => strip(m[1]).trim());
+  const h3s = [...h.matchAll(/<h3[^>]*>([\s\S]*?)<\/h3>/g)].map(m => strip(m[1]).trim());
+  // liens morts : un href vide, « # » seul ou javascript: ne mène nulle part (bouton réseau social sans adresse, lien oublié)
+  const dead = [...h.matchAll(/<a\b[^>]*\bhref="(#|\s*|javascript:[^"]*)"[^>]*>([\s\S]*?)<\/a>/g)].map(m => strip(m[2]).trim() || '(sans texte)');
+  // titres de bloc en gras suivis d'un paragraphe : pour Google ce n'est pas un titre, donc pas un sujet de la page
+  const fauxTitres = [...h.replace(/<nav[\s\S]*?<\/nav>|<footer[\s\S]*?<\/footer>/g, '').matchAll(/<(b|strong)>([^<]{8,})<\/\1>\s*<p[\s>]/g)].map(m => dec(m[2]).trim());
   const canonical = /<link rel="canonical"/.test(h);
   const lds = [...h.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map(m => { try { return JSON.parse(m[1])['@type']; } catch { return 'INVALID'; } });
   const body = strip(h); const words = body.split(' ').length;
@@ -55,9 +62,12 @@ for (const f of files) {
       variantes: s.variantes.map(v => ({ v, body: has(body, v), title: has(title, v) })), intention: s.intention, pourquoi: s.pourquoi };
     const score = [kw.title, kw.h1, kw.desc, kw.h2 || kw.faq, kw.body >= 2].filter(Boolean).length;
     kw.score = score;
+    // sous-titres : h2/h3 hors FAQ qui reprennent la requête ou une variante (ce que les gens tapent), pas seulement des accroches
+    const subs = [...h2s, ...h3s].filter(x => !/^questions? fr[ée]quentes?/i.test(x));
+    kw.subs = subs.filter(x => has(x, q) || s.variantes.some(v => has(x, v)));
     if (score < 3 && !legal && p !== 'demo' && p !== 'guides') warns.push(`${p}: requête « ${q} » peu présente (score ${score}/5 : titre ${kw.title ? 'oui' : 'non'}, h1 ${kw.h1 ? 'oui' : 'non'}, description ${kw.desc ? 'oui' : 'non'}, corps ×${kw.body})`);
   } else if (!legal) warns.push(`${p}: pas d'entrée dans seo.json (requête visée non définie)`);
-  pages.push({ page: p, title, desc, h1s, h2s, canonical, lds, words, faqN, broken, imgsNoAlt, kw, legal, snippet, uiNoise, hasAddr, ownN });
+  pages.push({ page: p, title, desc, h1s, h2s, h3s, dead, fauxTitres, canonical, lds, words, faqN, broken, imgsNoAlt, kw, legal, snippet, uiNoise, hasAddr, ownN });
   if (!title) errs.push(`${p}: pas de <title>`); else if (title.length > 65) warns.push(`${p}: title ${title.length} caractères (> 60)`);
   if (!desc) errs.push(`${p}: pas de description`); else if (desc.length > 160) warns.push(`${p}: description ${desc.length} caractères (> 155)`);
   if (h1s.length !== 1 && p !== 'demo') (legal ? warns : errs).push(`${p}: ${h1s.length} <h1> (il en faut un)`);
@@ -67,6 +77,9 @@ for (const f of files) {
   if (words < 300 && !legal) warns.push(`${p}: ${words} mots, page mince`);
   if (!legal && p !== '404' && p !== 'demo' && ownN < 200) warns.push(`${p}: ${ownN} mots propres (< 200) — Google risque de l'explorer sans l'indexer`);
   if (broken.length) errs.push(`${p}: liens cassés → ${[...new Set(broken)].join(', ')}`);
+  if (dead.length) errs.push(`${p}: lien(s) qui ne mène(nt) nulle part → ${[...new Set(dead)].join(', ')}`);
+  if (fauxTitres.length && !legal) errs.push(`${p}: ${fauxTitres.length} titre(s) de bloc en gras au lieu d'un h2/h3 → « ${fauxTitres[0]} »…`);
+  if (kw && !legal && !SANS_REQUETE_SOUS_TITRES.has(p) && kw.subs.length < 2) errs.push(`${p}: ${kw.subs.length} sous-titre (h2/h3) sur la requête « ${kw.q} » ou ses variantes (il en faut 2)`);
   if (imgsNoAlt) warns.push(`${p}: ${imgsNoAlt} image(s) sans alt`);
   if (uiNoise.length) warns.push(`${p}: texte d'interface lisible par Google (peut finir dans l'extrait) → ${uiNoise.join(', ')}`);
   if (hasAddr && !legal) warns.push(`${p}: adresse postale dans le texte de la page (Google peut l'afficher dans l'extrait)`);
@@ -90,7 +103,9 @@ const rows = pages.filter(x => !x.legal && x.page !== '404').map(x => `
   <tr><th>Extrait probable</th><td class="sn">${esc(x.snippet)}…</td></tr>
   <tr><th>H1</th><td>${x.h1s.map(esc).join('<br>') || '<span class="n">aucun</span>'} ${x.h1s.length === 1 ? '' : '<span class="n">(' + x.h1s.length + ')</span>'}</td></tr>
   <tr><th>H2</th><td>${x.h2s.map(esc).join(' · ')}</td></tr>
-  <tr><th>Technique</th><td>canonical ${ok(x.canonical)} · liens cassés ${x.broken.length ? '<span class="n">' + x.broken.length + '</span>' : '<span class="y">0</span>'} · images sans alt ${x.imgsNoAlt ? '<span class="n">' + x.imgsNoAlt + '</span>' : '<span class="y">0</span>'}</td></tr></table>
+  <tr><th>H3</th><td>${x.h3s.map(esc).join(' · ')}</td></tr>
+  <tr><th>Sous-titres sur la requête</th><td>${x.kw ? (x.kw.subs.length ? x.kw.subs.map(esc).join(' · ') : '<span class="n">aucun</span>') : '—'}</td></tr>
+  <tr><th>Technique</th><td>canonical ${ok(x.canonical)} · liens cassés ${x.broken.length + x.dead.length ? '<span class="n">' + (x.broken.length + x.dead.length) + '</span>' : '<span class="y">0</span>'} · images sans alt ${x.imgsNoAlt ? '<span class="n">' + x.imgsNoAlt + '</span>' : '<span class="y">0</span>'}</td></tr></table>
   ${x.kw ? `<div class="kw"><div class="kwh"><b>Requête visée : « ${esc(x.kw.q)} »</b> <span class="sc">${x.kw.score}/5</span></div>
   <div class="grid"><div>dans le titre ${ok(x.kw.title)}</div><div>dans le h1 ${ok(x.kw.h1)}</div><div>dans la description ${ok(x.kw.desc)}</div><div>dans un h2 ou la FAQ ${ok(x.kw.h2 || x.kw.faq)}</div><div>dans le texte : ×${x.kw.body}</div></div>
   <p><b>Intention.</b> ${esc(x.kw.intention)}</p><p><b>Pourquoi ce choix.</b> ${esc(x.kw.pourquoi)}</p>

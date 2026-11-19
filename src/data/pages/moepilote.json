@@ -37,13 +37,14 @@
     "sub": "Le logiciel des maîtres d'œuvre : le CR de visite en 5 minutes, les entreprises relancées, les assurances contrôlées, et un client qui n'a plus besoin d'appeler.",
     "status": "Démo disponible",
     "color": "var(--moe)",
+    "featsTitle": "Un logiciel de maître d'œuvre pour l'après-permis : chantier, entreprises, client.",
     "feats": [
       {
-        "t": "Le CR de chantier dicté.",
+        "t": "Le compte rendu de chantier, dicté.",
         "p": "En sortant de la visite, vous parlez comme sur le chantier. L'agent identifie les entreprises, classe réserves et actions, fixe les délais, et rédige deux versions : technique pour les entreprises, en clair pour votre client. Diffusé avec accusés de lecture et relance automatique."
       },
       {
-        "t": "Les assurances vérifiées, lot par lot.",
+        "t": "L'attestation décennale vérifiée, lot par lot.",
         "p": "Décennale, RC, URSSAF, Kbis : l'agent lit chaque attestation, croise les activités couvertes avec le lot du marché, relance avant expiration, et bloque le visa d'une situation tant que le dossier n'est pas à jour. La décennale qui ne couvre pas le chauffage alors que le lot comprend la PAC : il la voit."
       },
       {

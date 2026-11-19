@@ -8,7 +8,7 @@ Ce dépôt est le premier site produit par le modèle Webenvue 2.0 : **gabarit +
 - `src/components/` — les briques : `Product` (gabarit produit), `Faq` (FAQ + schema FAQPage), `AppLd` (schema SoftwareApplication), `DemoForm` (formulaire → Supabase), `Nav`, `Footer`.
 - `src/styles/global.css` — l'identité (noir/blanc, couleur par produit via `--c`).
 - `public/llms.txt`, `public/sitemap.xml`, `public/robots.txt` — ce que lisent les robots et les IA.
-- `scripts/audit.mjs` — l'agent d'audit SEO/GEO : titres, descriptions, h1, canonical, JSON-LD, FAQ, liens cassés, pages absentes du sitemap ou de llms.txt. Bloque le déploiement sur erreur.
+- `scripts/audit.mjs` — l'agent d'audit SEO/GEO : titres, descriptions, h1, sous-titres sur la requête, titres de bloc non balisés, canonical, JSON-LD, FAQ, liens cassés ou sans destination, pages absentes du sitemap ou de llms.txt. Bloque le déploiement sur erreur.
 
 ## Commandes
 - `npm run preview` — build d'aperçu (fichiers plats, liens relatifs) pour relecture.
@@ -20,6 +20,10 @@ Ce dépôt est le premier site produit par le modèle Webenvue 2.0 : **gabarit +
 3. Chaque produit a son schema `SoftwareApplication` ; le site a `Organization` ; `llms.txt` liste tout avec prix et dates.
 4. Titres ≤ 60 caractères, descriptions ≤ 155, un seul h1, canonical, sitemap complet.
 5. Les textes vivent dans les données ; le code ne contient pas de phrase destinée au visiteur (hors structure).
+6. Au moins deux sous-titres (h2/h3) par page reprennent la requête visée ou une de ses variantes (`seo.json`) : un sous-titre dit ce que les gens tapent, pas seulement une accroche. Bloquant.
+7. Un titre de bloc est un h2 ou un h3, jamais un texte en gras suivi d'un paragraphe : Google ne lit pas le gras comme un sujet de la page. Bloquant.
+8. Aucun lien sans destination (`href="#"`, vide, `javascript:`) : un réseau social sans adresse ne s'affiche pas. Bloquant.
+9. On n'affirme pas au présent ce qu'un produit en développement fera au lancement (conformité, certification) : « sera », avec la date. Relecture humaine, non automatisé.
 
 ## Agents prévus
 - **Audit** (fait) : à chaque build.

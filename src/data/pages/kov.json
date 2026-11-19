@@ -18,8 +18,8 @@
         "a": "Vous dictez trois lignes en sortant du rendez-vous (par exemple : « salle de bain 6 m², dépose carrelage, pose faïence, meuble vasque »). Kōv reconnaît les ouvrages, applique vos prix, ajoute les mentions légales obligatoires et produit un devis PDF prêt à envoyer. Vous relisez, vous envoyez."
       },
       {
-        "q": "Kōv est-il conforme à la facturation électronique obligatoire ?",
-        "a": "Oui. Kōv est conçu pour l'obligation de réception (2026) et d'émission (2027 pour les TPE) de factures électroniques, via une plateforme agréée."
+        "q": "Kōv sera-t-il conforme à la facturation électronique obligatoire ?",
+        "a": "Kōv est en développement et sera conforme dès son lancement en 2027 : il est conçu pour l'obligation de réception (2026) et d'émission (2027 pour les TPE) de factures électroniques, via une plateforme agréée."
       },
       {
         "q": "Mes clients doivent-ils installer quelque chose ?",
@@ -37,6 +37,7 @@
     "sub": "Le logiciel des artisans du bâtiment : le devis dicté sur le chantier, les commandes contrôlées, les factures envoyées, les impayés relancés. Sans soirée au bureau.",
     "status": "En développement",
     "color": "var(--kov)",
+    "featsTitle": "Un logiciel de devis et de facturation pour l'artisan, du rendez-vous au paiement.",
     "feats": [
       {
         "t": "Le devis en 30 secondes.",
@@ -47,7 +48,7 @@
         "p": "Quantités, métré et prix comparés à votre devis et à votre bon de commande. L'écart de 186 € sur une facture CEDEO, Kōv le voit et rédige la réclamation."
       },
       {
-        "t": "La facture et l'impayé.",
+        "t": "Facturation électronique de l'artisan prête pour 2027, impayés relancés.",
         "p": "Facture au bon moment, acompte, situation, solde ; relance polie à J+7, ferme à J+21, sans que vous y pensiez. Facturation électronique prête pour 2027, avec archivage des pièces justificatives."
       }
     ],

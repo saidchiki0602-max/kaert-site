@@ -37,13 +37,14 @@
     "sub": "Pour les agents immobiliers : le coût des travaux chiffré pendant la visite, la sortie de passoire thermique avec les aides et la mensualité, le prix après travaux.",
     "status": "En cours",
     "color": "var(--esti)",
+    "featsTitle": "Vendre une passoire thermique avec un projet chiffré, pas avec une décote.",
     "feats": [
       {
-        "t": "Le chiffrage en visite.",
+        "t": "Le chiffrage des travaux pendant la visite immobilière.",
         "p": "Surface, état, DPE : une fourchette de travaux crédible avant de sortir de la maison, basée sur les prix constatés dans votre secteur. L'audit énergétique, obligatoire à la vente d'un logement classé F ou G, donne déjà l'essentiel : l'outil le traduit en coût, en aides et en mensualité."
       },
       {
-        "t": "La sortie de passoire.",
+        "t": "Le coût de la sortie de passoire thermique.",
         "p": "Trois scénarios pour un F ou un G : travaux, aides mobilisables, reste à charge, mensualité. Une fiche à remettre à l'acheteur, qui transforme un bien invendable en projet."
       },
       {

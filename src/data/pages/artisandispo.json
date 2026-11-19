@@ -8,6 +8,7 @@
     "sub": "ArtisanDispo met en relation votre urgence — fuite, panne de chauffage, serrure, vitre, tuile — avec un artisan vérifié, disponible dans la journée parce qu'il a un trou dans son planning. Prix annoncé avant qu'il parte. Pour l'artisan : une annulation ne coûte plus une journée.",
     "status": "En préparation",
     "color": "var(--urgence, #F97316)",
+    "featsTitle": "Une urgence, un artisan disponible : comment ça marche des deux côtés.",
     "feats": [
       {
         "t": "Côté particulier : l'urgence, avec photo.",
@@ -18,7 +19,7 @@
         "p": "Une annulation, un chantier qui finit plus tôt, un jeudi après-midi vide : vous déclarez le créneau, votre métier et votre rayon. Quand une urgence correspond, vous acceptez ou non. Rien ne vous est imposé."
       },
       {
-        "t": "Le prix, avant de partir.",
+        "t": "Le prix du dépannage, sans arnaque, avant de partir.",
         "p": "Déplacement et taux horaire affichés par l'artisan à l'avance, acceptés par le particulier avant la mise en relation. Pas de devis gonflé sur le pas de la porte, pas de « ça dépend ». Paiement à la fin, intervention tracée."
       }
     ],

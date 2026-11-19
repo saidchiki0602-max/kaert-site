@@ -37,6 +37,7 @@
     "sub": "Le particulier confie son projet à un courtier indépendant : il cadre le besoin et le budget, consulte trois entreprises vérifiées au plus, compare les devis ligne à ligne, négocie, et suit le chantier jusqu'à la réception. Payé par une commission annoncée dès le départ — pas par des remises cachées.",
     "status": "Service",
     "color": "var(--esti)",
+    "featsTitle": "Ce que fait un courtier en travaux, étape par étape.",
     "feats": [
       {
         "t": "Le projet est cadré.",
@@ -47,7 +48,7 @@
         "p": "Assurances décennales lues et valides pour les travaux, SIREN actif, avis recueillis à la réception. Trois au plus, qui savent qu'elles sont trois."
       },
       {
-        "t": "Les devis comparés, négociés, suivis.",
+        "t": "Les devis de travaux comparés, négociés, suivis.",
         "p": "Comparaison ligne à ligne, questions posées aux entreprises, négociation, puis suivi dans Travaux Sans Piège : étapes, photos, paiements liés à l'avancement, réception."
       }
     ],

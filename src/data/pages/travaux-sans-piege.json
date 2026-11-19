@@ -37,9 +37,10 @@
     "sub": "L'application de suivi de travaux du particulier qui pilote son chantier lui-même, sans maître d'œuvre : les artisans vérifiés, les devis lus, le chantier en clair, les paiements liés aux étapes.",
     "status": "Prototype",
     "color": "var(--mc)",
+    "featsTitle": "Le suivi de travaux du particulier, de la première visite au dernier paiement.",
     "feats": [
       {
-        "t": "Les artisans vérifiés et les devis lus.",
+        "t": "Vérifier un artisan et lire son devis avant de signer.",
         "p": "Assurance décennale, SIREN, avis recueillis à la réception : vous choisissez parmi des entreprises contrôlées. Chaque devis reçu est lu : lignes manquantes, prix hors marché, mentions obligatoires, questions à poser avant de signer."
       },
       {
@@ -47,7 +48,7 @@
         "p": "Qui vient quand, ce qui doit être fait avant que le suivant arrive, la photo du jour, la prochaine étape. Le carreleur n'arrive plus avant que le plombier ait fini."
       },
       {
-        "t": "Les paiements liés aux étapes.",
+        "t": "Payer l'artisan par étape, jamais d'avance.",
         "p": "Vous voyez ce qui est prévu, ce qui est fait, ce qui est dû, et pourquoi. Acompte, situation, solde : vous payez ce qui est vérifié, pas ce qui est demandé. À la fin, PV de réception et garanties conservés dix ans."
       }
     ],
