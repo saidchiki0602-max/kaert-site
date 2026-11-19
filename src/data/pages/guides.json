@@ -11,7 +11,7 @@
       },
       {
         "q": "À quel rythme publiez-vous ?",
-        "a": "Deux guides par semaine. Les huit premiers arrivent bientôt."
+        "a": "Le premier guide est en ligne : vérifier une attestation décennale. Les sept suivants arrivent, à raison de deux par semaine."
       },
       {
         "q": "Puis-je proposer un sujet ?",
@@ -40,11 +40,12 @@
       "r": "Qui décide quoi, qui paie quoi, ce qu'on fait si le client change d'avis en cours de route : la réunion de mise au point se prépare, elle ne s'improvise pas."
     },
     {
-      "t": "Attestation décennale : les 6 choses à vérifier avant de signer un marché",
-      "who": "MOE · artisans · particuliers",
+      "t": "Vérifier une attestation décennale : les 6 points à contrôler avant de signer un marché",
+      "who": "Maîtres d'œuvre · artisans",
       "href": "/outils/#decennale",
       "lab": "Outil décennale",
-      "r": "Activité garantie, période de validité, plafond, raison sociale exacte : une attestation valable sur un métier ne couvre pas forcément celui qu'on vous facture."
+      "r": "Activité garantie, période de validité, plafond, raison sociale exacte : une attestation valable sur un métier ne couvre pas forcément celui qu'on vous facture.",
+      "slug": "verifier-attestation-decennale"
     },
     {
       "t": "Compte rendu de chantier : le modèle qui évite les litiges (et les 5 erreurs qui les créent)",
@@ -88,5 +89,6 @@
       "lab": "MOEpilote (espace client)",
       "r": "Le retard n'est pas le problème ; l'apprendre par quelqu'un d'autre en est un. Tenir le client informé sans y passer ses soirées."
     }
-  ]
+  ],
+  "intro": "Des réponses directes, des chiffres datés, une FAQ, et un seul renvoi vers l'outil concerné. Le premier guide est en ligne, les sept suivants arrivent."
 }

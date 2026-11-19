@@ -9,11 +9,11 @@ const guides = data.guides;
 <header class="ph"><div class="wrap">
   <div class="who">Guides · écrits par des gens de métier</div>
   <h1>Les guides du chantier, pour maîtres d'œuvre et artisans. Ce qu'on aurait aimé lire avant d'ouvrir un chantier.</h1>
-  <p class="sub">Des réponses directes, des chiffres datés, une FAQ de trois questions, et un seul renvoi vers l'outil concerné. Deux guides par semaine. Les huit premiers arrivent bientôt.</p>
+  <p class="sub">{data.intro}</p>
 </div></header>
 <section class="sec"><div class="wrap">
   <div class="grid2">
-    {guides.map((g: any, i: number) => <article class="box"><div class="meta">Guide {i + 1} · {g.who} <span class="pill">Bientôt</span></div><h3>{g.t}</h3><p style="margin-top:12px">{g.r}</p><p style="margin-top:10px">Renvoie vers <a href={L(g.href)}>{g.lab}</a>.</p></article>)}
+    {guides.map((g: any, i: number) => <article class="box"><div class="meta">Guide {i + 1} · {g.who} <span class="pill">{g.slug ? 'En ligne' : 'Bientôt'}</span></div><h3>{g.slug ? <a href={L(`/guides/${g.slug}/`)}>{g.t}</a> : g.t}</h3><p style="margin-top:12px">{g.r}</p>{g.slug ? <p style="margin-top:10px"><a href={L(`/guides/${g.slug}/`)}>Lire le guide →</a></p> : <p style="margin-top:10px">Renvoie vers <a href={L(g.href)}>{g.lab}</a>.</p>}</article>)}
   </div>
 </div></section>
 <Faq title={data.faq.title} items={data.faq.items.map((i: any) => [i.q, i.a] as [string, string])} />

@@ -1,0 +1,43 @@
+---
+// Gabarit des guides : réponse en tête, l'essentiel, contenu, renvoi vers un seul outil, FAQ balisée.
+import Base from './Base.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import Faq from '../components/Faq.astro';
+import { L } from '../lib/links';
+import '../styles/global.css';
+const { frontmatter } = Astro.props;
+const { title, description, slug, h1, who, lead, tldr, faq = [], minutes = 6, published, updated, cta } = frontmatter;
+const path = `/guides/${slug}/`;
+const site = 'https://kaertgroupe.com';
+const fr = (d: string) => new Date(d + 'T12:00:00').toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' });
+const article = {
+  "@context": "https://schema.org", "@type": "Article", headline: h1, description, inLanguage: "fr-FR",
+  datePublished: published, dateModified: updated, mainEntityOfPage: site + path,
+  author: { "@type": "Person", name: "Saïd Chiki", jobTitle: "Fondateur de Kaërt Groupe, maître d'œuvre pendant dix ans" },
+  publisher: { "@type": "Organization", name: "Kaërt Groupe", url: site }
+};
+const crumbs = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
+  { "@type": "ListItem", position: 1, name: "Accueil", item: site + '/' },
+  { "@type": "ListItem", position: 2, name: "Guides", item: site + '/guides/' },
+  { "@type": "ListItem", position: 3, name: h1, item: site + path } ] };
+---
+<Base title={title} description={description} path={path}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(article)} />
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(crumbs)} />
+  <Nav />
+  <header class="ph gh"><div class="wrap">
+    <div class="who"><a href={L('/guides/')}>Guides</a> · {who}</div>
+    <h1>{h1}</h1>
+    <p class="sub">{lead}</p>
+    <p class="gmeta">Mis à jour le {fr(updated)} · {minutes} min de lecture · écrit par un ancien maître d'œuvre</p>
+  </div></header>
+  <article class="wrap"><div class="prose">
+    <div class="tldr"><div class="eyebrow">L'essentiel</div><p set:html={tldr} /></div>
+    <slot />
+    {cta && <div class="gcta"><div><h3>{cta.title}</h3><p>{cta.text}</p></div><a class="btn p" href={L(cta.href)}>{cta.label}</a></div>}
+    <p class="disc">Ce guide donne une information générale, à jour à la date indiquée. Il ne remplace pas un conseil juridique ou un avis d'assureur adapté à votre situation.</p>
+  </div></article>
+  {faq.length > 0 && <Faq items={faq} title="Questions fréquentes" />}
+  <Footer />
+</Base>
