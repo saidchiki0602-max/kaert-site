@@ -35,7 +35,7 @@
     "who": "Particuliers qui pilotent leurs travaux eux-mêmes",
     "title": "L'application de suivi de travaux du particulier. Vos travaux, lot par lot, sans vous faire avoir.",
     "sub": "L'application de suivi de travaux du particulier qui pilote son chantier lui-même, sans maître d'œuvre : les artisans vérifiés, les devis lus, le chantier en clair, les paiements liés aux étapes.",
-    "status": "Prototype",
+    "status": "Site ouvert",
     "color": "var(--mc)",
     "featsTitle": "Le suivi de travaux du particulier, de la première visite au dernier paiement.",
     "feats": [
@@ -74,8 +74,8 @@
       "text": "Vous n'avez pas besoin de Travaux Sans Piège : leur appli vous ouvre déjà votre espace client, avec le même suivi, les mêmes photos et les mêmes paiements à l'étape. Travaux Sans Piège est pour ceux qui n'ont ni l'un ni l'autre et font le chantier eux-mêmes."
     },
     "price": {
-      "big": "2027",
-      "p": "Prototype testé avec des particuliers en Bretagne. Lancement 2027.",
+      "big": "Dès 149 €",
+      "p": "La vérification de devis est ouverte et gratuite sur travauxsanspiege.fr. L'application ouvrira prochainement : un seul paiement pour tout le chantier, sans abonnement, à partir de 149 €.",
       "items": [
         "Aucune installation : ça marche sur votre téléphone",
         "Vos artisans ouvrent un lien, sans compte",
@@ -83,16 +83,16 @@
       ]
     },
     "cta": {
-      "label": "Voir la démo",
-      "href": "/demo/",
-      "note": "Démo interactive de l’appli."
+      "label": "Aller sur travauxsanspiege.fr",
+      "href": "https://travauxsanspiege.fr/",
+      "note": "Vérification de devis gratuite, sans compte."
     }
   },
   "app": {
     "name": "Travaux Sans Piège",
     "url": "/travaux-sans-piege/",
     "audience": "Particuliers qui pilotent leurs travaux eux-mêmes",
-    "status": "Prototype, lancement 2027",
+    "status": "Vérification de devis ouverte, application à venir",
     "description": "Application de suivi de travaux pour le particulier qui pilote son chantier lui-même : artisans vérifiés, devis lus, chantier en clair, paiements liés aux étapes."
   }
 }
