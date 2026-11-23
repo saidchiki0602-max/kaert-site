@@ -35,6 +35,7 @@ const url = site + path;
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Kaërt Groupe",
+    "alternateName": ["Kaert Groupe", "KaertGroupe", "Kaërt", "Kaert"],
     "legalName": "Kaërt Groupe SAS",
     "url": site,
     "logo": site + "/favicon.svg",
@@ -45,7 +46,14 @@ const url = site + path;
     "founder": { "@type": "Person", "name": "Saïd Chiki", "jobTitle": "Fondateur et président" },
     "address": { "@type": "PostalAddress", "streetAddress": "13 rue de la Basse Ville", "postalCode": "35190", "addressLocality": "Québriac", "addressRegion": "Bretagne", "addressCountry": "FR" },
     "areaServed": "Bretagne",
-    "brand": ["Kōv", "MOEpilote", "Travaux Sans Piège", "ValoTravaux", "CourtierTravaux", "VosMaîtresdŒuvre"]
+    "brand": ["Kōv", "MOEpilote", "Travaux Sans Piège", "ValoTravaux", "CourtierTravaux", "VosMaîtresdŒuvre", "Conformité Travaux", "ArtisanDispo", "Vosartisans"]
+  })} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Kaërt Groupe",
+    "alternateName": ["Kaert Groupe", "kaertgroupe.com"],
+    "url": site + "/"
   })} />
   <slot name="head" />
 </head>
