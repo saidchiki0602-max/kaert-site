@@ -10,7 +10,7 @@ const tools = [
   { id: 'cr', who: "Maîtres d'œuvre", t: 'Mon CR de chantier en 5 minutes', p: 'Dictez votre réunion, recevez le compte rendu structuré, diffusé avec accusés de lecture.', ask: 'Une dictée de 2 minutes', give: 'Un CR structuré par lot, actions et délais ; 3 par mois offerts', when: 'Bientôt', soon: true, to: '/moepilote/', toLabel: 'MOEpilote' },
   { id: 'devis30', who: 'Artisans', t: 'Mon devis en 30 secondes', p: 'Trois lignes dictées, un devis PDF propre avec toutes les mentions légales. Trois par mois offerts.', ask: 'Métier, SIRET, trois lignes', give: 'Devis PDF conforme', when: 'Bientôt, avec Kōv', soon: true, to: '/kov/', toLabel: 'Kōv' },
   { id: 'decennale', who: 'MOE · artisans · agents', t: 'Vérifier une attestation décennale en ligne', p: "Attestation lue, croisée avec le devis, confirmée auprès de l'assureur. Trafiquée, impayée ou hors activité : on le voit.", ask: "L'attestation (photo ou PDF), le devis", give: 'Validité, activités couvertes vs travaux, alertes', when: 'Bientôt', soon: true, to: '/moepilote/', toLabel: 'MOEpilote' },
-  { id: 'acte', who: 'Notaires', t: "Dossier travaux complet pour l'acte ?", p: 'Cinq questions, et la liste des pièces qui manqueront : permis, achèvement, assurances, DPE.', ask: '5 questions', give: 'Liste des pièces attendues et manquantes', when: '2027', soon: true, to: '/conformite-travaux/', toLabel: 'Conformité Travaux' },
+  { id: 'acte', who: 'Vendeurs · agences · notaires', t: 'Vérifier les travaux avant la vente', p: 'Cinq questions, et la liste des pièces qui manqueront : permis, achèvement, assurances.', ask: '5 questions', give: 'Liste des pièces attendues et manquantes', when: 'Ouvert', soon: false, href: 'https://conformitetravaux.com/verifier-travaux-avant-vente/', to: '/conformite-travaux/', toLabel: 'Conformité Travaux' },
 ];
 ---
 <Page title={data.title} description={data.description} path={data.path}>
@@ -27,7 +27,7 @@ const tools = [
       <h3>{t.t}</h3><p>{t.p}</p>
       <dl style="margin:16px 0 0;display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:.92rem"><dt style="font-weight:700">Il demande</dt><dd style="margin:0;color:var(--fg2)">{t.ask}</dd><dt style="font-weight:700">Il rend</dt><dd style="margin:0;color:var(--fg2)">{t.give}</dd></dl>
       <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap;align-items:center">
-        {t.soon ? <a class="btn s" href={L('/demo/')} style="padding:10px 16px;font-size:.9rem">Être prévenu</a> : <a class="btn p" href={L('/demo/')} style="padding:10px 16px;font-size:.9rem">Essayer l'outil</a>}
+        {t.soon ? <a class="btn s" href={L('/demo/')} style="padding:10px 16px;font-size:.9rem">Être prévenu</a> : <a class="btn p" href={t.href ?? L('/demo/')} style="padding:10px 16px;font-size:.9rem">Essayer l'outil</a>}
         <a href={L(t.to)} style="font-size:.9rem;color:var(--fg2)">Le produit derrière : <b style="display:inline;font:inherit;font-weight:700;color:var(--fg)">{t.toLabel}</b> →</a>
       </div>
     </div>)}

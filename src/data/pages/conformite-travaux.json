@@ -18,8 +18,8 @@
         "a": "Souvent, par un permis de régularisation si les travaux respectent les règles d'urbanisme en vigueur, ou par prescription après dix ans pour certaines infractions. L'outil indique qui contacter, les délais et le coût."
       },
       {
-        "q": "Quand Conformité Travaux sera-t-il disponible ?",
-        "a": "En 2027. Un premier outil gratuit, « Dossier travaux complet pour l'acte ? », ouvre avant : cinq questions et la liste des pièces attendues et manquantes."
+        "q": "Conformité Travaux est-il déjà disponible ?",
+        "a": "Le test gratuit est ouvert sur conformitetravaux.com : cinq questions, et la liste des pièces attendues et manquantes, sans compte. L'application complète ouvrira ensuite pour les vendeurs, les agences immobilières et les études notariales."
       },
       {
         "q": "Combien de temps faut-il conserver les pièces d'un chantier ?",
@@ -32,10 +32,10 @@
     ]
   },
   "product": {
-    "who": "Notaires · vendeurs",
+    "who": "Notaires · agences · vendeurs",
     "title": "Les pièces travaux exigées pour la vente d'une maison, trouvées avant la signature.",
-    "sub": "Pour les notaires et les vendeurs : les pièces travaux exigées pour la vente d'une maison — permis, déclaration d'achèvement, dommages-ouvrage, décennales, RE2020. Ce qui manque, et comment le régulariser.",
-    "status": "2027",
+    "sub": "Pour les vendeurs, les agences immobilières et les notaires : les pièces travaux exigées pour la vente d'une maison — permis, déclaration d'achèvement, dommages-ouvrage, décennales, RE2020. Ce qui manque, et comment le régulariser.",
+    "status": "Site ouvert",
     "color": "var(--not)",
     "featsTitle": "Les pièces de travaux à réunir pour la vente d'une maison.",
     "feats": [
@@ -53,17 +53,18 @@
       }
     ],
     "price": {
-      "big": "2027",
-      "p": "Le premier pas est gratuit : l'outil « Dossier travaux complet pour l'acte ? » — cinq questions, et la liste des pièces qui manqueront.",
+      "big": "Test gratuit",
+      "p": "Le test est ouvert et gratuit sur conformitetravaux.com : cinq questions, et la liste des pièces qui manqueront. L'application complète ouvrira ensuite.",
       "items": [
-        "Outil gratuit en premier, sans compte",
+        "Test gratuit, sans compte, en deux minutes",
         "Puis le dossier du bien complet, issu des chantiers Kōv et MOEpilote",
-        "Laissez votre e-mail : on vous prévient à l’ouverture"
+        "Tarifs vendeur, agence et étude détaillés sur conformitetravaux.com"
       ]
     },
     "cta": {
-      "label": "Être prévenu à l’ouverture",
-      "href": "/conformite-travaux/#alerte"
+      "label": "Aller sur conformitetravaux.com",
+      "href": "https://conformitetravaux.com/",
+      "note": "Test gratuit, sans compte."
     },
     "oui": {
       "intro": "Dès l'ouverture du dossier, Conformité Travaux liste ce qui manque et à qui le demander. Vous relancez en un clic, et vous voyez ce qui est revenu.",
@@ -90,8 +91,8 @@
   "app": {
     "name": "Conformité Travaux",
     "url": "/conformite-travaux/",
-    "audience": "Notaires et vendeurs",
-    "status": "Ouverture 2027",
+    "audience": "Vendeurs, agences immobilières et notaires",
+    "status": "Test gratuit ouvert, application à venir",
     "description": "Outil pour notaires et vendeurs : liste des pièces travaux exigées pour un acte (permis, DAACT, dommages-ouvrage, décennales, RE2020), pièces manquantes, risques et régularisation."
   }
 }

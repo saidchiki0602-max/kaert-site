@@ -4,15 +4,21 @@ import data from '../data/pages/conformite-travaux.json';
 import Faq from '../components/Faq.astro';
 import AppLd from '../components/AppLd.astro';
 import Product from '../components/Product.astro';
-import DemoForm from '../components/DemoForm.astro';
 ---
 <Page title={data.title} description={data.description} path={data.path}>
 <Product {...data.product}>
   <svg slot="logo" viewBox="0 0 340 56" aria-hidden="true"><text x="0" y="44" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="30" fill="currentColor" letter-spacing="-1.2">Conformité<tspan fill="var(--c)"> Travaux</tspan></text></svg>
 </Product>
-<section class="contact" id="alerte"><div class="wrap">
-  <div><div class="eyebrow">Ouverture 2027</div><h2 style="margin-top:14px">Être prévenu à l'ouverture.</h2><p class="lead">Un e-mail à l'ouverture de l'outil gratuit, un autre au lancement. Rien entre les deux.</p></div>
-  <DemoForm label="Me prévenir" defaultRole="Notaire" />
+<section class="sec" id="alerte" style="border-top:2px solid var(--fg)"><div class="wrap">
+  <h2>Le test gratuit est ouvert.</h2>
+  <p class="lead">Cinq questions sur les travaux de la maison, et la liste des pièces que le notaire demandera : celles qui sont là, celles qui manquent, et comment les obtenir. Sans compte.</p>
+  <p style="margin-top:20px"><a class="btn p" href="https://conformitetravaux.com/verifier-travaux-avant-vente/">Vérifier les travaux avant la vente →</a></p>
+  <div class="grid2" style="margin-top:28px">
+    <a class="box" href="https://conformitetravaux.com/vendre-maison-travaux-non-declares/" style="text-decoration:none;color:inherit"><div class="meta">Vendeurs</div><h3>Vendre une maison avec des travaux non déclarés →</h3><p>Le dossier à préparer avant le compromis.</p></a>
+    <a class="box" href="https://conformitetravaux.com/agent-immobilier-travaux-non-declares/" style="text-decoration:none;color:inherit"><div class="meta">Agences immobilières</div><h3>Repérer les travaux non déclarés avant le mandat →</h3><p>Ce qui manque au dossier, vu avant de signer.</p></a>
+    <a class="box" href="https://conformitetravaux.com/notaire-pieces-travaux-vente/" style="text-decoration:none;color:inherit"><div class="meta">Études notariales</div><h3>Réunir les pièces travaux avant l'acte →</h3><p>Les pièces de chaque vente, collectées en amont.</p></a>
+    <a class="box" href="https://conformitetravaux.com/guides/" style="text-decoration:none;color:inherit"><div class="meta">Guides</div><h3>Travaux non déclarés et vente : les cas fréquents →</h3><p>Extension, véranda, piscine, garage, combles, DAACT.</p></a>
+  </div>
 </div></section>
 <AppLd {...(data as any).app} />
 <Faq title={data.faq.title} items={data.faq.items.map((i: any) => [i.q, i.a] as [string, string])} />
