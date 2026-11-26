@@ -25,6 +25,20 @@ Ce dépôt est le premier site produit par le modèle Webenvue 2.0 : **gabarit +
 8. Aucun lien sans destination (`href="#"`, vide, `javascript:`) : un réseau social sans adresse ne s'affiche pas. Bloquant.
 9. On n'affirme pas au présent ce qu'un produit en développement fera au lancement (conformité, certification) : « sera », avec la date. Relecture humaine, non automatisé.
 
+10. Tout contenu qui affirme une règle (droit, fiscalité, norme, prix public) cite sa source officielle : champ `sources` de la page (liste `[libellé, adresse]`), affiché dans un bloc « Sources officielles » et repris dans les données structurées (`citation`). Sites publics uniquement (Service-Public, Légifrance, DGCCRF, impots.gouv.fr, Assemblée nationale…), chaque adresse ouverte et lue avant d'être citée. Sans source, une IA n'a aucune raison de reprendre un site récent.
+11. Chaque guide porte deux dates : `published` (première publication) et `updated` (dernière vérification), reprises dans `datePublished` et `dateModified`.
+12. Les guides liés en bas de page sont des voisins thématiques déclarés dans les données (`voisins`), pas les trois mêmes partout : chaque nouveau guide doit recevoir des liens.
+
+## Référencement IA (GEO) : liste de mise en ligne, à refaire pour chaque nouveau site
+Établie le 26 novembre 2026 sur travauxsanspiege.fr. Les quatre premiers points sont dans le gabarit ; les suivants se font une fois par site.
+1. `robots.txt` autorise nommément GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, PerplexityBot, Google-Extended, Applebot-Extended et Bingbot. Contrôle : demander une page avec chacun de ces noms de robot, obtenir un code 200 et la page complète.
+2. Le texte est dans le HTML, lisible sans JavaScript.
+3. `llms.txt` à jour, avec les pages utiles, les prix et les dates.
+4. IndexNow prévient Bing à chaque déploiement.
+5. Google Search Console : propriété validée, sitemap envoyé, demande d'indexation des nouvelles pages. Le rapport « IA générative » (bêta) donne les pages affichées dans les réponses IA de Google.
+6. Bing Webmaster Tools : importer le site depuis la Search Console, puis envoyer le sitemap à la main (l'import ne le reprend pas pour une propriété de domaine). Bing alimente ChatGPT et Copilot ; sa rubrique « AI Performance » donne les citations. Premières données sous 48 heures.
+7. Relever les deux rapports IA trois à quatre semaines après la mise en ligne : les citations suivent le classement, elles ne le précèdent pas.
+
 ## Agents prévus
 - **Audit** (fait) : à chaque build.
 - **Contenu** : écrit les guides sur les requêtes où le site est en page 2 (Search Console) ; produit un `.md` par guide, relu avant publication.
